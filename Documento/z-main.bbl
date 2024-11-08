@@ -1,0 +1,952 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{li_map_2023}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=29cc077bfda7ac06a41a7b2a7e84cfb0}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jingwen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=474eced966207f8269f0e696a38a9974}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Wenkang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=8d3346030389bb4358dd53ef845ff0b1}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5d3bb27868d926e16a91ff5a128bd557}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Dayong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4ef00311f61a16a5b9aa0ecae7940d77}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Jianwu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cca9ba853f88fb0a4bfd608231bdcf6b}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Yanling},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{db67d03a15617382785a47ca21eb1ae5}
+      \strng{fullhash}{0d01d269bca8d51c55a556cc686c0603}
+      \strng{fullhashraw}{0d01d269bca8d51c55a556cc686c0603}
+      \strng{bibnamehash}{0d01d269bca8d51c55a556cc686c0603}
+      \strng{authorbibnamehash}{0d01d269bca8d51c55a556cc686c0603}
+      \strng{authornamehash}{db67d03a15617382785a47ca21eb1ae5}
+      \strng{authorfullhash}{0d01d269bca8d51c55a556cc686c0603}
+      \strng{authorfullhashraw}{0d01d269bca8d51c55a556cc686c0603}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Symmetry}
+      \field{number}{10}
+      \field{title}{Map {Construction} and {Path} {Planning} {Method} for {Mobile} {Robots} {Based} on {Collision} {Probability} {Model}}
+      \field{volume}{15}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.3390/sym15101891
+      \endverb
+    \endentry
+    \entry{li_quadruped_2022}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=1016f45114ced473595a89e1864b0333}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=cd1e4e648b0074e1d1f4427d70297b0a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0f3c5faed8cf39931bd02da75499fe4d}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Qixing},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=1ab28900b9c3fd4f40c9c22578b1dfe4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Weilong},
+           giveni={W\bibinitperiod}}}%
+        {{hash=e0cdb0dcf54e0a628d3bbdf8d00200d4}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Landong},
+           giveni={L\bibinitperiod}}}%
+        {{hash=03963094993d3df56fbb2384f903f066}{%
+           family={Rong},
+           familyi={R\bibinitperiod},
+           given={Xuewen},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{7889da6c48fbc295d5fb83337d8db18e}
+      \strng{fullhash}{36e4703023a93ff059eaa3ea8a1e1c37}
+      \strng{fullhashraw}{36e4703023a93ff059eaa3ea8a1e1c37}
+      \strng{bibnamehash}{36e4703023a93ff059eaa3ea8a1e1c37}
+      \strng{authorbibnamehash}{36e4703023a93ff059eaa3ea8a1e1c37}
+      \strng{authornamehash}{7889da6c48fbc295d5fb83337d8db18e}
+      \strng{authorfullhash}{36e4703023a93ff059eaa3ea8a1e1c37}
+      \strng{authorfullhashraw}{36e4703023a93ff059eaa3ea8a1e1c37}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Advanced Robotic Systems}
+      \field{number}{4}
+      \field{title}{A quadruped robot obstacle avoidance and personnel following strategy based on ultra-wideband and three-dimensional laser radar}
+      \field{volume}{19}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1177/17298806221114705
+      \endverb
+    \endentry
+    \entry{dai_mobile_2019}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=83b51382ef34a58681b91e5e4f50270f}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Xiaolin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=22db1e416e33eb3e122606ff13a4059e}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Shuai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=13d224d3833718175fd79538c6aac650}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhiwen},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=dabe1e463f4e82d16a4b9af66a95b368}{%
+           family={Gong},
+           familyi={G\bibinitperiod},
+           given={Dawei},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{9377bc07a9b69e13312e1e315d83b831}
+      \strng{fullhash}{305e54d452835b767042af3118989feb}
+      \strng{fullhashraw}{305e54d452835b767042af3118989feb}
+      \strng{bibnamehash}{305e54d452835b767042af3118989feb}
+      \strng{authorbibnamehash}{305e54d452835b767042af3118989feb}
+      \strng{authornamehash}{9377bc07a9b69e13312e1e315d83b831}
+      \strng{authorfullhash}{305e54d452835b767042af3118989feb}
+      \strng{authorfullhashraw}{305e54d452835b767042af3118989feb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Neurorobotics}
+      \field{title}{Mobile {Robot} {Path} {Planning} {Based} on {Ant} {Colony} {Algorithm} {With} {A}* {Heuristic} {Method}}
+      \field{volume}{13}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.3389/fnbot.2019.00015
+      \endverb
+    \endentry
+    \entry{han_mobile_2019}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=ebbf2de506b998e93cacc7a20b86ee84}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Yisa},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=32a08717e0d6dcde59bc98b96800ed6c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2b77324b1473f53c145039ccbc69ff29}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Haiyan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=76805eb6ac258dc63cba6bad9fa01921}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Xulu},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{76133bebb82a77af6874783842d8db5b}
+      \strng{fullhash}{b6f99f5bde5bf2a743fe45150429f91d}
+      \strng{fullhashraw}{b6f99f5bde5bf2a743fe45150429f91d}
+      \strng{bibnamehash}{b6f99f5bde5bf2a743fe45150429f91d}
+      \strng{authorbibnamehash}{b6f99f5bde5bf2a743fe45150429f91d}
+      \strng{authornamehash}{76133bebb82a77af6874783842d8db5b}
+      \strng{authorfullhash}{b6f99f5bde5bf2a743fe45150429f91d}
+      \strng{authorfullhashraw}{b6f99f5bde5bf2a743fe45150429f91d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 {Chinese} {Control} {Conference} ({CCC})}
+      \field{title}{Mobile {Robot} {Path} {Planning} {Based} on {Improved} {Particle} {Swarm} optimization}
+      \field{year}{2019}
+      \field{pages}{4354\bibrangedash 4358}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.23919/ChiCC.2019.8866634
+      \endverb
+    \endentry
+    \entry{pena_echeverria_algoritmo_2019}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=ed34f2546404c6c49cc58e39c538df26}{%
+           family={Peña},
+           familyi={P\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad del Valle de Guatemala}%
+      }
+      \strng{namehash}{ed34f2546404c6c49cc58e39c538df26}
+      \strng{fullhash}{ed34f2546404c6c49cc58e39c538df26}
+      \strng{fullhashraw}{ed34f2546404c6c49cc58e39c538df26}
+      \strng{bibnamehash}{ed34f2546404c6c49cc58e39c538df26}
+      \strng{authorbibnamehash}{ed34f2546404c6c49cc58e39c538df26}
+      \strng{authornamehash}{ed34f2546404c6c49cc58e39c538df26}
+      \strng{authorfullhash}{ed34f2546404c6c49cc58e39c538df26}
+      \strng{authorfullhashraw}{ed34f2546404c6c49cc58e39c538df26}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Algoritmo de sincronización y control de sistemas de robots multiagente para misiones de búsqueda}
+      \field{type}{Tesis de licenciatura}
+      \field{year}{2019}
+    \endentry
+    \entry{santizo_olivet_aprendizaje_2021}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=ebb1c091a5990b6ca950601dba3baea7}{%
+           family={Santizo},
+           familyi={S\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad del Valle de Guatemala}%
+      }
+      \strng{namehash}{ebb1c091a5990b6ca950601dba3baea7}
+      \strng{fullhash}{ebb1c091a5990b6ca950601dba3baea7}
+      \strng{fullhashraw}{ebb1c091a5990b6ca950601dba3baea7}
+      \strng{bibnamehash}{ebb1c091a5990b6ca950601dba3baea7}
+      \strng{authorbibnamehash}{ebb1c091a5990b6ca950601dba3baea7}
+      \strng{authornamehash}{ebb1c091a5990b6ca950601dba3baea7}
+      \strng{authorfullhash}{ebb1c091a5990b6ca950601dba3baea7}
+      \strng{authorfullhashraw}{ebb1c091a5990b6ca950601dba3baea7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Aprendizaje reforzado y aprendizaje profundo en aplicaciones de robótica de enjambre}
+      \field{type}{Tesis de licenciatura}
+      \field{year}{2021}
+    \endentry
+    \entry{baldizon_garcia_aplicaciones_2022}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=bccbfa1ee81415eb665b9679f0480f31}{%
+           family={Baldizón},
+           familyi={B\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad del Valle de Guatemala}%
+      }
+      \strng{namehash}{bccbfa1ee81415eb665b9679f0480f31}
+      \strng{fullhash}{bccbfa1ee81415eb665b9679f0480f31}
+      \strng{fullhashraw}{bccbfa1ee81415eb665b9679f0480f31}
+      \strng{bibnamehash}{bccbfa1ee81415eb665b9679f0480f31}
+      \strng{authorbibnamehash}{bccbfa1ee81415eb665b9679f0480f31}
+      \strng{authornamehash}{bccbfa1ee81415eb665b9679f0480f31}
+      \strng{authorfullhash}{bccbfa1ee81415eb665b9679f0480f31}
+      \strng{authorfullhashraw}{bccbfa1ee81415eb665b9679f0480f31}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Aplicaciones prácticas para algoritmos de inteligencia y robótica de enjambre}
+      \field{type}{Tesis de licenciatura}
+      \field{year}{2022}
+    \endentry
+    \entry{godoy_lucero_desarrollo_2023}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6b04fab35be37a383b7beff4283858d}{%
+           family={Godoy},
+           familyi={G\bibinitperiod},
+           given={Fredy},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad del Valle de Guatemala}%
+      }
+      \strng{namehash}{b6b04fab35be37a383b7beff4283858d}
+      \strng{fullhash}{b6b04fab35be37a383b7beff4283858d}
+      \strng{fullhashraw}{b6b04fab35be37a383b7beff4283858d}
+      \strng{bibnamehash}{b6b04fab35be37a383b7beff4283858d}
+      \strng{authorbibnamehash}{b6b04fab35be37a383b7beff4283858d}
+      \strng{authornamehash}{b6b04fab35be37a383b7beff4283858d}
+      \strng{authorfullhash}{b6b04fab35be37a383b7beff4283858d}
+      \strng{authorfullhashraw}{b6b04fab35be37a383b7beff4283858d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Desarrollo y evaluación de algoritmos para el mapeo de entornos y generación de trayectorias utilizando sistemas robóticos multi-agente}
+      \field{type}{Tesis de licenciatura}
+      \field{year}{2023}
+    \endentry
+    \entry{maderer_robotarium_nodate}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=90fdea843c0d9aa45a3de23169144b21}{%
+           family={Maderer},
+           familyi={M\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{90fdea843c0d9aa45a3de23169144b21}
+      \strng{fullhash}{90fdea843c0d9aa45a3de23169144b21}
+      \strng{fullhashraw}{90fdea843c0d9aa45a3de23169144b21}
+      \strng{bibnamehash}{90fdea843c0d9aa45a3de23169144b21}
+      \strng{authorbibnamehash}{90fdea843c0d9aa45a3de23169144b21}
+      \strng{authornamehash}{90fdea843c0d9aa45a3de23169144b21}
+      \strng{authorfullhash}{90fdea843c0d9aa45a3de23169144b21}
+      \strng{authorfullhashraw}{90fdea843c0d9aa45a3de23169144b21}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Robotarium: {A} {Robotics} {Lab} {Accessible} to {All}}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://news.gatech.edu/archive/features/robotarium-robotics-lab-accessible-all.shtml
+      \endverb
+      \verb{url}
+      \verb https://news.gatech.edu/archive/features/robotarium-robotics-lab-accessible-all.shtml
+      \endverb
+    \endentry
+    \entry{barrera_robotat_nodate}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=97e1cf224e3a614f72d8bc96bce10f6c}{%
+           family={Barrera},
+           familyi={B\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{97e1cf224e3a614f72d8bc96bce10f6c}
+      \strng{fullhash}{97e1cf224e3a614f72d8bc96bce10f6c}
+      \strng{fullhashraw}{97e1cf224e3a614f72d8bc96bce10f6c}
+      \strng{bibnamehash}{97e1cf224e3a614f72d8bc96bce10f6c}
+      \strng{authorbibnamehash}{97e1cf224e3a614f72d8bc96bce10f6c}
+      \strng{authornamehash}{97e1cf224e3a614f72d8bc96bce10f6c}
+      \strng{authorfullhash}{97e1cf224e3a614f72d8bc96bce10f6c}
+      \strng{authorfullhashraw}{97e1cf224e3a614f72d8bc96bce10f6c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{El {Robotat}, el hábitat donde interactúan los robots en el {CIT}}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://noticias.uvg.edu.gt/el-robotat-el-habitat-donde-interactuan-los-robots-en-el-cit/
+      \endverb
+      \verb{url}
+      \verb https://noticias.uvg.edu.gt/el-robotat-el-habitat-donde-interactuan-los-robots-en-el-cit/
+      \endverb
+    \endentry
+    \entry{perafan_camilo_2022}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=97ed05d5b6cb12c2b3e5da0faba7398a}{%
+           family={Montoya},
+           familyi={M\bibinitperiod},
+           given={Camilo},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad del Valle de Guatemala}%
+      }
+      \strng{namehash}{97ed05d5b6cb12c2b3e5da0faba7398a}
+      \strng{fullhash}{97ed05d5b6cb12c2b3e5da0faba7398a}
+      \strng{fullhashraw}{97ed05d5b6cb12c2b3e5da0faba7398a}
+      \strng{bibnamehash}{97ed05d5b6cb12c2b3e5da0faba7398a}
+      \strng{authorbibnamehash}{97ed05d5b6cb12c2b3e5da0faba7398a}
+      \strng{authornamehash}{97ed05d5b6cb12c2b3e5da0faba7398a}
+      \strng{authorfullhash}{97ed05d5b6cb12c2b3e5da0faba7398a}
+      \strng{authorfullhashraw}{97ed05d5b6cb12c2b3e5da0faba7398a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Robotat: un ecosistema robótico de captura de movimiento y comunicación inalámbrica}
+      \field{type}{Tesis de licenciatura}
+      \field{year}{2022}
+    \endentry
+    \entry{thrun_probabilistic_2005}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=5112ea130eadef0764fce0145b8b9f91}{%
+           family={Thrun},
+           familyi={T\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=98f4ab1bc2ac191d8f8a0651315ce9c0}{%
+           family={Burgard},
+           familyi={B\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=93b0c4a7857a82a8f94e256475887c74}{%
+           family={Fox},
+           familyi={F\bibinitperiod},
+           given={Dieter},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, Massachusetts}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{cb3e97dbc1e8d4a631a5b656776c23d3}
+      \strng{fullhash}{cb3e97dbc1e8d4a631a5b656776c23d3}
+      \strng{fullhashraw}{cb3e97dbc1e8d4a631a5b656776c23d3}
+      \strng{bibnamehash}{cb3e97dbc1e8d4a631a5b656776c23d3}
+      \strng{authorbibnamehash}{cb3e97dbc1e8d4a631a5b656776c23d3}
+      \strng{authornamehash}{cb3e97dbc1e8d4a631a5b656776c23d3}
+      \strng{authorfullhash}{cb3e97dbc1e8d4a631a5b656776c23d3}
+      \strng{authorfullhashraw}{cb3e97dbc1e8d4a631a5b656776c23d3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0262201623}
+      \field{title}{Probabilistic Robotics (Intelligent Robotics and Autonomous Agents)}
+      \field{year}{2005}
+    \endentry
+    \entry{fahimi_autonomous_2009}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=5871f19d01be8ed85cce754d6335aa71}{%
+           family={Fahimi},
+           familyi={F\bibinitperiod},
+           given={Farbod},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Edmonton, Alberta}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{5871f19d01be8ed85cce754d6335aa71}
+      \strng{fullhash}{5871f19d01be8ed85cce754d6335aa71}
+      \strng{fullhashraw}{5871f19d01be8ed85cce754d6335aa71}
+      \strng{bibnamehash}{5871f19d01be8ed85cce754d6335aa71}
+      \strng{authorbibnamehash}{5871f19d01be8ed85cce754d6335aa71}
+      \strng{authornamehash}{5871f19d01be8ed85cce754d6335aa71}
+      \strng{authorfullhash}{5871f19d01be8ed85cce754d6335aa71}
+      \strng{authorfullhashraw}{5871f19d01be8ed85cce754d6335aa71}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0387095381}
+      \field{title}{Autonomous {Robots}: {Modeling}, {Path} {Planning}, and {Control}}
+      \field{year}{2009}
+    \endentry
+    \entry{siciliano_robotics_2009}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=38f7a70abf2d86e432d63826f560ab93}{%
+           family={Siciliano},
+           familyi={S\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8ee631ade831cd9df4fdd3ecba074704}{%
+           family={Sciavicco},
+           familyi={S\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ff3e3865edda89166207ec2d8a4c22aa}{%
+           family={Villani},
+           familyi={V\bibinitperiod},
+           given={Luigi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=dcc89269b2eb1155024b2da9fd7c68eb}{%
+           family={Oriolo},
+           familyi={O\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London, England}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{abc7d060ecb5ddb10fbe1463bcfbedb8}
+      \strng{fullhash}{ee90168e098b65fb796c51b65c7348da}
+      \strng{fullhashraw}{ee90168e098b65fb796c51b65c7348da}
+      \strng{bibnamehash}{ee90168e098b65fb796c51b65c7348da}
+      \strng{authorbibnamehash}{ee90168e098b65fb796c51b65c7348da}
+      \strng{authornamehash}{abc7d060ecb5ddb10fbe1463bcfbedb8}
+      \strng{authorfullhash}{ee90168e098b65fb796c51b65c7348da}
+      \strng{authorfullhashraw}{ee90168e098b65fb796c51b65c7348da}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1846286417}
+      \field{series}{Advanced {Textbooks} in {Control} and {Signal} {Processing}}
+      \field{title}{Robotics Modelling, Planning and Control}
+      \field{year}{2009}
+    \endentry
+    \entry{multi-robot_nodate}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=9f17fcafaa69a542bb0e3303f4d2991b}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod}}}%
+        {{hash=47fffdac52fb33e9421ad3a79a908b40}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Siyi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f940488b8cacbd6c6b508212c6d05168}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Meng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=107909457969f6b3c8312497dccf3274}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Shi},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{13f19640bcd92d3071947dc036ef31e9}
+      \strng{fullhash}{459c9a40a329d9b2367bfbc91d709c19}
+      \strng{fullhashraw}{459c9a40a329d9b2367bfbc91d709c19}
+      \strng{bibnamehash}{459c9a40a329d9b2367bfbc91d709c19}
+      \strng{authorbibnamehash}{459c9a40a329d9b2367bfbc91d709c19}
+      \strng{authornamehash}{13f19640bcd92d3071947dc036ef31e9}
+      \strng{authorfullhash}{459c9a40a329d9b2367bfbc91d709c19}
+      \strng{authorfullhashraw}{459c9a40a329d9b2367bfbc91d709c19}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Complex System Modeling and Simulation}
+      \field{number}{2}
+      \field{title}{Multi-{Robot} {Indoor} {Environment} {Map} {Building} {Based} on {Multi}-{Stage} {Optimization} {Method}}
+      \field{volume}{1}
+      \field{year}{2021}
+      \field{pages}{145\bibrangedash 161}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.23919/CSMS.2021.0011
+      \endverb
+    \endentry
+    \entry{niko_correll_kinematics}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ae6ceca64dceedf87ea64f70860cd62}{%
+           family={Correll},
+           familyi={C\bibinitperiod},
+           given={Nikolaus},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Independent}%
+      }
+      \strng{namehash}{9ae6ceca64dceedf87ea64f70860cd62}
+      \strng{fullhash}{9ae6ceca64dceedf87ea64f70860cd62}
+      \strng{fullhashraw}{9ae6ceca64dceedf87ea64f70860cd62}
+      \strng{bibnamehash}{9ae6ceca64dceedf87ea64f70860cd62}
+      \strng{authorbibnamehash}{9ae6ceca64dceedf87ea64f70860cd62}
+      \strng{authornamehash}{9ae6ceca64dceedf87ea64f70860cd62}
+      \strng{authorfullhash}{9ae6ceca64dceedf87ea64f70860cd62}
+      \strng{authorfullhashraw}{9ae6ceca64dceedf87ea64f70860cd62}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1493773070}
+      \field{series}{Kinematics, Perception, Localization and Planning}
+      \field{title}{Introduction to Autonomous Robots}
+      \field{year}{2016}
+    \endentry
+    \entry{corke_robotics_2017}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c0e503339314930d140b67b5e7c55c3e}{%
+           family={Corke},
+           familyi={C\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham, Switzerland}%
+      }
+      \list{publisher}{1}{%
+        {Springer Cham}%
+      }
+      \strng{namehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{fullhash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{fullhashraw}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{bibnamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authorbibnamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authornamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authorfullhash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authorfullhashraw}{c0e503339314930d140b67b5e7c55c3e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second Edition}
+      \field{isbn}{3319544128}
+      \field{series}{Springer {Tracts} in {Advanced} {Robotics}}
+      \field{title}{Robotics, {Vision} and {Control:} {Fundamental} {Algorithms} In MATLAB}
+      \field{year}{2017}
+    \endentry
+    \entry{lidar}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=ac299f8012dbbbb67f0ad6e60f26375e}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jingyun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6b4661a35d44ce15b274b5e0ad88356b}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Qiao},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=1a9960c45892ae8586b09e51443bbc9e}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Zhe},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=eac4766046cc1e346421cdce16fc8734}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Yudong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5ad6d119cef5e0a6293102d001776db}
+      \strng{fullhash}{4eb5ed83740bab7ba7dafe17ed434120}
+      \strng{fullhashraw}{4eb5ed83740bab7ba7dafe17ed434120}
+      \strng{bibnamehash}{4eb5ed83740bab7ba7dafe17ed434120}
+      \strng{authorbibnamehash}{4eb5ed83740bab7ba7dafe17ed434120}
+      \strng{authornamehash}{d5ad6d119cef5e0a6293102d001776db}
+      \strng{authorfullhash}{4eb5ed83740bab7ba7dafe17ed434120}
+      \strng{authorfullhashraw}{4eb5ed83740bab7ba7dafe17ed434120}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE 3rd Optoelectronics Global Conference (OGC)}
+      \field{title}{TOF Lidar Development in Autonomous Vehicle}
+      \field{year}{2018}
+      \field{pages}{185\bibrangedash 190}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/OGC.2018.8529992
+      \endverb
+    \endentry
+    \entry{tof}{misc}{}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{title}{{STMicroelectronics} {Time} {of} {Flight} ({ToF}) {Sensors}}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.st.com/en/imaging-and-photonics-solutions/time-of-flight-sensors.html
+      \endverb
+      \verb{url}
+      \verb https://www.st.com/en/imaging-and-photonics-solutions/time-of-flight-sensors.html
+      \endverb
+    \endentry
+    \entry{drouin2020}{book}{}{}
+      \name{editor}{3}{}{%
+        {{hash=30a3f502b128ed5109aab9c7cd49e5a4}{%
+           family={Pears},
+           familyi={P\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=0814b08e9c9c4db1c4e62df0c84f5ac9}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yonghuai},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7d8f76a9fb14d59f1efd0a4e984914e0}{%
+           family={Bunting},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham, Switzerland}%
+      }
+      \list{publisher}{1}{%
+        {Springer Cham}%
+      }
+      \strng{namehash}{7a0501ee612acd4f44d0b782defcca7a}
+      \strng{fullhash}{7a0501ee612acd4f44d0b782defcca7a}
+      \strng{fullhashraw}{7a0501ee612acd4f44d0b782defcca7a}
+      \strng{bibnamehash}{7a0501ee612acd4f44d0b782defcca7a}
+      \strng{editorbibnamehash}{7a0501ee612acd4f44d0b782defcca7a}
+      \strng{editornamehash}{7a0501ee612acd4f44d0b782defcca7a}
+      \strng{editorfullhash}{7a0501ee612acd4f44d0b782defcca7a}
+      \strng{editorfullhashraw}{7a0501ee612acd4f44d0b782defcca7a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second Edition}
+      \field{isbn}{3030440702}
+      \field{title}{3D {Imaging}, {Analysis} and {Applications}}
+      \field{year}{2020}
+    \endentry
+    \entry{pololu}{misc}{}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{shorttitle}
+      \field{shorttitle}{Pololu - 3pi+ {32U4} {Robot} - {Standard} {Edition} (30}
+      \field{title}{Pololu - 3pi+ {32U4} {Robot} - {Standard} {Edition}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.pololu.com/product/3737
+      \endverb
+      \verb{url}
+      \verb https://www.pololu.com/product/3737
+      \endverb
+    \endentry
+    \entry{pena_uart_nodate}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=a7e3da01885dd710d6e502979a0b11ca}{%
+           family={Peňa},
+           familyi={P\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=73c952b9559be32e6475d4f62d520c56}{%
+           family={Legaspi},
+           familyi={L\bibinitperiod},
+           given={Mary},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1841cf5ea6c1a201df41321237ed6c98}
+      \strng{fullhash}{1841cf5ea6c1a201df41321237ed6c98}
+      \strng{fullhashraw}{1841cf5ea6c1a201df41321237ed6c98}
+      \strng{bibnamehash}{1841cf5ea6c1a201df41321237ed6c98}
+      \strng{authorbibnamehash}{1841cf5ea6c1a201df41321237ed6c98}
+      \strng{authornamehash}{1841cf5ea6c1a201df41321237ed6c98}
+      \strng{authorfullhash}{1841cf5ea6c1a201df41321237ed6c98}
+      \strng{authorfullhashraw}{1841cf5ea6c1a201df41321237ed6c98}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Analog Devices}
+      \field{title}{{UART}: {A} {Hardware} {Communication} {Protocol} {Understanding} {Universal} {Asynchronous} {Receiver}/{Transmitter}}
+      \field{volume}{54}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.analog.com/en/resources/analog-dialogue/articles/uart-a-hardware-communication-protocol.html
+      \endverb
+      \verb{url}
+      \verb https://www.analog.com/en/resources/analog-dialogue/articles/uart-a-hardware-communication-protocol.html
+      \endverb
+    \endentry
+    \entry{campbell_basics_2016}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=8b58a130b113229537c54cadd0b95755}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b58a130b113229537c54cadd0b95755}
+      \strng{fullhash}{8b58a130b113229537c54cadd0b95755}
+      \strng{fullhashraw}{8b58a130b113229537c54cadd0b95755}
+      \strng{bibnamehash}{8b58a130b113229537c54cadd0b95755}
+      \strng{authorbibnamehash}{8b58a130b113229537c54cadd0b95755}
+      \strng{authornamehash}{8b58a130b113229537c54cadd0b95755}
+      \strng{authorfullhash}{8b58a130b113229537c54cadd0b95755}
+      \strng{authorfullhashraw}{8b58a130b113229537c54cadd0b95755}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Circuit Basics}
+      \field{title}{Basics of {UART} {Communication}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.circuitbasics.com/basics-uart-communication/
+      \endverb
+      \verb{url}
+      \verb https://www.circuitbasics.com/basics-uart-communication/
+      \endverb
+    \endentry
+    \entry{stmicroelectronics_vl53l0x_2016}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=03098dfdb493e0412368fc3e14814dd6}{%
+           family={STMicroelectronics{|}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{03098dfdb493e0412368fc3e14814dd6}
+      \strng{fullhash}{03098dfdb493e0412368fc3e14814dd6}
+      \strng{fullhashraw}{03098dfdb493e0412368fc3e14814dd6}
+      \strng{bibnamehash}{03098dfdb493e0412368fc3e14814dd6}
+      \strng{authorbibnamehash}{03098dfdb493e0412368fc3e14814dd6}
+      \strng{authornamehash}{03098dfdb493e0412368fc3e14814dd6}
+      \strng{authorfullhash}{03098dfdb493e0412368fc3e14814dd6}
+      \strng{authorfullhashraw}{03098dfdb493e0412368fc3e14814dd6}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{VL53L0X} - {Time}-of-{Flight} ({ToF}) ranging sensor - {Datasheet} ({Rev} 6)}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.st.com/resource/en/datasheet/vl53l0x.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.st.com/resource/en/datasheet/vl53l0x.pdf
+      \endverb
+    \endentry
+    \entry{youyeetoo_tech_ld20_nodate}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=01ee748968044de04ca8341cf6d0b945}{%
+           family={Tech},
+           familyi={T\bibinitperiod},
+           prefix={youyeetoo},
+           prefixi={y\bibinitperiod}}}%
+      }
+      \strng{namehash}{01ee748968044de04ca8341cf6d0b945}
+      \strng{fullhash}{01ee748968044de04ca8341cf6d0b945}
+      \strng{fullhashraw}{01ee748968044de04ca8341cf6d0b945}
+      \strng{bibnamehash}{01ee748968044de04ca8341cf6d0b945}
+      \strng{authorbibnamehash}{01ee748968044de04ca8341cf6d0b945}
+      \strng{authornamehash}{01ee748968044de04ca8341cf6d0b945}
+      \strng{authorfullhash}{01ee748968044de04ca8341cf6d0b945}
+      \strng{authorfullhashraw}{01ee748968044de04ca8341cf6d0b945}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{LD20}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://wiki.youyeetoo.com/en/Lidar/LD20
+      \endverb
+      \verb{url}
+      \verb https://wiki.youyeetoo.com/en/Lidar/LD20
+      \endverb
+    \endentry
+    \entry{eai_technology_ydlidar_2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ca587f53ad7ad1fec5f97b0915cb3b91}{%
+           family={Technology},
+           familyi={T\bibinitperiod},
+           given={EAI},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca587f53ad7ad1fec5f97b0915cb3b91}
+      \strng{fullhash}{ca587f53ad7ad1fec5f97b0915cb3b91}
+      \strng{fullhashraw}{ca587f53ad7ad1fec5f97b0915cb3b91}
+      \strng{bibnamehash}{ca587f53ad7ad1fec5f97b0915cb3b91}
+      \strng{authorbibnamehash}{ca587f53ad7ad1fec5f97b0915cb3b91}
+      \strng{authornamehash}{ca587f53ad7ad1fec5f97b0915cb3b91}
+      \strng{authorfullhash}{ca587f53ad7ad1fec5f97b0915cb3b91}
+      \strng{authorfullhashraw}{ca587f53ad7ad1fec5f97b0915cb3b91}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{YDLIDAR} {T}-{MINI} {PRO}- {Datasheet} ({Rev} 1.1)}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://static.generation-robots.com/media/ydlidar-tmini-pro-datasheet.pdf
+      \endverb
+      \verb{url}
+      \verb https://static.generation-robots.com/media/ydlidar-tmini-pro-datasheet.pdf
+      \endverb
+    \endentry
+    \entry{fatchurrahman_light_2016}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=a843f5813ac48e7cb4aaf65c077af49f}{%
+           family={Fatchurrahman},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=75590208749992cd22f3e8d6eb334d58}{%
+           family={Putra},
+           familyi={P\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=046f2c9af1685e360a2835405d7825c2}{%
+           family={Joyokusumo},
+           familyi={J\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=5764e5bdcdcbc96697eb6a61ee0e1448}{%
+           family={Habib},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=8de3a8b9a053021c80fdbf25fb8b1a5b}{%
+           family={Imawati},
+           familyi={I\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=8cd307164eef03eddb33ceb9c5996924}{%
+           family={Hadi},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{e134581233265ee769070af0a150ee18}
+      \strng{fullhash}{e24b58a7a3591661ed782724356bee67}
+      \strng{fullhashraw}{e24b58a7a3591661ed782724356bee67}
+      \strng{bibnamehash}{e24b58a7a3591661ed782724356bee67}
+      \strng{authorbibnamehash}{e24b58a7a3591661ed782724356bee67}
+      \strng{authornamehash}{e134581233265ee769070af0a150ee18}
+      \strng{authorfullhash}{e24b58a7a3591661ed782724356bee67}
+      \strng{authorfullhashraw}{e24b58a7a3591661ed782724356bee67}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 2nd International Conference of Industrial, Mechanical, Electrical, and Chemical Engineering (ICIMECE)}
+      \field{title}{Light sensor selection of {Wi}-{MoLS} (wireless modern light sensor) based on analytic hierarchy process ({AHP})}
+      \field{year}{2016}
+      \field{pages}{152\bibrangedash 155}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ICIMECE.2016.7910443
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

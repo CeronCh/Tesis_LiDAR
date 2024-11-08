@@ -1,0 +1,1989 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  5 NOV 2024 14:32
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./z-main.tex
+(z-main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
+(0-datos_estudiante.tex)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@chapter=\count189
+\c@section=\count190
+\c@subsection=\count191
+\c@subsubsection=\count192
+\c@paragraph=\count193
+\c@subparagraph=\count194
+\c@figure=\count195
+\c@table=\count196
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2024/02/07 v24.2 The Babel package
+\babel@savecnt=\count197
+\U@D=\dimen141
+\l@unhyphenated=\language79
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count198
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.l
+df
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks17
+\es@quotdepth=\count199
+Package babel Info: Making " an active character on input line 570.
+))
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel
+-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+)
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(0-datos_estudiante.tex) (1-opciones_adicionales.tex)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks20
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen142
+))
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count266
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count267
+\leftroot@=\count268
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count269
+\DOTSCASE@=\count270
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count271
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count272
+\dotsspace@=\muskip16
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
+\tag@help=\toks22
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
+\andhelp@=\toks23
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks24
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks31
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks32
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count278
+\calc@Bcount=\count279
+\calc@Adimen=\dimen151
+\calc@Bdimen=\dimen152
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count280
+\calc@Cskip=\skip58
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count281
+\l_MT_multwidth_dim=\dimen153
+\origjot=\skip59
+\l_MT_shortvdotswithinadjustabove_dim=\dimen154
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen155
+\l_MT_above_intertext_sep=\dimen156
+\l_MT_below_intertext_sep=\dimen157
+\l_MT_above_shortintertext_sep=\dimen158
+\l_MT_below_shortintertext_sep=\dimen159
+\xmathstrut@box=\box53
+\xmathstrut@dim=\dimen160
+) (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
+) (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/xfrac\xfrac.sty
+Package: xfrac 2024-02-13 Split-level fractions
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\xt
+emplate.sty
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\xt
+emplate-2023-10-10.sty
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-03-14 L3 programming layer (loader) 
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count282
+\l__pdf_internal_box=\box54
+))
+Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen163
+\l__xtemplate_tmp_int=\count283
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip60
+))
+\l__xfrac_slash_box=\box55
+\l__xfrac_tmp_box=\box56
+\l__xfrac_denominator_bot_sep_dim=\dimen164
+\l__xfrac_numerator_bot_sep_dim=\dimen165
+\l__xfrac_numerator_top_sep_dim=\dimen166
+\l__xfrac_slash_left_sep_dim=\dimen167
+\l__xfrac_slash_right_sep_dim=\dimen168
+\l__xfrac_slash_left_muskip=\muskip18
+\l__xfrac_slash_right_muskip=\muskip19
+
+Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
+(xtemplate)             line 98.
+
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count284
+\float@exts=\toks33
+\float@box=\box57
+\@float@everytoks=\toks34
+\@floatcapt=\box58
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count285
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count286
+)
+\@linkdim=\dimen169
+\Hy@linkcounter=\count287
+\Hy@pagecounter=\count288
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count289
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `hypertexnames' set `false' on input line 4062.
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count290
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip20
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen170
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count291
+\Field@Width=\dimen171
+\Fld@charsize=\dimen172
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count292
+\c@Item=\count293
+\c@Hfootnote=\count294
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count295
+\c@bookmark@seq@number=\count296
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip61
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen173
+\captionmargin=\dimen174
+\caption@leftmargin=\dimen175
+\caption@rightmargin=\dimen176
+\caption@width=\dimen177
+\caption@indent=\dimen178
+\caption@parindent=\dimen179
+\caption@hangindent=\dimen180
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count297
+\c@continuedfloat=\count298
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count299
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count300
+) (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2024-03-14 L3 Experimental document command parser
+))
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/emptypage\emptypage.sty
+Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
+pages
+) (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/hyphenat\hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language80
+LaTeX Info: Redefining \_ on input line 43.
+) (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip62
+\f@nch@O@elh=\skip63
+\f@nch@O@erh=\skip64
+\f@nch@O@olh=\skip65
+\f@nch@O@orh=\skip66
+\f@nch@O@elf=\skip67
+\f@nch@O@erf=\skip68
+\f@nch@O@olf=\skip69
+\f@nch@O@orf=\skip70
+) (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen181
+\ar@mcellbox=\box59
+\extrarowheight=\dimen182
+\NC@list=\toks35
+\extratabsurround=\skip71
+\backup@length=\skip72
+\ar@cellbox=\box60
+)
+\everycr=\toks36
+\minrowclearance=\skip73
+\rownum=\count301
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count302
+\rotFPtop=\skip74
+\rotFPbot=\skip75
+\rot@float@box=\box61
+\rot@mess@toks=\toks37
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count303
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count304
+\c@listtotal=\count305
+\c@listcount=\count306
+\c@liststart=\count307
+\c@liststop=\count308
+\c@citecount=\count309
+\c@citetotal=\count310
+\c@multicitecount=\count311
+\c@multicitetotal=\count312
+\c@instcount=\count313
+\c@maxnames=\count314
+\c@minnames=\count315
+\c@maxitems=\count316
+\c@minitems=\count317
+\c@citecounter=\count318
+\c@maxcitecounter=\count319
+\c@savedcitecounter=\count320
+\c@uniquelist=\count321
+\c@uniquename=\count322
+\c@refsection=\count323
+\c@refsegment=\count324
+\c@maxextratitle=\count325
+\c@maxextratitleyear=\count326
+\c@maxextraname=\count327
+\c@maxextradate=\count328
+\c@maxextraalpha=\count329
+\c@abbrvpenalty=\count330
+\c@highnamepenalty=\count331
+\c@lownamepenalty=\count332
+\c@maxparens=\count333
+\c@parenlevel=\count334
+\blx@tempcnta=\count335
+\blx@tempcntb=\count336
+\blx@tempcntc=\count337
+\c@blx@maxsection=\count338
+\blx@maxsegment@0=\count339
+\blx@notetype=\count340
+\blx@parenlevel@text=\count341
+\blx@parenlevel@foot=\count342
+\blx@sectionciteorder@0=\count343
+\blx@sectionciteorderinternal@0=\count344
+\blx@entrysetcounter=\count345
+\blx@biblioinstance=\count346
+\labelnumberwidth=\skip76
+\labelalphawidth=\skip77
+\biblabelsep=\skip78
+\bibitemsep=\skip79
+\bibnamesep=\skip80
+\bibinitsep=\skip81
+\bibparsep=\skip82
+\bibhang=\skip83
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language81
+\c@mincomprange=\count347
+\c@maxcomprange=\count348
+\c@mincompwidth=\count349
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count350
+\c@savedafterword=\count351
+\c@annotator=\count352
+\c@savedannotator=\count353
+\c@author=\count354
+\c@savedauthor=\count355
+\c@bookauthor=\count356
+\c@savedbookauthor=\count357
+\c@commentator=\count358
+\c@savedcommentator=\count359
+\c@editor=\count360
+\c@savededitor=\count361
+\c@editora=\count362
+\c@savededitora=\count363
+\c@editorb=\count364
+\c@savededitorb=\count365
+\c@editorc=\count366
+\c@savededitorc=\count367
+\c@foreword=\count368
+\c@savedforeword=\count369
+\c@holder=\count370
+\c@savedholder=\count371
+\c@introduction=\count372
+\c@savedintroduction=\count373
+\c@namea=\count374
+\c@savednamea=\count375
+\c@nameb=\count376
+\c@savednameb=\count377
+\c@namec=\count378
+\c@savednamec=\count379
+\c@translator=\count380
+\c@savedtranslator=\count381
+\c@shortauthor=\count382
+\c@savedshortauthor=\count383
+\c@shorteditor=\count384
+\c@savedshorteditor=\count385
+\c@labelname=\count386
+\c@savedlabelname=\count387
+\c@institution=\count388
+\c@savedinstitution=\count389
+\c@lista=\count390
+\c@savedlista=\count391
+\c@listb=\count392
+\c@savedlistb=\count393
+\c@listc=\count394
+\c@savedlistc=\count395
+\c@listd=\count396
+\c@savedlistd=\count397
+\c@liste=\count398
+\c@savedliste=\count399
+\c@listf=\count400
+\c@savedlistf=\count401
+\c@location=\count402
+\c@savedlocation=\count403
+\c@organization=\count404
+\c@savedorganization=\count405
+\c@origlocation=\count406
+\c@savedoriglocation=\count407
+\c@origpublisher=\count408
+\c@savedorigpublisher=\count409
+\c@publisher=\count410
+\c@savedpublisher=\count411
+\c@language=\count412
+\c@savedlanguage=\count413
+\c@origlanguage=\count414
+\c@savedoriglanguage=\count415
+\c@pageref=\count416
+\c@savedpageref=\count417
+\shorthandwidth=\skip84
+\shortjournalwidth=\skip85
+\shortserieswidth=\skip86
+\shorttitlewidth=\skip87
+\shortauthorwidth=\skip88
+\shorteditorwidth=\skip89
+\locallabelnumberwidth=\skip90
+\locallabelalphawidth=\skip91
+\localshorthandwidth=\skip92
+\localshortjournalwidth=\skip93
+\localshortserieswidth=\skip94
+\localshorttitlewidth=\skip95
+\localshortauthorwidth=\skip96
+\localshorteditorwidth=\skip97
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count418
+\c@textcitetotal=\count419
+\c@textcitemaxnames=\count420
+\c@biburlbigbreakpenalty=\count421
+\c@biburlbreakpenalty=\count422
+\c@biburlnumpenalty=\count423
+\c@biburlucpenalty=\count424
+\c@biburllcpenalty=\count425
+\biburlbigskip=\muskip21
+\biburlnumskip=\muskip22
+\biburlucskip=\muskip23
+\biburllcskip=\muskip24
+\c@smartand=\count426
+)
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-ieee\ieee.bbx
+File: ieee.bbx 2021/12/06 v1.3f biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric-co
+mp.bbx
+File: numeric-comp.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bb
+x
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
+bx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count427
+\c@bbx:relatedtotal=\count428
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-ieee\ieee.cbx
+File: ieee.cbx 2021/12/06 v1.3f biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric-co
+mp.cbx
+File: numeric-comp.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count429
+\c@cbx@tempcntb=\count430
+\c@cbx@tempcntc=\count431
+\c@cbx@tempcntd=\count432
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\cites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2024-03-14 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
+.sty
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+))
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip98
+\multirow@cntb=\count433
+\multirow@dima=\skip99
+\bigstrutjot=\dimen183
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen184
+\c@nlinenum=\count434
+\TeXr@lab=\toks38
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/overpic\overpic.sty
+Package: overpic 2024/01/06 2.1 picture overlays (RN)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/eepic\epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count435
+\d@lta=\count436
+\@delta=\dimen185
+\@@delta=\dimen186
+\@gridcnt=\count437
+\@joinkind=\count438
+\@dotgap=\dimen187
+\@ddotgap=\dimen188
+\@x@diff=\count439
+\@y@diff=\count440
+\x@diff=\dimen189
+\y@diff=\dimen190
+\@dotbox=\box62
+\num@segments=\count441
+\num@segmentsi=\count442
+\@datafile=\read4
+)
+\OVP@box=\box63
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossar
+ies.sty
+Package: glossaries 2024/04/03 v4.54 (NLCT)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks39
+\XKV@tempa@toks=\toks40
+)
+\XKV@depth=\count443
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
+Package: mfirstuc 2022/10/14 v2.08 (NLCT)
+\@glsmfirst=\toks41
+\@glsmrest=\toks42
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-base.
+sty
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+ (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count444
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-fp.st
+y
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+ (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count445
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count446
+\FP@xia=\count447
+\FP@xib=\count448
+\FP@xfa=\count449
+\FP@xfb=\count450
+\FP@rega=\count451
+\FP@regb=\count452
+\FP@regs=\count453
+\FP@times=\count454
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count455
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks43
+\@dtl@tmpcount=\count456
+\dtl@tmplength=\skip100
+\dtl@sortresult=\count457
+\@dtl@numgrpsepcount=\count458
+\@dtl@datatype=\count459
+\dtl@codeA=\count460
+\dtl@codeB=\count461
+\@dtl@foreach@level=\count462
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/tracklang\tracklang.sty
+Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\tracklang.t
+ex))
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator.s
+ty
+Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-spanish\glos
+saries-spanish.ldf
+File: glossaries-spanish.ldf 2014/11/23 v1.0
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-spanish\glos
+saries-spanish-utf8.ldf))
+\gls@level=\count463
+\@gls@tmpb=\toks44
+\gls@tmplen=\skip101
+\glskeylisttok=\toks45
+\glslabeltok=\toks46
+\glsshorttok=\toks47
+\glslongtok=\toks48
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
+ary-hypernav.sty
+Package: glossary-hypernav 2024/04/03 v4.54 (NLCT)
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
+ary-list.sty
+Package: glossary-list 2024/04/03 v4.54 (NLCT)
+\glslistdottedwidth=\skip102
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
+ary-long.sty
+Package: glossary-long 2024/04/03 v4.54 (NLCT)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip103
+\LTright=\skip104
+\LTpre=\skip105
+\LTpost=\skip106
+\LTchunksize=\count464
+\LTcapwidth=\dimen191
+\LT@head=\box64
+\LT@firsthead=\box65
+\LT@foot=\box66
+\LT@lastfoot=\box67
+\LT@gbox=\box68
+\LT@cols=\count465
+\LT@rows=\count466
+\c@LT@tables=\count467
+\c@LT@chunks=\count468
+\LT@p@ftn=\toks49
+)
+\glsdescwidth=\skip107
+\glspagelistwidth=\skip108
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
+ary-super.sty
+Package: glossary-super 2024/04/03 v4.54 (NLCT)
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabul
+ar.sty
+Package: supertabular 2024/07/20 v4.2c the supertabular environment
+\c@tracingst=\count469
+\ST@wd=\dimen192
+\ST@rightskip=\skip109
+\ST@leftskip=\skip110
+\ST@parfillskip=\skip111
+\ST@pageleft=\dimen193
+\ST@headht=\dimen194
+\ST@tailht=\dimen195
+\ST@pagesofar=\dimen196
+\ST@pboxht=\dimen197
+\ST@rowht=\dimen198
+\ST@prevht=\dimen199
+\ST@toadd=\dimen256
+\ST@dimen=\dimen257
+\ST@pbox=\box69
+))
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
+ary-tree.sty
+Package: glossary-tree 2024/04/03 v4.54 (NLCT)
+\glstreeindent=\skip112
+))
+\glswrite=\write4
+\glo@main@file=\write5
+\openout5 = `z-main.glo'.
+
+Package glossaries Info: Writing glossary file z-main.glo on input line 68.
+ (o-glosario.tex)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count470
+\Gm@cntv=\count471
+\c@Gm@tempcnt=\count472
+\Gm@bindingoffset=\dimen258
+\Gm@wd@mp=\dimen259
+\Gm@odd@mp=\dimen260
+\Gm@even@mp=\dimen261
+\Gm@layoutwidth=\dimen262
+\Gm@layoutheight=\dimen263
+\Gm@layouthoffset=\dimen264
+\Gm@layoutvoffset=\dimen265
+\Gm@dimlist=\toks50
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip113
+\mylen=\skip114
+\myhi=\skip115
+\px=\skip116
+\py=\skip117
+\pyy=\skip118
+\pxx=\skip119
+)
+(2-paquetes_y_comandos_usuario.tex)
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count473
+\@quotereset=\count474
+(z-main.aux
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+
+
+LaTeX Warning: Label `disposicion_lidar6' multiply defined.
+
+
+LaTeX Warning: Label `sub@disposicion_lidar6' multiply defined.
+
+)
+\openout1 = `z-main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Info: Redefining \. on input line 113.
+LaTeX Info: Redefining \% on input line 113.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count475
+\scratchdimen=\dimen266
+\scratchbox=\box70
+\nofMPsegments=\count476
+\nofMParguments=\count477
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count478
+\MPscratchDim=\dimen267
+\MPnumerator=\count479
+\makeMPintoPDFobject=\count480
+\everyMPtoPDFconversion=\toks52
+)
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring OFF on input line 113.
+ (z-main.out) (z-main.out)
+\@outlinefile=\write6
+\openout6 = `z-main.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Trying to load language 'spanish'...
+Package biblatex Info: ... file 'spanish.lbx' found.
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\spanish.lb
+x
+File: spanish.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `z-main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'z-main.bbl' found.
+ (z-main.bbl)
+Package biblatex Info: Reference section=0 on input line 113.
+Package biblatex Info: Reference segment=0 on input line 113.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 433.62001pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=433.62001pt
+* \textheight=650.43001pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* v-part:(T,H,B)=(72.26999pt, 722.7pt, 0.0pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=443.57848pt
+* \textheight=722.7pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Overfull \hbox (70.36966pt too wide) in paragraph at lines 132--132
+[]\T1/cmr/m/n/24.88 Evaluación de sensores de distancia para aplicaciones
+ []
+
+<plantilla/portadacit.jpg, id=259, 1927.2pt x 752.8125pt>
+File: plantilla/portadacit.jpg Graphic file (type jpg)
+<use plantilla/portadacit.jpg>
+Package pdftex.def Info: plantilla/portadacit.jpg  used on input line 144.
+(pdftex.def)             Requested size: 965.1268pt x 376.99901pt.
+<plantilla/fondologo_grande.png, id=260, 969.02025pt x 430.0065pt>
+File: plantilla/fondologo_grande.png Graphic file (type png)
+<use plantilla/fondologo_grande.png>
+Package pdftex.def Info: plantilla/fondologo_grande.png  used on input line 144
+.
+(pdftex.def)             Requested size: 187.27997pt x 83.11005pt.
+Package epstopdf Info: Source file: <plantilla/logoUVGblanco.eps>
+(epstopdf)                    date: 2019-05-10 13:56:26
+(epstopdf)                    size: 733366 bytes
+(epstopdf)             Output file: <plantilla/logoUVGblanco-eps-converted-to.p
+df>
+(epstopdf)                    date: 2024-08-28 19:38:58
+(epstopdf)                    size: 8900 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=plantilla/logoUVGbla
+nco-eps-converted-to.pdf plantilla/logoUVGblanco.eps>
+(epstopdf)             \includegraphics on input line 144.
+Package epstopdf Info: Output file is already uptodate.
+<plantilla/logoUVGblanco-eps-converted-to.pdf, id=262, 680.5425pt x 174.6525pt>
+
+File: plantilla/logoUVGblanco-eps-converted-to.pdf Graphic file (type pdf)
+<use plantilla/logoUVGblanco-eps-converted-to.pdf>
+Package pdftex.def Info: plantilla/logoUVGblanco-eps-converted-to.pdf  used on 
+input line 144.
+(pdftex.def)             Requested size: 154.88077pt x 39.74872pt.
+[1
+
+\openout4 = `z-main.ist'.
+
+
+
+{C:/Users/jrcer/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./plantilla/
+portadacit.jpg> <./plantilla/fondologo_grande.png> <./plantilla/logoUVGblanco-e
+ps-converted-to.pdf>]
+Package epstopdf Info: Source file: <plantilla/escudoUVGnegro.eps>
+(epstopdf)                    date: 2019-05-10 13:56:26
+(epstopdf)                    size: 353392 bytes
+(epstopdf)             Output file: <plantilla/escudoUVGnegro-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2024-08-09 10:02:49
+(epstopdf)                    size: 37956 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=plantilla/escudoUVGn
+egro-eps-converted-to.pdf plantilla/escudoUVGnegro.eps>
+(epstopdf)             \includegraphics on input line 168.
+Package epstopdf Info: Output file is already uptodate.
+<plantilla/escudoUVGnegro-eps-converted-to.pdf, id=277, 141.52875pt x 209.78375
+pt>
+File: plantilla/escudoUVGnegro-eps-converted-to.pdf Graphic file (type pdf)
+<use plantilla/escudoUVGnegro-eps-converted-to.pdf>
+Package pdftex.def Info: plantilla/escudoUVGnegro-eps-converted-to.pdf  used on
+ input line 168.
+(pdftex.def)             Requested size: 105.574pt x 156.49014pt.
+ [1
+
+
+ <./plantilla/escudoUVGnegro-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+[2
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
+59.
+ (C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmss.fd
+File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+(a-prefacio.tex) [3
+
+
+] (z-main.toc
+LaTeX Info: Redefining \sptext on input line 1.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \sptext on input line 2.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+
+
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[4
+
+
+])
+\tf@toc=\write7
+\openout7 = `z-main.toc'.
+
+ [5] (z-main.lof
+LaTeX Info: Redefining \sptext on input line 1.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \sptext on input line 2.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+ [6
+
+
+])
+\tf@lof=\write8
+\openout8 = `z-main.lof'.
+
+ [7] [8] (z-main.lot
+LaTeX Info: Redefining \sptext on input line 1.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \sptext on input line 2.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+)
+\tf@lot=\write9
+\openout9 = `z-main.lot'.
+
+ [9
+
+
+] (b-resumen.tex) [10
+
+
+]
+(c-abstract.tex) [11
+
+
+]
+Cap\'{\i }tulo 1.
+(d-introduccion.tex) [1
+
+
+]
+Cap\'{\i }tulo 2.
+(e-antecedentes.tex
+<figuras/mapa_colisiones.jpg, id=616, 277.78781pt x 260.47313pt>
+File: figuras/mapa_colisiones.jpg Graphic file (type jpg)
+<use figuras/mapa_colisiones.jpg>
+Package pdftex.def Info: figuras/mapa_colisiones.jpg  used on input line 8.
+(pdftex.def)             Requested size: 195.12767pt x 182.96587pt.
+ [2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+[3 <./figuras/mapa_colisiones.jpg>]
+<figuras/ruta_algoritmo_mod.jpg, id=632, 475.7775pt x 344.28625pt>
+File: figuras/ruta_algoritmo_mod.jpg Graphic file (type jpg)
+<use figuras/ruta_algoritmo_mod.jpg>
+Package pdftex.def Info: figuras/ruta_algoritmo_mod.jpg  used on input line 24.
+
+(pdftex.def)             Requested size: 260.17465pt x 188.27582pt.
+ [4 <./figuras/ruta_algoritmo_mod.jpg>]
+<figuras/desplazamiento.jpg, id=642, 782.32275pt x 390.258pt>
+File: figuras/desplazamiento.jpg Graphic file (type jpg)
+<use figuras/desplazamiento.jpg>
+Package pdftex.def Info: figuras/desplazamiento.jpg  used on input line 37.
+(pdftex.def)             Requested size: 325.215pt x 162.22797pt.
+<figuras/formacion.jpg, id=645, 863.6265pt x 431.211pt>
+File: figuras/formacion.jpg Graphic file (type jpg)
+<use figuras/formacion.jpg>
+Package pdftex.def Info: figuras/formacion.jpg  used on input line 44.
+(pdftex.def)             Requested size: 325.215pt x 162.38144pt.
+<figuras/mapa.jpg, id=650, 484.81125pt x 367.97475pt>
+File: figuras/mapa.jpg Graphic file (type jpg)
+<use figuras/mapa.jpg>
+Package pdftex.def Info: figuras/mapa.jpg  used on input line 54.
+(pdftex.def)             Requested size: 216.81pt x 164.55959pt.
+
+[5 <./figuras/desplazamiento.jpg> <./figuras/formacion.jpg>]
+<figuras/pos_ini.jpg, id=658, 448.074pt x 450.483pt>
+File: figuras/pos_ini.jpg Graphic file (type jpg)
+<use figuras/pos_ini.jpg>
+Package pdftex.def Info: figuras/pos_ini.jpg  used on input line 62.
+(pdftex.def)             Requested size: 195.12767pt x 196.17848pt.
+<figuras/pos_int1.jpg, id=659, 449.2785pt x 445.665pt>
+File: figuras/pos_int1.jpg Graphic file (type jpg)
+<use figuras/pos_int1.jpg>
+Package pdftex.def Info: figuras/pos_int1.jpg  used on input line 67.
+(pdftex.def)             Requested size: 195.12767pt x 193.55669pt.
+<figuras/pos_int2.jpg, id=660, 446.8695pt x 446.26724pt>
+File: figuras/pos_int2.jpg Graphic file (type jpg)
+<use figuras/pos_int2.jpg>
+Package pdftex.def Info: figuras/pos_int2.jpg  used on input line 72.
+(pdftex.def)             Requested size: 195.12767pt x 194.86691pt.
+<figuras/pos_fin.jpg, id=661, 448.074pt x 451.6875pt>
+File: figuras/pos_fin.jpg Graphic file (type jpg)
+<use figuras/pos_fin.jpg>
+Package pdftex.def Info: figuras/pos_fin.jpg  used on input line 77.
+(pdftex.def)             Requested size: 195.12767pt x 196.70302pt.
+
+Overfull \hbox (2.4216pt too wide) in paragraph at lines 60--80
+[][] []
+ []
+
+
+Overfull \hbox (2.4216pt too wide) in paragraph at lines 60--80
+[] [] 
+ []
+
+[6 <./figuras/mapa.jpg>]
+<figuras/escenario.jpg, id=669, 417.9615pt x 417.9615pt>
+File: figuras/escenario.jpg Graphic file (type jpg)
+<use figuras/escenario.jpg>
+Package pdftex.def Info: figuras/escenario.jpg  used on input line 89.
+(pdftex.def)             Requested size: 260.17465pt x 260.18575pt.
+ [7 <./figuras/pos_ini.jpg> <./figuras/pos_int1.jpg> <./figuras/pos_int2.jpg> <
+./figuras/pos_fin.jpg>]
+<figuras/exploracion.jpg, id=678, 348.1005pt x 232.4685pt>
+File: figuras/exploracion.jpg Graphic file (type jpg)
+<use figuras/exploracion.jpg>
+Package pdftex.def Info: figuras/exploracion.jpg  used on input line 96.
+(pdftex.def)             Requested size: 216.81pt x 144.7923pt.
+ [8 <./figuras/escenario.jpg> <./figuras/exploracion.jpg>]
+<figuras/mapeo.jpg, id=685, 462.528pt x 445.06274pt>
+File: figuras/mapeo.jpg Graphic file (type jpg)
+<use figuras/mapeo.jpg>
+Package pdftex.def Info: figuras/mapeo.jpg  used on input line 106.
+(pdftex.def)             Requested size: 260.17465pt x 250.36075pt.
+<figuras/uart_protocol.jpg, id=691, 756.426pt x 99.9735pt>
+File: figuras/uart_protocol.jpg Graphic file (type jpg)
+<use figuras/uart_protocol.jpg>
+Package pdftex.def Info: figuras/uart_protocol.jpg  used on input line 118.
+(pdftex.def)             Requested size: 260.17465pt x 34.38562pt.
+ [9 <./figuras/mapeo.jpg>]) [10 <./figuras/uart_protocol.jpg>]
+Cap\'{\i }tulo 3.
+(f-justificacion.tex) [11
+
+]
+Cap\'{\i }tulo 4.
+(g-objetivos.tex) [12
+
+]
+Cap\'{\i }tulo 5.
+(h-alcance.tex) [13
+
+]
+Cap\'{\i }tulo 6.
+(i-marco_teorico.tex [14
+
+]
+<figuras/inter_ent.jpg, id=726, 658.8615pt x 316.7835pt>
+File: figuras/inter_ent.jpg Graphic file (type jpg)
+<use figuras/inter_ent.jpg>
+Package pdftex.def Info: figuras/inter_ent.jpg  used on input line 13.
+(pdftex.def)             Requested size: 303.53267pt x 145.93968pt.
+ [15 <./figuras/inter_ent.jpg>]
+<figuras/mob_rob_coo_sys.jpg, id=739, 423.984pt x 351.714pt>
+File: figuras/mob_rob_coo_sys.jpg Graphic file (type jpg)
+<use figuras/mob_rob_coo_sys.jpg>
+Package pdftex.def Info: figuras/mob_rob_coo_sys.jpg  used on input line 47.
+(pdftex.def)             Requested size: 260.17465pt x 215.83324pt.
+ [16] [17 <./figuras/mob_rob_coo_sys.jpg>]
+<figuras/mapeo_malo.jpg, id=764, 337.86224pt x 296.90926pt>
+File: figuras/mapeo_malo.jpg Graphic file (type jpg)
+<use figuras/mapeo_malo.jpg>
+Package pdftex.def Info: figuras/mapeo_malo.jpg  used on input line 70.
+(pdftex.def)             Requested size: 216.81pt x 190.52867pt.
+<figuras/mapeo_bueno.jpg, id=765, 340.8735pt x 192.11775pt>
+File: figuras/mapeo_bueno.jpg Graphic file (type jpg)
+<use figuras/mapeo_bueno.jpg>
+Package pdftex.def Info: figuras/mapeo_bueno.jpg  used on input line 76.
+(pdftex.def)             Requested size: 216.81pt x 122.19861pt.
+ [18] [19 <./figuras/mapeo_malo.jpg> <./figuras/mapeo_bueno.jpg>]
+<figuras/lidar.jpg, id=783, 552.0625pt x 291.0875pt>
+File: figuras/lidar.jpg Graphic file (type jpg)
+<use figuras/lidar.jpg>
+Package pdftex.def Info: figuras/lidar.jpg  used on input line 100.
+(pdftex.def)             Requested size: 281.85036pt x 148.61699pt.
+ [20]
+<figuras/triangulation.jpg, id=791, 920.238pt x 468.5505pt>
+File: figuras/triangulation.jpg Graphic file (type jpg)
+<use figuras/triangulation.jpg>
+Package pdftex.def Info: figuras/triangulation.jpg  used on input line 113.
+(pdftex.def)             Requested size: 325.215pt x 165.58946pt.
+ [21 <./figuras/lidar.jpg>]
+<figuras/pololu.jpg, id=801, 473.97075pt x 419.166pt>
+File: figuras/pololu.jpg Graphic file (type jpg)
+<use figuras/pololu.jpg>
+Package pdftex.def Info: figuras/pololu.jpg  used on input line 127.
+(pdftex.def)             Requested size: 216.81pt x 191.73778pt.
+ [22 <./figuras/triangulation.jpg>]
+<figuras/uart_conexion.jpg, id=809, 1052.733pt x 322.806pt>
+File: figuras/uart_conexion.jpg Graphic file (type jpg)
+<use figuras/uart_conexion.jpg>
+Package pdftex.def Info: figuras/uart_conexion.jpg  used on input line 138.
+(pdftex.def)             Requested size: 303.53267pt x 93.07445pt.
+
+[23 <./figuras/pololu.jpg> <./figuras/uart_conexion.jpg>]
+File: figuras/uart_protocol.jpg Graphic file (type jpg)
+<use figuras/uart_protocol.jpg>
+Package pdftex.def Info: figuras/uart_protocol.jpg  used on input line 157.
+(pdftex.def)             Requested size: 346.89732pt x 45.848pt.
+) [24]
+(j-capitulos.tex
+Cap\'{\i }tulo 7.
+[25
+
+] [26] [27]
+Overfull \vbox (16.27339pt too high) has occurred while \output is active []
+
+
+[28] [29] [30] [31] [32] [33]
+<figuras/trade_study.png, id=907, 709.998pt x 153.738pt>
+File: figuras/trade_study.png Graphic file (type png)
+<use figuras/trade_study.png>
+Package pdftex.def Info: figuras/trade_study.png  used on input line 366.
+(pdftex.def)             Requested size: 433.62001pt x 93.89499pt.
+ [34]
+<figuras/parametros_tradestudy.jpg, id=912, 205.36725pt x 314.3745pt>
+File: figuras/parametros_tradestudy.jpg Graphic file (type jpg)
+<use figuras/parametros_tradestudy.jpg>
+Package pdftex.def Info: figuras/parametros_tradestudy.jpg  used on input line 
+373.
+(pdftex.def)             Requested size: 108.405pt x 165.9509pt.
+ [35 <./figuras/trade_study.png> <./figuras/parametros_tradestudy.jpg>]
+Cap\'{\i }tulo 8.
+[36
+
+]
+<figuras/orientacion_lidar.jpg, id=926, 485.56406pt x 241.65282pt>
+File: figuras/orientacion_lidar.jpg Graphic file (type jpg)
+<use figuras/orientacion_lidar.jpg>
+Package pdftex.def Info: figuras/orientacion_lidar.jpg  used on input line 455.
+
+(pdftex.def)             Requested size: 303.53267pt x 151.05844pt.
+<figuras/pin_lidar.jpg, id=932, 181.42781pt x 110.66344pt>
+File: figuras/pin_lidar.jpg Graphic file (type jpg)
+<use figuras/pin_lidar.jpg>
+Package pdftex.def Info: figuras/pin_lidar.jpg  used on input line 465.
+(pdftex.def)             Requested size: 173.44534pt x 105.79663pt.
+ [37 <./figuras/orientacion_lidar.jpg>] [38 <./figuras/pin_lidar.jpg>]
+<figuras/diagrama_captura.png, id=950, 2159.06625pt x 4364.305pt>
+File: figuras/diagrama_captura.png Graphic file (type png)
+<use figuras/diagrama_captura.png>
+Package pdftex.def Info: figuras/diagrama_captura.png  used on input line 547.
+(pdftex.def)             Requested size: 260.17465pt x 525.8916pt.
+
+[39] [40 <./figuras/diagrama_captura.png>]
+<figuras/diagrama_procesamiento.png, id=961, 1189.44376pt x 4428.545pt>
+File: figuras/diagrama_procesamiento.png Graphic file (type png)
+<use figuras/diagrama_procesamiento.png>
+Package pdftex.def Info: figuras/diagrama_procesamiento.png  used on input line
+ 566.
+(pdftex.def)             Requested size: 143.09538pt x 532.75397pt.
+ [41] [42 <./figuras/diagrama_procesamiento.png>]
+<figuras/data_in.jpg, id=972, 1445.4pt x 628.59843pt>
+File: figuras/data_in.jpg Graphic file (type jpg)
+<use figuras/data_in.jpg>
+Package pdftex.def Info: figuras/data_in.jpg  used on input line 577.
+(pdftex.def)             Requested size: 346.89732pt x 150.8571pt.
+<figuras/disposicion_lidar1.jpeg, id=974, 542.025pt x 963.6pt>
+File: figuras/disposicion_lidar1.jpeg Graphic file (type jpg)
+<use figuras/disposicion_lidar1.jpeg>
+Package pdftex.def Info: figuras/disposicion_lidar1.jpeg  used on input line 59
+0.
+(pdftex.def)             Requested size: 542.02367pt x 963.59766pt.
+<figuras/primera_lectura.png, id=975, 1445.4pt x 773.89125pt>
+File: figuras/primera_lectura.png Graphic file (type png)
+<use figuras/primera_lectura.png>
+Package pdftex.def Info: figuras/primera_lectura.png  used on input line 597.
+(pdftex.def)             Requested size: 277.5189pt x 148.58778pt.
+ [43 <./figuras/data_in.jpg>] [44 <./figuras/disposicion_lidar1.jpeg> <./figura
+s/primera_lectura.png>]
+<figuras/app.jpg, id=990, 751.608pt x 549.252pt>
+File: figuras/app.jpg Graphic file (type jpg)
+<use figuras/app.jpg>
+Package pdftex.def Info: figuras/app.jpg  used on input line 624.
+(pdftex.def)             Requested size: 390.25536pt x 285.18526pt.
+ [45] [46 <./figuras/app.jpg>] [47]
+Cap\'{\i }tulo 9.
+<figuras/pared_ranura.jpg, id=1005, 903.375pt x 216.81pt>
+File: figuras/pared_ranura.jpg Graphic file (type jpg)
+<use figuras/pared_ranura.jpg>
+Package pdftex.def Info: figuras/pared_ranura.jpg  used on input line 657.
+(pdftex.def)             Requested size: 216.81pt x 52.03215pt.
+<figuras/pared_normal.jpg, id=1006, 903.375pt x 216.81pt>
+File: figuras/pared_normal.jpg Graphic file (type jpg)
+<use figuras/pared_normal.jpg>
+Package pdftex.def Info: figuras/pared_normal.jpg  used on input line 663.
+(pdftex.def)             Requested size: 216.81pt x 52.03215pt.
+[48
+
+]
+<figuras/base.jpg, id=1013, 910.602pt x 475.17525pt>
+File: figuras/base.jpg Graphic file (type jpg)
+<use figuras/base.jpg>
+Package pdftex.def Info: figuras/base.jpg  used on input line 676.
+(pdftex.def)             Requested size: 260.17465pt x 135.75987pt.
+<figuras/base_lidar.png, id=1014, 440.847pt x 316.18124pt>
+File: figuras/base_lidar.png Graphic file (type png)
+<use figuras/base_lidar.png>
+Package pdftex.def Info: figuras/base_lidar.png  used on input line 683.
+(pdftex.def)             Requested size: 216.81pt x 155.49945pt.
+ [49 <./figuras/pared_ranura.jpg> <./figuras/pared_normal.jpg> <./figuras/base.
+jpg> <./figuras/base_lidar.png>]
+<figuras/plataforma_cad2.jpg, id=1024, 672.111pt x 475.17525pt>
+File: figuras/plataforma_cad2.jpg Graphic file (type jpg)
+<use figuras/plataforma_cad2.jpg>
+Package pdftex.def Info: figuras/plataforma_cad2.jpg  used on input line 692.
+(pdftex.def)             Requested size: 260.17465pt x 183.93999pt.
+<figuras/plataforma.jpg, id=1025, 2083.785pt x 2168.1pt>
+File: figuras/plataforma.jpg Graphic file (type jpg)
+<use figuras/plataforma.jpg>
+Package pdftex.def Info: figuras/plataforma.jpg  used on input line 699.
+(pdftex.def)             Requested size: 216.81pt x 225.55647pt.
+ [50 <./figuras/plataforma_cad2.jpg> <./figuras/plataforma.jpg>]
+<figuras/diagrama_procesamiento_dec.png, id=1032, 880.28876pt x 2353.79375pt>
+File: figuras/diagrama_procesamiento_dec.png Graphic file (type png)
+<use figuras/diagrama_procesamiento_dec.png>
+Package pdftex.def Info: figuras/diagrama_procesamiento_dec.png  used on input 
+line 711.
+(pdftex.def)             Requested size: 173.44534pt x 463.7468pt.
+ [51] [52 <./figuras/diagrama_procesamiento_dec.png>]
+<figuras/disposicion_lidar3.jpeg, id=1043, 2310.6325pt x 2580.64125pt>
+File: figuras/disposicion_lidar3.jpeg Graphic file (type jpg)
+<use figuras/disposicion_lidar3.jpeg>
+Package pdftex.def Info: figuras/disposicion_lidar3.jpeg  used on input line 72
+4.
+(pdftex.def)             Requested size: 182.12146pt x 203.38408pt.
+<figuras/lectura_sin_filt.png, id=1044, 509.5035pt x 495.0495pt>
+File: figuras/lectura_sin_filt.png Graphic file (type png)
+<use figuras/lectura_sin_filt.png>
+Package pdftex.def Info: figuras/lectura_sin_filt.png  used on input line 731.
+(pdftex.def)             Requested size: 175.61371pt x 170.62607pt.
+<figuras/lectura_con_filt.png, id=1045, 509.5035pt x 495.0495pt>
+File: figuras/lectura_con_filt.png Graphic file (type png)
+<use figuras/lectura_con_filt.png>
+Package pdftex.def Info: figuras/lectura_con_filt.png  used on input line 738.
+(pdftex.def)             Requested size: 175.61371pt x 170.62607pt.
+
+[53 <./figuras/disposicion_lidar3.jpeg> <./figuras/lectura_sin_filt.png> <./fig
+uras/lectura_con_filt.png>]
+<figuras/lecturas_nula.jpg, id=1057, 383.63326pt x 132.495pt>
+File: figuras/lecturas_nula.jpg Graphic file (type jpg)
+<use figuras/lecturas_nula.jpg>
+Package pdftex.def Info: figuras/lecturas_nula.jpg  used on input line 757.
+(pdftex.def)             Requested size: 346.89732pt x 119.80844pt.
+<figuras/disposicion_lidar4.jpeg, id=1058, 2312.64pt x 2617.78pt>
+File: figuras/disposicion_lidar4.jpeg Graphic file (type jpg)
+<use figuras/disposicion_lidar4.jpeg>
+Package pdftex.def Info: figuras/disposicion_lidar4.jpeg  used on input line 76
+6.
+(pdftex.def)             Requested size: 169.11192pt x 191.41191pt.
+<figuras/try_6cm_r.png, id=1059, 498.663pt x 498.663pt>
+File: figuras/try_6cm_r.png Graphic file (type png)
+<use figuras/try_6cm_r.png>
+Package pdftex.def Info: figuras/try_6cm_r.png  used on input line 773.
+(pdftex.def)             Requested size: 175.61371pt x 175.61513pt.
+<figuras/try_6cm_r_car.png, id=1060, 509.5035pt x 495.0495pt>
+File: figuras/try_6cm_r_car.png Graphic file (type png)
+<use figuras/try_6cm_r_car.png>
+Package pdftex.def Info: figuras/try_6cm_r_car.png  used on input line 780.
+(pdftex.def)             Requested size: 175.61371pt x 170.62607pt.
+ [54 <./figuras/lecturas_nula.jpg>] [55 <./figuras/disposicion_lidar4.jpeg> <./
+figuras/try_6cm_r.png> <./figuras/try_6cm_r_car.png>]
+<figuras/disposicion_lidar8.jpeg, id=1075, 1424.32124pt x 1606.0pt>
+File: figuras/disposicion_lidar8.jpeg Graphic file (type jpg)
+<use figuras/disposicion_lidar8.jpeg>
+Package pdftex.def Info: figuras/disposicion_lidar8.jpeg  used on input line 79
+7.
+(pdftex.def)             Requested size: 169.11192pt x 190.67772pt.
+<figuras/try_10cm_r.png, id=1076, 498.663pt x 498.663pt>
+File: figuras/try_10cm_r.png Graphic file (type png)
+<use figuras/try_10cm_r.png>
+Package pdftex.def Info: figuras/try_10cm_r.png  used on input line 804.
+(pdftex.def)             Requested size: 175.61371pt x 175.61513pt.
+<figuras/try_10cm_r_car.png, id=1077, 509.5035pt x 495.0495pt>
+File: figuras/try_10cm_r_car.png Graphic file (type png)
+<use figuras/try_10cm_r_car.png>
+Package pdftex.def Info: figuras/try_10cm_r_car.png  used on input line 811.
+(pdftex.def)             Requested size: 175.61371pt x 170.62607pt.
+ [56 <./figuras/disposicion_lidar8.jpeg> <./figuras/try_10cm_r.png> <./figuras/
+try_10cm_r_car.png>] [57]
+<figuras/disposicion_lidar_var_dist1.jpg, id=1098, 4111.36pt x 2312.64pt>
+File: figuras/disposicion_lidar_var_dist1.jpg Graphic file (type jpg)
+<use figuras/disposicion_lidar_var_dist1.jpg>
+Package pdftex.def Info: figuras/disposicion_lidar_var_dist1.jpg  used on input
+ line 874.
+(pdftex.def)             Requested size: 260.17465pt x 146.33932pt.
+<figuras/0.149m_radius.png, id=1099, 498.663pt x 498.663pt>
+File: figuras/0.149m_radius.png Graphic file (type png)
+<use figuras/0.149m_radius.png>
+Package pdftex.def Info: figuras/0.149m_radius.png  used on input line 881.
+(pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
+<figuras/0.149m_radius_XY.png, id=1100, 509.5035pt x 495.0495pt>
+File: figuras/0.149m_radius_XY.png Graphic file (type png)
+<use figuras/0.149m_radius_XY.png>
+Package pdftex.def Info: figuras/0.149m_radius_XY.png  used on input line 888.
+(pdftex.def)             Requested size: 161.95631pt x 157.36153pt.
+<figuras/disposicion_lidar_var_dist8.jpg, id=1101, 3184.89874pt x 2126.94624pt>
+
+File: figuras/disposicion_lidar_var_dist8.jpg Graphic file (type jpg)
+<use figuras/disposicion_lidar_var_dist8.jpg>
+Package pdftex.def Info: figuras/disposicion_lidar_var_dist8.jpg  used on input
+ line 900.
+(pdftex.def)             Requested size: 260.17465pt x 173.72917pt.
+<figuras/0.499m_radius.png, id=1102, 498.663pt x 498.663pt>
+File: figuras/0.499m_radius.png Graphic file (type png)
+<use figuras/0.499m_radius.png>
+Package pdftex.def Info: figuras/0.499m_radius.png  used on input line 907.
+(pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
+<figuras/0.499m_radius_XY.png, id=1103, 509.5035pt x 495.0495pt>
+File: figuras/0.499m_radius_XY.png Graphic file (type png)
+<use figuras/0.499m_radius_XY.png>
+Package pdftex.def Info: figuras/0.499m_radius_XY.png  used on input line 914.
+(pdftex.def)             Requested size: 161.95631pt x 157.36153pt.
+ [58 <./figuras/disposicion_lidar_var_dist1.jpg> <./figuras/0.149m_radius.png> 
+<./figuras/0.149m_radius_XY.png>] [59 <./figuras/disposicion_lidar_var_dist8.jp
+g> <./figuras/0.499m_radius.png> <./figuras/0.499m_radius_XY.png>]
+<figuras/varianza_tendencia.png, id=1121, 475.23pt x 216.591pt>
+File: figuras/varianza_tendencia.png Graphic file (type png)
+<use figuras/varianza_tendencia.png>
+Package pdftex.def Info: figuras/varianza_tendencia.png  used on input line 946
+.
+(pdftex.def)             Requested size: 346.89732pt x 158.1035pt.
+<figuras/0.149m_radius_stats_P6.png, id=1126, 1300.86pt x 578.16pt>
+File: figuras/0.149m_radius_stats_P6.png Graphic file (type png)
+<use figuras/0.149m_radius_stats_P6.png>
+Package pdftex.def Info: figuras/0.149m_radius_stats_P6.png  used on input line
+ 956.
+(pdftex.def)             Requested size: 542.02501pt x 240.90234pt.
+ [60 <./figuras/varianza_tendencia.png>]
+<figuras/0.499m_radius_stats_P1.png, id=1132, 1300.86pt x 578.16pt>
+File: figuras/0.499m_radius_stats_P1.png Graphic file (type png)
+<use figuras/0.499m_radius_stats_P1.png>
+Package pdftex.def Info: figuras/0.499m_radius_stats_P1.png  used on input line
+ 963.
+(pdftex.def)             Requested size: 542.02501pt x 240.90234pt.
+<figuras/bias_tendencia.png, id=1133, 475.449pt x 220.752pt>
+File: figuras/bias_tendencia.png Graphic file (type png)
+<use figuras/bias_tendencia.png>
+Package pdftex.def Info: figuras/bias_tendencia.png  used on input line 970.
+(pdftex.def)             Requested size: 346.89732pt x 161.06677pt.
+ [61 <./figuras/0.149m_radius_stats_P6.png> <./figuras/0.499m_radius_stats_P1.p
+ng>] [62 <./figuras/bias_tendencia.png>] [63]
+<figuras/analisis_precision_1_1.png, id=1150, 643.9257pt x 341.8371pt>
+File: figuras/analisis_precision_1_1.png Graphic file (type png)
+<use figuras/analisis_precision_1_1.png>
+Package pdftex.def Info: figuras/analisis_precision_1_1.png  used on input line
+ 1007.
+(pdftex.def)             Requested size: 312.20546pt x 165.73862pt.
+<figuras/analisis_precision_1_2.png, id=1151, 651.8754pt x 346.896pt>
+File: figuras/analisis_precision_1_2.png Graphic file (type png)
+<use figuras/analisis_precision_1_2.png>
+Package pdftex.def Info: figuras/analisis_precision_1_2.png  used on input line
+ 1014.
+(pdftex.def)             Requested size: 312.20546pt x 166.14294pt.
+<figuras/analisis_precision_1_3.png, id=1152, 390.258pt x 651.8754pt>
+File: figuras/analisis_precision_1_3.png Graphic file (type png)
+<use figuras/analisis_precision_1_3.png>
+Package pdftex.def Info: figuras/analisis_precision_1_3.png  used on input line
+ 1026.
+(pdftex.def)             Requested size: 195.12767pt x 325.93689pt.
+<figuras/analisis_precision_1_4.png, id=1153, 398.9304pt x 646.0938pt>
+File: figuras/analisis_precision_1_4.png Graphic file (type png)
+<use figuras/analisis_precision_1_4.png>
+Package pdftex.def Info: figuras/analisis_precision_1_4.png  used on input line
+ 1033.
+(pdftex.def)             Requested size: 195.12767pt x 316.0268pt.
+ [64 <./figuras/analisis_precision_1_1.png> <./figuras/analisis_precision_1_2.p
+ng>]
+<figuras/codo.png, id=1161, 518.6878pt x 520.19344pt>
+File: figuras/codo.png Graphic file (type png)
+<use figuras/codo.png>
+Package pdftex.def Info: figuras/codo.png  used on input line 1050.
+(pdftex.def)             Requested size: 175.61371pt x 176.12523pt.
+<figuras/codo3.png, id=1162, 311.66437pt x 289.08pt>
+File: figuras/codo3.png Graphic file (type png)
+<use figuras/codo3.png>
+Package pdftex.def Info: figuras/codo3.png  used on input line 1057.
+(pdftex.def)             Requested size: 175.61371pt x 162.88939pt.
+<figuras/codo1.png, id=1163, 335.00156pt x 323.70938pt>
+File: figuras/codo1.png Graphic file (type png)
+<use figuras/codo1.png>
+Package pdftex.def Info: figuras/codo1.png  used on input line 1064.
+(pdftex.def)             Requested size: 175.61371pt x 169.69312pt.
+<figuras/codo2.png, id=1164, 295.85532pt x 295.1025pt>
+File: figuras/codo2.png Graphic file (type png)
+<use figuras/codo2.png>
+Package pdftex.def Info: figuras/codo2.png  used on input line 1071.
+(pdftex.def)             Requested size: 175.61371pt x 175.17163pt.
+ [65 <./figuras/analisis_precision_1_3.png> <./figuras/analisis_precision_1_4.p
+ng>] [66 <./figuras/codo.png> <./figuras/codo3.png> <./figuras/codo1.png> <./fi
+guras/codo2.png>]
+Cap\'{\i }tulo 10.
+<figuras/calibracion1.png, id=1179, 578.16pt x 578.16pt>
+File: figuras/calibracion1.png Graphic file (type png)
+<use figuras/calibracion1.png>
+Package pdftex.def Info: figuras/calibracion1.png  used on input line 1086.
+(pdftex.def)             Requested size: 216.81pt x 216.80946pt.
+[67
+
+] [68 <./figuras/calibracion1.png>]
+<figuras/disposicion_lidar2.jpeg, id=1194, 2312.64pt x 2678.005pt>
+File: figuras/disposicion_lidar2.jpeg Graphic file (type jpg)
+<use figuras/disposicion_lidar2.jpeg>
+Package pdftex.def Info: figuras/disposicion_lidar2.jpeg  used on input line 11
+17.
+(pdftex.def)             Requested size: 156.10637pt x 180.7371pt.
+<figuras/lectura_sin_corre.png, id=1195, 509.5035pt x 495.0495pt>
+File: figuras/lectura_sin_corre.png Graphic file (type png)
+<use figuras/lectura_sin_corre.png>
+Package pdftex.def Info: figuras/lectura_sin_corre.png  used on input line 1124
+.
+(pdftex.def)             Requested size: 175.61371pt x 170.62607pt.
+<figuras/lectura_con_corre.png, id=1196, 509.5035pt x 495.0495pt>
+File: figuras/lectura_con_corre.png Graphic file (type png)
+<use figuras/lectura_con_corre.png>
+Package pdftex.def Info: figuras/lectura_con_corre.png  used on input line 1131
+.
+(pdftex.def)             Requested size: 175.61371pt x 170.62607pt.
+ [69]) [70 <./figuras/disposicion_lidar2.jpeg> <./figuras/lectura_sin_corre.png
+> <./figuras/lectura_con_corre.png>]
+Cap\'{\i }tulo 11.
+(k-conclusiones.tex) [71
+
+]
+Cap\'{\i }tulo 12.
+(l-recomendaciones.tex) [72
+
+]
+Cap\'{\i }tulo 13.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
+42.
+(C:\Users\jrcer\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+[73
+
+
+]
+Overfull \hbox (0.30807pt too wide) in paragraph at lines 442--442
+\T1/cmr/m/n/10.95 ger Tracts in Ad-van-ced Ro-bo-tics), Se-cond Edi-tion. Cham,
+ Switzer-land: Sprin-ger Cham,
+ []
+
+
+Overfull \hbox (4.17278pt too wide) in paragraph at lines 442--442
+\T1/cmtt/m/n/10.95 com / en / resources / analog -[] dialogue / articles / uart
+ -[] a -[] hardware -[] communication -[]
+ []
+
+
+Overfull \hbox (38.07613pt too wide) in paragraph at lines 442--442
+[]\T1/cmr/m/n/10.95 S. Camp-bell, \T1/cmr/m/it/10.95 Ba-sics of UART Com-mu-ni-
+ca-tion\T1/cmr/m/n/10.95 , 2016. di-rec-ción: []$\T1/cmtt/m/n/10.95 https : / /
+ www . circuitbasics .
+ []
+
+[74] [75]
+Cap\'{\i }tulo 14.
+(n-anexos.tex
+<figuras/disposicion_lidar5.jpeg, id=1259, 2312.64pt x 2619.7875pt>
+File: figuras/disposicion_lidar5.jpeg Graphic file (type jpg)
+<use figuras/disposicion_lidar5.jpeg>
+Package pdftex.def Info: figuras/disposicion_lidar5.jpeg  used on input line 6.
+
+(pdftex.def)             Requested size: 130.08733pt x 147.3467pt.
+<figuras/try_7cm_r.png, id=1260, 498.663pt x 498.663pt>
+File: figuras/try_7cm_r.png Graphic file (type png)
+<use figuras/try_7cm_r.png>
+Package pdftex.def Info: figuras/try_7cm_r.png  used on input line 13.
+(pdftex.def)             Requested size: 136.58876pt x 136.5887pt.
+<figuras/try_7cm_r_car.png, id=1261, 509.5035pt x 495.0495pt>
+File: figuras/try_7cm_r_car.png Graphic file (type png)
+<use figuras/try_7cm_r_car.png>
+Package pdftex.def Info: figuras/try_7cm_r_car.png  used on input line 20.
+(pdftex.def)             Requested size: 136.58876pt x 132.71336pt.
+ [76
+
+]
+Overfull \vbox (28.46024pt too high) has occurred while \output is active []
+
+
+[77 <./figuras/disposicion_lidar5.jpeg> <./figuras/try_7cm_r.png> <./figuras/tr
+y_7cm_r_car.png>]
+<figuras/disposicion_lidar6.jpeg, id=1272, 1527.7075pt x 1606.0pt>
+File: figuras/disposicion_lidar6.jpeg Graphic file (type jpg)
+<use figuras/disposicion_lidar6.jpeg>
+Package pdftex.def Info: figuras/disposicion_lidar6.jpeg  used on input line 32
+.
+(pdftex.def)             Requested size: 156.10637pt x 164.08919pt.
+<figuras/try_8cm_r.png, id=1273, 498.663pt x 498.663pt>
+File: figuras/try_8cm_r.png Graphic file (type png)
+<use figuras/try_8cm_r.png>
+Package pdftex.def Info: figuras/try_8cm_r.png  used on input line 39.
+(pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
+<figuras/try_8cm_r_car.png, id=1274, 509.5035pt x 495.0495pt>
+File: figuras/try_8cm_r_car.png Graphic file (type png)
+<use figuras/try_8cm_r_car.png>
+Package pdftex.def Info: figuras/try_8cm_r_car.png  used on input line 46.
+(pdftex.def)             Requested size: 156.10272pt x 151.6735pt.
+<figuras/disposicion_lidar7.jpeg, id=1275, 2310.6325pt x 2674.99374pt>
+File: figuras/disposicion_lidar7.jpeg Graphic file (type jpg)
+<use figuras/disposicion_lidar7.jpeg>
+Package pdftex.def Info: figuras/disposicion_lidar7.jpeg  used on input line 59
+.
+(pdftex.def)             Requested size: 156.10637pt x 180.69714pt.
+<figuras/try_9cm_r.png, id=1276, 498.663pt x 498.663pt>
+File: figuras/try_9cm_r.png Graphic file (type png)
+<use figuras/try_9cm_r.png>
+Package pdftex.def Info: figuras/try_9cm_r.png  used on input line 66.
+(pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
+<figuras/try_9cm_r_car.png, id=1277, 509.5035pt x 495.0495pt>
+File: figuras/try_9cm_r_car.png Graphic file (type png)
+<use figuras/try_9cm_r_car.png>
+Package pdftex.def Info: figuras/try_9cm_r_car.png  used on input line 73.
+(pdftex.def)             Requested size: 156.10272pt x 151.6735pt.
+) [78 <./figuras/disposicion_lidar6.jpeg> <./figuras/try_8cm_r.png> <./figuras/
+try_8cm_r_car.png>] [79 <./figuras/disposicion_lidar7.jpeg> <./figuras/try_9cm_
+r.png> <./figuras/try_9cm_r_car.png>]
+No file z-main.gls.
+[80] (z-main.aux
+LaTeX Info: Redefining \sptext on input line 9.
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+LaTeX Info: Redefining \sptext on input line 16.
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `z-main.out' has not changed.
+(rerunfilecheck)             Checksum: 06E81A8925B2A50541C9013D005D3279;14783.
+Package logreq Info: Writing requests to 'z-main.run.xml'.
+\openout1 = `z-main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 31087 strings out of 474423
+ 576830 string characters out of 5741719
+ 1953496 words of memory out of 5000000
+ 52651 multiletter control sequences out of 15000+600000
+ 579985 words of font info for 84 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 94i,20n,99p,2343b,2758s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+1095.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm0800.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecti1000.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbi1200.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\jrcer\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.pk> <C:\Users\jrcer\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jrcer\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2488.pk> <C:\Users\jrcer\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\
+jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1095.pk> <C:\
+Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk
+> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1
+095.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecrm1095.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecss1440.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecrm1200.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/
+jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\font
+s/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\jrcer\AppData\Local\MiKTe
+X\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk><C:/Users/jrcer/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jrcer/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jr
+cer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/
+Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on z-main.pdf (92 pages, 17995076 bytes).
+PDF statistics:
+ 2209 PDF objects out of 2487 (max. 8388607)
+ 283 named destinations out of 1000 (max. 500000)
+ 928 words of extra memory for PDF output out of 10000 (max. 10000000)
+

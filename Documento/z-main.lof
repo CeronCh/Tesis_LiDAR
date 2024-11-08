@@ -1,0 +1,67 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Mapa generado a partir de cuadrícula de probabilidad de colisión con ruta óptima \blx@tocontentsinit {0}\cite {li_map_2023}.}}{3}{figure.caption.15}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Ruta generada a partir del algoritmo ACO mejorado \blx@tocontentsinit {0}\cite {dai_mobile_2019}.}}{4}{figure.caption.17}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Desplazamiento del grupo de robots hacia la meta \blx@tocontentsinit {0}\cite {pena_echeverria_algoritmo_2019}.}}{5}{figure.caption.20}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Formación triangular del grupo de robots en la meta \blx@tocontentsinit {0}\cite {pena_echeverria_algoritmo_2019}.}}{5}{figure.caption.21}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Mapa y trayectoria generada para la validación en Webots \blx@tocontentsinit {0}\cite {baldizon_garcia_aplicaciones_2022}.}}{6}{figure.caption.22}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Secuencia de movimientos del agente móvil para la evasión de obstáculos en Webots \blx@tocontentsinit {0}\cite {baldizon_garcia_aplicaciones_2022}.}}{7}{figure.caption.23}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Escenario simulado en Webots \blx@tocontentsinit {0}\cite {godoy_lucero_desarrollo_2023}.}}{8}{figure.caption.24}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Puntos de visibilidad de los sensores integrados en el agente robótico móvil en Webots. \blx@tocontentsinit {0}\cite {godoy_lucero_desarrollo_2023}.}}{8}{figure.caption.25}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Espacio de trabajo estimado en exploración de 10 minutos, con planificación de trayectoria hacia su posición inicial de simulación \blx@tocontentsinit {0}\cite {godoy_lucero_desarrollo_2023}.}}{9}{figure.caption.26}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Robotat, laboratorio especializado en experimentación robótica.}}{10}{figure.caption.28}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {11}{\ignorespaces Interacción de un robot con su entorno \blx@tocontentsinit {0}\cite {thrun_probabilistic_2005}.}}{15}{figure.caption.36}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Sistema de coordenadas de referencia de un robot móvil con tracción diferencial. $XOY$ muestra el marco de referencia mundial.$(x_{b},y_{b})$ es la coordenada del centro de masa del robot a lo largo de los ejes $X_R$ y $Y_R$, los cuales representan el sistema local de coordenadas del robot \blx@tocontentsinit {0}\cite {multi-robot_nodate}.}}{17}{figure.caption.42}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Visualización del proceso de SLAM \blx@tocontentsinit {0}\cite {thrun_probabilistic_2005}.}}{19}{figure.caption.45}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Funcionamiento LiDAR \blx@tocontentsinit {0}\cite {lidar}.}}{21}{figure.caption.48}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama esquemático de un sensor de distancia basado en triangulación. La distancia fija $H$ representa la línea base entre el emisor láser y el centro óptico de la lente, mientras que $d$ es la distancia entre la lente y el detector. El ángulo de proyección del haz láser hacia el objeto se denota como $\alpha $, y el ángulo de recolección $\beta $ se calcula en función de $d$ y la posición $p$ del punto láser en el detector. La ubicación del punto $[X,Z]^T$ se determina a partir de la línea base $H$, el ángulo de proyección $\alpha $, y el ángulo de recolección $\beta $ \blx@tocontentsinit {0}\cite {drouin2020}.}}{22}{figure.caption.51}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Pololu 3pi+ 32U4 OLED Robot \blx@tocontentsinit {0}\cite {pololu}.}}{23}{figure.caption.53}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Esquema de comunicación UART entre dispositivos \blx@tocontentsinit {0}\cite {pena_uart_nodate}.}}{23}{figure.caption.55}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Ejemplo de protocolo de trama UART. \blx@tocontentsinit {0}\cite {pena_uart_nodate}.}}{24}{figure.caption.56}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {19}{\ignorespaces Resultados del \textit {trade study}.}}{35}{figure.caption.90}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Leyenda del gráfico de barras segmentadas.}}{35}{figure.caption.91}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {21}{\ignorespaces Orientación del sensor \blx@tocontentsinit {0}\cite {youyeetoo_tech_ld20_nodate}.}}{37}{figure.caption.98}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Esquema de conexión del conector ZH1.5T-4P del LiDAR FHL-LD20 \blx@tocontentsinit {0}\cite {youyeetoo_tech_ld20_nodate}.}}{38}{figure.caption.100}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Diagrama de flujo general para captura de datos provenientes del sensor.}}{40}{figure.caption.107}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Diagrama de flujo general para procesamiento de datos provenientes del sensor.}}{42}{figure.caption.108}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Ejemplificación del proceso de reconstrucción de mediciones: ángulo de inicio.}}{43}{figure.caption.109}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Visualización de la primera corrida del sensor: 840 puntos de medición.}}{44}{figure.caption.110}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Vista de usuario, interfaz gráfica LiDAR MapViewer.}}{46}{figure.caption.112}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {28}{\ignorespaces Vista frontal de las dos clases de paredes laterales que componen la plataforma de pruebas.}}{49}{figure.caption.115}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Vista isométrica de la base de la plataforma de pruebas.}}{49}{figure.caption.116}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Vista isométrica del soporte para el LiDAR FHL-LD20.}}{49}{figure.caption.117}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Vista isométrica de la plataforma de pruebas.}}{50}{figure.caption.118}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Vista superior de la plataforma de pruebas.}}{50}{figure.caption.119}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Diagrama de flujo general para procesamiento de datos en formato decimal.}}{52}{figure.caption.121}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Comparación de la reconstrucción con y sin filtro de mediciones nulas: tres revoluciones completas capturadas.}}{53}{figure.caption.122}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Ejemplificación de las lecturas nulas durante la reconstrucción de mediciones: entorno circular de 6 cm de radio.}}{54}{figure.caption.125}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas capturadas en entorno circular: 6 cm de radio}}{55}{figure.caption.126}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas capturadas en entorno circular: 10 cm de radio}}{56}{figure.caption.127}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Reconstrucción con 180 revoluciones completas capturadas del entorno circular: 149 mm de radio.}}{58}{figure.caption.134}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Reconstrucción del entorno circular de 499 mm de radio con 180 revoluciones completas capturadas.}}{59}{figure.caption.135}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Ajuste lineal para la variación de la varianza en función de la distancia.}}{60}{figure.caption.137}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 149 mm.}}{61}{figure.caption.138}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 499 mm.}}{61}{figure.caption.139}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Variación del sesgo en función de la distancia.}}{62}{figure.caption.140}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Análisis de la reconstrucción realizada para las aristas horizontales de una caja de 400$\times $400 mm: tres revoluciones completas capturadas.}}{64}{figure.caption.143}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Análisis de la reconstrucción realizada para las aristas verticales de una caja de 400$\times $400 mm: tres revoluciones completas capturadas.}}{65}{figure.caption.144}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Diseño de los codos para transiciones graduales}}{66}{figure.caption.146}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {47}{\ignorespaces Reconstrucción realizada para verificar la calibración del sensor.}}{68}{figure.caption.149}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Comparación de la reconstrucción con y sin ángulo de corrección: tres revoluciones completas capturadas.}}{70}{figure.caption.153}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {49}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas de lectura en entorno circular: 7 cm de radio}}{77}{figure.caption.160}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas de lectura en entorno circular: 8 cm de radio}}{78}{figure.caption.161}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas de lectura en entorno circular: 9 cm de radio}}{79}{figure.caption.162}%
