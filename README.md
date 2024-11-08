@@ -1,3 +1,4 @@
+
 # Evaluación de sensores de distancia para aplicaciones de mapeo de entornos con agentes robóticos móviles
 <h2 align="center"><em>Autor: Jorge Ricardo Cerón Cheley</em></h2>
 <h3 align="center"><em>Universidad del Valle de Guatemala</em></h3>
@@ -54,3 +55,4 @@ Para diseñar elementos físicos, como las plataformas de prueba y el soporte pa
   * [Radios]
 4. **[Recursos]**: Contiene las fuentes bibliográficas empleadas en la redacción de la tesis.
 5. **[Multimedia]**: Incluye imágenes y videos no listados de YouTube que muestran el funcionamiento del LiDAR, la transmisión de datos, la aplicación desarrollada y diversas pruebas realizadas.
+
