@@ -50,9 +50,9 @@ Para diseñar elementos físicos, como las plataformas de prueba y el soporte pa
   * [Python]
 2. **[Documento]**: Incluye la plantilla de redacción de la tesis, la tesis presentada y las figuras utilizadas en el documento.
 3. **[Modelos]**: Contiene los archivos necesarios para la fabricación e impresión de piezas empleadas en este trabajo, tanto para entornos de prueba como para soportes del LiDAR.
-* **[Pruebas]**: Contiene las hojas de datos utilizadas para la evaluación de la caracterización y calibración del sensor en mediciones radiales y angulares.
+4. **[Multimedia]**: Incluye imágenes y videos no listados de YouTube que muestran el funcionamiento del LiDAR, la transmisión de datos, la aplicación desarrollada y diversas pruebas realizadas.
+5. **[Pruebas]**: Contiene las hojas de datos utilizadas para la evaluación de la caracterización y calibración del sensor en mediciones radiales y angulares.
   * [Angulos]
   * [Radios]
-4. **[Recursos]**: Contiene las fuentes bibliográficas empleadas en la redacción de la tesis.
-5. **[Multimedia]**: Incluye imágenes y videos no listados de YouTube que muestran el funcionamiento del LiDAR, la transmisión de datos, la aplicación desarrollada y diversas pruebas realizadas.
+6. **[Recursos]**: Contiene las fuentes bibliográficas empleadas en la redacción de la tesis.
 
