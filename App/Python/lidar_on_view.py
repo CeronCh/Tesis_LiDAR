@@ -8,14 +8,15 @@ selected_port = "COM3"  # Define el puerto aquí
 baudrate = 230400
 sampling_interval = 5  # Intervalo de tiempo en segundos entre cada captura
 
-# Configuración inicial del gráfico
-fig, (ax1, ax2) = plt.subplots(1, 2, subplot_kw={'polar': True}, figsize=(10, 5))
+# Configuración inicial del gráfico (sin plt.ion())
+fig, ax1 = plt.subplots(subplot_kw={'polar': True}, figsize=(6, 6))
 fig.patch.set_facecolor('#212121')
 ax1.set_facecolor("#212121")
-ax2.set_facecolor("#212121")
-plt.ion()
 
 # Variables de almacenamiento de datos
+# Mostrar la ventana del gráfico sin bloquear el flujo
+plt.show(block=False)
+
 data = []
 expected_length = 60
 
@@ -143,19 +144,17 @@ def process_dec_data(dec_data):
         indx += 1
     return dist_angl[:, 0], dist_angl[:, 1], dist_angl[:, 2], dist_angl[:, 3], dist_angl[:, 4], dist_cc[:, 0], dist_cc[:, 1]
 
-def update_plot(theta, r, x, y):
-    ax1.clear()
-    ax2.clear()
-    ax1.set_facecolor("#212121")
-    ax2.set_facecolor("#212121")
-    ax1.plot(theta, r, ".", color="cyan", markersize=3)
-    ax2.plot(x, y, ".", color="cyan", markersize=3)
-    plt.draw()
-    plt.pause(0.1)
-
 def filter_zero_distances(new_angles_rads, distances, x_coords, y_coords, new_angle_degs):
     mask_zero = distances > 0
     return (new_angles_rads[mask_zero], distances[mask_zero], x_coords[mask_zero], y_coords[mask_zero], new_angle_degs[mask_zero])
+
+
+def update_plot(theta, r):
+    ax1.cla()  # Limpiar el gráfico manteniendo el mismo eje
+    ax1.set_facecolor("#212121")  # Restaurar el fondo
+    ax1.plot(theta, r, ".", color="cyan", markersize=3)  # Graficar los nuevos puntos
+    plt.draw()  # Dibujar el gráfico
+    plt.pause(0.1)  # Pausa breve para actualizar la pantalla
 
 # Ciclo principal
 LiDAR = open_port()
@@ -165,11 +164,16 @@ if LiDAR:
             old_angle_rad, old_angle_deg, new_angle_rad, new_angle_deg, radio_dist, distx, disty = catch_samples(LiDAR)
             new_angles_rads, radio_dist_no_zeros, x_coords, y_coords, new_angle_degs = filter_zero_distances(new_angle_rad, radio_dist, distx, disty, new_angle_deg)
             
+            # Verificar que los datos sean diferentes en cada captura
             if new_angles_rads is not None:
-                update_plot(new_angles_rads, radio_dist_no_zeros, x_coords, y_coords)
-            time.sleep(sampling_interval)
+                print("Actualizando el gráfico con nuevos datos...")
+                update_plot(new_angles_rads, radio_dist_no_zeros)
+            else:
+                print("No se recibieron datos válidos.")
+            
+            time.sleep(sampling_interval)  # Intervalo de captura (ajusta según la velocidad de captura deseada)
     except KeyboardInterrupt:
-        print("Detenido por el usuario.")
+        print("Detenido por el usuario.")   
     finally:
         LiDAR.close()
         print("Puerto cerrado.")
