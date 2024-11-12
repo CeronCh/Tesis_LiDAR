@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  5 NOV 2024 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  12 NOV 2024 01:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,12 +1189,12 @@ Overfull \hbox (70.36966pt too wide) in paragraph at lines 132--132
 []\T1/cmr/m/n/24.88 Evaluación de sensores de distancia para aplicaciones
  []
 
-<plantilla/portadacit.jpg, id=259, 1927.2pt x 752.8125pt>
+<plantilla/portadacit.jpg, id=263, 1927.2pt x 752.8125pt>
 File: plantilla/portadacit.jpg Graphic file (type jpg)
 <use plantilla/portadacit.jpg>
 Package pdftex.def Info: plantilla/portadacit.jpg  used on input line 144.
 (pdftex.def)             Requested size: 965.1268pt x 376.99901pt.
-<plantilla/fondologo_grande.png, id=260, 969.02025pt x 430.0065pt>
+<plantilla/fondologo_grande.png, id=264, 969.02025pt x 430.0065pt>
 File: plantilla/fondologo_grande.png Graphic file (type png)
 <use plantilla/fondologo_grande.png>
 Package pdftex.def Info: plantilla/fondologo_grande.png  used on input line 144
@@ -1211,7 +1211,7 @@ df>
 nco-eps-converted-to.pdf plantilla/logoUVGblanco.eps>
 (epstopdf)             \includegraphics on input line 144.
 Package epstopdf Info: Output file is already uptodate.
-<plantilla/logoUVGblanco-eps-converted-to.pdf, id=262, 680.5425pt x 174.6525pt>
+<plantilla/logoUVGblanco-eps-converted-to.pdf, id=266, 680.5425pt x 174.6525pt>
 
 File: plantilla/logoUVGblanco-eps-converted-to.pdf Graphic file (type pdf)
 <use plantilla/logoUVGblanco-eps-converted-to.pdf>
@@ -1238,7 +1238,7 @@ pdf>
 egro-eps-converted-to.pdf plantilla/escudoUVGnegro.eps>
 (epstopdf)             \includegraphics on input line 168.
 Package epstopdf Info: Output file is already uptodate.
-<plantilla/escudoUVGnegro-eps-converted-to.pdf, id=277, 141.52875pt x 209.78375
+<plantilla/escudoUVGnegro-eps-converted-to.pdf, id=281, 141.52875pt x 209.78375
 pt>
 File: plantilla/escudoUVGnegro-eps-converted-to.pdf Graphic file (type pdf)
 <use plantilla/escudoUVGnegro-eps-converted-to.pdf>
@@ -1295,39 +1295,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write7
 \openout7 = `z-main.toc'.
 
- [5] (z-main.lof
+ [5] [6] (z-main.lof
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
- [6
+ [7
 
 
-])
+] [8])
 \tf@lof=\write8
 \openout8 = `z-main.lof'.
 
- [7] [8] (z-main.lot
+ [9] (z-main.lot
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \sptext on input line 2.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-)
+ [10
+
+
+])
 \tf@lot=\write9
 \openout9 = `z-main.lot'.
 
- [9
+ [11] (b-resumen.tex)
+[12
 
 
-] (b-resumen.tex) [10
-
-
-]
-(c-abstract.tex) [11
+] (c-abstract.tex) [13
 
 
 ]
@@ -1338,7 +1338,7 @@ Cap\'{\i }tulo 1.
 ]
 Cap\'{\i }tulo 2.
 (e-antecedentes.tex
-<figuras/mapa_colisiones.jpg, id=616, 277.78781pt x 260.47313pt>
+<figuras/mapa_colisiones.jpg, id=696, 277.78781pt x 260.47313pt>
 File: figuras/mapa_colisiones.jpg Graphic file (type jpg)
 <use figuras/mapa_colisiones.jpg>
 Package pdftex.def Info: figuras/mapa_colisiones.jpg  used on input line 8.
@@ -1351,46 +1351,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
  []
 
 [3 <./figuras/mapa_colisiones.jpg>]
-<figuras/ruta_algoritmo_mod.jpg, id=632, 475.7775pt x 344.28625pt>
+<figuras/ruta_algoritmo_mod.jpg, id=712, 475.7775pt x 344.28625pt>
 File: figuras/ruta_algoritmo_mod.jpg Graphic file (type jpg)
 <use figuras/ruta_algoritmo_mod.jpg>
 Package pdftex.def Info: figuras/ruta_algoritmo_mod.jpg  used on input line 24.
 
 (pdftex.def)             Requested size: 260.17465pt x 188.27582pt.
  [4 <./figuras/ruta_algoritmo_mod.jpg>]
-<figuras/desplazamiento.jpg, id=642, 782.32275pt x 390.258pt>
+<figuras/desplazamiento.jpg, id=722, 782.32275pt x 390.258pt>
 File: figuras/desplazamiento.jpg Graphic file (type jpg)
 <use figuras/desplazamiento.jpg>
 Package pdftex.def Info: figuras/desplazamiento.jpg  used on input line 37.
 (pdftex.def)             Requested size: 325.215pt x 162.22797pt.
-<figuras/formacion.jpg, id=645, 863.6265pt x 431.211pt>
+<figuras/formacion.jpg, id=725, 863.6265pt x 431.211pt>
 File: figuras/formacion.jpg Graphic file (type jpg)
 <use figuras/formacion.jpg>
 Package pdftex.def Info: figuras/formacion.jpg  used on input line 44.
 (pdftex.def)             Requested size: 325.215pt x 162.38144pt.
-<figuras/mapa.jpg, id=650, 484.81125pt x 367.97475pt>
+<figuras/mapa.jpg, id=730, 484.81125pt x 367.97475pt>
 File: figuras/mapa.jpg Graphic file (type jpg)
 <use figuras/mapa.jpg>
 Package pdftex.def Info: figuras/mapa.jpg  used on input line 54.
 (pdftex.def)             Requested size: 216.81pt x 164.55959pt.
 
 [5 <./figuras/desplazamiento.jpg> <./figuras/formacion.jpg>]
-<figuras/pos_ini.jpg, id=658, 448.074pt x 450.483pt>
+<figuras/pos_ini.jpg, id=739, 448.074pt x 450.483pt>
 File: figuras/pos_ini.jpg Graphic file (type jpg)
 <use figuras/pos_ini.jpg>
 Package pdftex.def Info: figuras/pos_ini.jpg  used on input line 62.
 (pdftex.def)             Requested size: 195.12767pt x 196.17848pt.
-<figuras/pos_int1.jpg, id=659, 449.2785pt x 445.665pt>
+<figuras/pos_int1.jpg, id=740, 449.2785pt x 445.665pt>
 File: figuras/pos_int1.jpg Graphic file (type jpg)
 <use figuras/pos_int1.jpg>
 Package pdftex.def Info: figuras/pos_int1.jpg  used on input line 67.
 (pdftex.def)             Requested size: 195.12767pt x 193.55669pt.
-<figuras/pos_int2.jpg, id=660, 446.8695pt x 446.26724pt>
+<figuras/pos_int2.jpg, id=741, 446.8695pt x 446.26724pt>
 File: figuras/pos_int2.jpg Graphic file (type jpg)
 <use figuras/pos_int2.jpg>
 Package pdftex.def Info: figuras/pos_int2.jpg  used on input line 72.
 (pdftex.def)             Requested size: 195.12767pt x 194.86691pt.
-<figuras/pos_fin.jpg, id=661, 448.074pt x 451.6875pt>
+<figuras/pos_fin.jpg, id=742, 448.074pt x 451.6875pt>
 File: figuras/pos_fin.jpg Graphic file (type jpg)
 <use figuras/pos_fin.jpg>
 Package pdftex.def Info: figuras/pos_fin.jpg  used on input line 77.
@@ -1406,30 +1406,30 @@ Overfull \hbox (2.4216pt too wide) in paragraph at lines 60--80
  []
 
 [6 <./figuras/mapa.jpg>]
-<figuras/escenario.jpg, id=669, 417.9615pt x 417.9615pt>
+<figuras/escenario.jpg, id=750, 417.9615pt x 417.9615pt>
 File: figuras/escenario.jpg Graphic file (type jpg)
 <use figuras/escenario.jpg>
 Package pdftex.def Info: figuras/escenario.jpg  used on input line 89.
 (pdftex.def)             Requested size: 260.17465pt x 260.18575pt.
  [7 <./figuras/pos_ini.jpg> <./figuras/pos_int1.jpg> <./figuras/pos_int2.jpg> <
 ./figuras/pos_fin.jpg>]
-<figuras/exploracion.jpg, id=678, 348.1005pt x 232.4685pt>
+<figuras/exploracion.jpg, id=758, 348.1005pt x 232.4685pt>
 File: figuras/exploracion.jpg Graphic file (type jpg)
 <use figuras/exploracion.jpg>
 Package pdftex.def Info: figuras/exploracion.jpg  used on input line 96.
 (pdftex.def)             Requested size: 216.81pt x 144.7923pt.
  [8 <./figuras/escenario.jpg> <./figuras/exploracion.jpg>]
-<figuras/mapeo.jpg, id=685, 462.528pt x 445.06274pt>
+<figuras/mapeo.jpg, id=765, 462.528pt x 445.06274pt>
 File: figuras/mapeo.jpg Graphic file (type jpg)
 <use figuras/mapeo.jpg>
 Package pdftex.def Info: figuras/mapeo.jpg  used on input line 106.
-(pdftex.def)             Requested size: 260.17465pt x 250.36075pt.
-<figuras/uart_protocol.jpg, id=691, 756.426pt x 99.9735pt>
-File: figuras/uart_protocol.jpg Graphic file (type jpg)
-<use figuras/uart_protocol.jpg>
-Package pdftex.def Info: figuras/uart_protocol.jpg  used on input line 118.
-(pdftex.def)             Requested size: 260.17465pt x 34.38562pt.
- [9 <./figuras/mapeo.jpg>]) [10 <./figuras/uart_protocol.jpg>]
+(pdftex.def)             Requested size: 238.49232pt x 229.4917pt.
+<figuras/robotat.jpg, id=771, 4111.36pt x 2312.64pt>
+File: figuras/robotat.jpg Graphic file (type jpg)
+<use figuras/robotat.jpg>
+Package pdftex.def Info: figuras/robotat.jpg  used on input line 118.
+(pdftex.def)             Requested size: 325.215pt x 182.93298pt.
+) [9 <./figuras/mapeo.jpg>] [10 <./figuras/robotat.jpg>]
 Cap\'{\i }tulo 3.
 (f-justificacion.tex) [11
 
@@ -1446,60 +1446,60 @@ Cap\'{\i }tulo 6.
 (i-marco_teorico.tex [14
 
 ]
-<figuras/inter_ent.jpg, id=726, 658.8615pt x 316.7835pt>
+<figuras/inter_ent.jpg, id=806, 658.8615pt x 316.7835pt>
 File: figuras/inter_ent.jpg Graphic file (type jpg)
 <use figuras/inter_ent.jpg>
 Package pdftex.def Info: figuras/inter_ent.jpg  used on input line 13.
 (pdftex.def)             Requested size: 303.53267pt x 145.93968pt.
  [15 <./figuras/inter_ent.jpg>]
-<figuras/mob_rob_coo_sys.jpg, id=739, 423.984pt x 351.714pt>
+<figuras/mob_rob_coo_sys.jpg, id=819, 423.984pt x 351.714pt>
 File: figuras/mob_rob_coo_sys.jpg Graphic file (type jpg)
 <use figuras/mob_rob_coo_sys.jpg>
 Package pdftex.def Info: figuras/mob_rob_coo_sys.jpg  used on input line 47.
 (pdftex.def)             Requested size: 260.17465pt x 215.83324pt.
  [16] [17 <./figuras/mob_rob_coo_sys.jpg>]
-<figuras/mapeo_malo.jpg, id=764, 337.86224pt x 296.90926pt>
+<figuras/mapeo_malo.jpg, id=845, 337.86224pt x 296.90926pt>
 File: figuras/mapeo_malo.jpg Graphic file (type jpg)
 <use figuras/mapeo_malo.jpg>
 Package pdftex.def Info: figuras/mapeo_malo.jpg  used on input line 70.
 (pdftex.def)             Requested size: 216.81pt x 190.52867pt.
-<figuras/mapeo_bueno.jpg, id=765, 340.8735pt x 192.11775pt>
+<figuras/mapeo_bueno.jpg, id=846, 340.8735pt x 192.11775pt>
 File: figuras/mapeo_bueno.jpg Graphic file (type jpg)
 <use figuras/mapeo_bueno.jpg>
 Package pdftex.def Info: figuras/mapeo_bueno.jpg  used on input line 76.
 (pdftex.def)             Requested size: 216.81pt x 122.19861pt.
  [18] [19 <./figuras/mapeo_malo.jpg> <./figuras/mapeo_bueno.jpg>]
-<figuras/lidar.jpg, id=783, 552.0625pt x 291.0875pt>
+<figuras/lidar.jpg, id=863, 552.0625pt x 291.0875pt>
 File: figuras/lidar.jpg Graphic file (type jpg)
 <use figuras/lidar.jpg>
 Package pdftex.def Info: figuras/lidar.jpg  used on input line 100.
 (pdftex.def)             Requested size: 281.85036pt x 148.61699pt.
  [20]
-<figuras/triangulation.jpg, id=791, 920.238pt x 468.5505pt>
+<figuras/triangulation.jpg, id=871, 920.238pt x 468.5505pt>
 File: figuras/triangulation.jpg Graphic file (type jpg)
 <use figuras/triangulation.jpg>
 Package pdftex.def Info: figuras/triangulation.jpg  used on input line 113.
 (pdftex.def)             Requested size: 325.215pt x 165.58946pt.
  [21 <./figuras/lidar.jpg>]
-<figuras/pololu.jpg, id=801, 473.97075pt x 419.166pt>
+<figuras/pololu.jpg, id=881, 473.97075pt x 419.166pt>
 File: figuras/pololu.jpg Graphic file (type jpg)
 <use figuras/pololu.jpg>
 Package pdftex.def Info: figuras/pololu.jpg  used on input line 127.
 (pdftex.def)             Requested size: 216.81pt x 191.73778pt.
  [22 <./figuras/triangulation.jpg>]
-<figuras/uart_conexion.jpg, id=809, 1052.733pt x 322.806pt>
+<figuras/uart_conexion.jpg, id=889, 1052.733pt x 322.806pt>
 File: figuras/uart_conexion.jpg Graphic file (type jpg)
 <use figuras/uart_conexion.jpg>
 Package pdftex.def Info: figuras/uart_conexion.jpg  used on input line 138.
 (pdftex.def)             Requested size: 303.53267pt x 93.07445pt.
 
 [23 <./figuras/pololu.jpg> <./figuras/uart_conexion.jpg>]
+<figuras/uart_protocol.jpg, id=901, 756.426pt x 99.9735pt>
 File: figuras/uart_protocol.jpg Graphic file (type jpg)
 <use figuras/uart_protocol.jpg>
 Package pdftex.def Info: figuras/uart_protocol.jpg  used on input line 157.
 (pdftex.def)             Requested size: 346.89732pt x 45.848pt.
-) [24]
-(j-capitulos.tex
+) [24 <./figuras/uart_protocol.jpg>] (j-capitulos.tex
 Cap\'{\i }tulo 7.
 [25
 
@@ -1508,13 +1508,13 @@ Overfull \vbox (16.27339pt too high) has occurred while \output is active []
 
 
 [28] [29] [30] [31] [32] [33]
-<figuras/trade_study.png, id=907, 709.998pt x 153.738pt>
+<figuras/trade_study.png, id=988, 709.998pt x 153.738pt>
 File: figuras/trade_study.png Graphic file (type png)
 <use figuras/trade_study.png>
 Package pdftex.def Info: figuras/trade_study.png  used on input line 366.
 (pdftex.def)             Requested size: 433.62001pt x 93.89499pt.
  [34]
-<figuras/parametros_tradestudy.jpg, id=912, 205.36725pt x 314.3745pt>
+<figuras/parametros_tradestudy.jpg, id=993, 205.36725pt x 314.3745pt>
 File: figuras/parametros_tradestudy.jpg Graphic file (type jpg)
 <use figuras/parametros_tradestudy.jpg>
 Package pdftex.def Info: figuras/parametros_tradestudy.jpg  used on input line 
@@ -1525,63 +1525,63 @@ Cap\'{\i }tulo 8.
 [36
 
 ]
-<figuras/orientacion_lidar.jpg, id=926, 485.56406pt x 241.65282pt>
+<figuras/orientacion_lidar.jpg, id=1008, 485.56406pt x 241.65282pt>
 File: figuras/orientacion_lidar.jpg Graphic file (type jpg)
 <use figuras/orientacion_lidar.jpg>
 Package pdftex.def Info: figuras/orientacion_lidar.jpg  used on input line 455.
 
 (pdftex.def)             Requested size: 303.53267pt x 151.05844pt.
-<figuras/pin_lidar.jpg, id=932, 181.42781pt x 110.66344pt>
+<figuras/pin_lidar.jpg, id=1014, 181.42781pt x 110.66344pt>
 File: figuras/pin_lidar.jpg Graphic file (type jpg)
 <use figuras/pin_lidar.jpg>
 Package pdftex.def Info: figuras/pin_lidar.jpg  used on input line 465.
 (pdftex.def)             Requested size: 173.44534pt x 105.79663pt.
  [37 <./figuras/orientacion_lidar.jpg>] [38 <./figuras/pin_lidar.jpg>]
-<figuras/diagrama_captura.png, id=950, 2159.06625pt x 4364.305pt>
+<figuras/diagrama_captura.png, id=1031, 2159.06625pt x 4364.305pt>
 File: figuras/diagrama_captura.png Graphic file (type png)
 <use figuras/diagrama_captura.png>
 Package pdftex.def Info: figuras/diagrama_captura.png  used on input line 547.
 (pdftex.def)             Requested size: 260.17465pt x 525.8916pt.
 
 [39] [40 <./figuras/diagrama_captura.png>]
-<figuras/diagrama_procesamiento.png, id=961, 1189.44376pt x 4428.545pt>
+<figuras/diagrama_procesamiento.png, id=1042, 1189.44376pt x 4428.545pt>
 File: figuras/diagrama_procesamiento.png Graphic file (type png)
 <use figuras/diagrama_procesamiento.png>
 Package pdftex.def Info: figuras/diagrama_procesamiento.png  used on input line
  566.
 (pdftex.def)             Requested size: 143.09538pt x 532.75397pt.
  [41] [42 <./figuras/diagrama_procesamiento.png>]
-<figuras/data_in.jpg, id=972, 1445.4pt x 628.59843pt>
+<figuras/data_in.jpg, id=1054, 1445.4pt x 628.59843pt>
 File: figuras/data_in.jpg Graphic file (type jpg)
 <use figuras/data_in.jpg>
 Package pdftex.def Info: figuras/data_in.jpg  used on input line 577.
 (pdftex.def)             Requested size: 346.89732pt x 150.8571pt.
-<figuras/disposicion_lidar1.jpeg, id=974, 542.025pt x 963.6pt>
+<figuras/disposicion_lidar1.jpeg, id=1056, 542.025pt x 963.6pt>
 File: figuras/disposicion_lidar1.jpeg Graphic file (type jpg)
 <use figuras/disposicion_lidar1.jpeg>
 Package pdftex.def Info: figuras/disposicion_lidar1.jpeg  used on input line 59
 0.
 (pdftex.def)             Requested size: 542.02367pt x 963.59766pt.
-<figuras/primera_lectura.png, id=975, 1445.4pt x 773.89125pt>
+<figuras/primera_lectura.png, id=1057, 1445.4pt x 773.89125pt>
 File: figuras/primera_lectura.png Graphic file (type png)
 <use figuras/primera_lectura.png>
 Package pdftex.def Info: figuras/primera_lectura.png  used on input line 597.
 (pdftex.def)             Requested size: 277.5189pt x 148.58778pt.
  [43 <./figuras/data_in.jpg>] [44 <./figuras/disposicion_lidar1.jpeg> <./figura
 s/primera_lectura.png>]
-<figuras/app.jpg, id=990, 751.608pt x 549.252pt>
+<figuras/app.jpg, id=1071, 751.608pt x 549.252pt>
 File: figuras/app.jpg Graphic file (type jpg)
 <use figuras/app.jpg>
 Package pdftex.def Info: figuras/app.jpg  used on input line 624.
 (pdftex.def)             Requested size: 390.25536pt x 285.18526pt.
  [45] [46 <./figuras/app.jpg>] [47]
 Cap\'{\i }tulo 9.
-<figuras/pared_ranura.jpg, id=1005, 903.375pt x 216.81pt>
+<figuras/pared_ranura.jpg, id=1087, 903.375pt x 216.81pt>
 File: figuras/pared_ranura.jpg Graphic file (type jpg)
 <use figuras/pared_ranura.jpg>
 Package pdftex.def Info: figuras/pared_ranura.jpg  used on input line 657.
 (pdftex.def)             Requested size: 216.81pt x 52.03215pt.
-<figuras/pared_normal.jpg, id=1006, 903.375pt x 216.81pt>
+<figuras/pared_normal.jpg, id=1088, 903.375pt x 216.81pt>
 File: figuras/pared_normal.jpg Graphic file (type jpg)
 <use figuras/pared_normal.jpg>
 Package pdftex.def Info: figuras/pared_normal.jpg  used on input line 663.
@@ -1589,48 +1589,48 @@ Package pdftex.def Info: figuras/pared_normal.jpg  used on input line 663.
 [48
 
 ]
-<figuras/base.jpg, id=1013, 910.602pt x 475.17525pt>
+<figuras/base.jpg, id=1095, 910.602pt x 475.17525pt>
 File: figuras/base.jpg Graphic file (type jpg)
 <use figuras/base.jpg>
 Package pdftex.def Info: figuras/base.jpg  used on input line 676.
 (pdftex.def)             Requested size: 260.17465pt x 135.75987pt.
-<figuras/base_lidar.png, id=1014, 440.847pt x 316.18124pt>
+<figuras/base_lidar.png, id=1096, 910.602pt x 475.17525pt>
 File: figuras/base_lidar.png Graphic file (type png)
 <use figuras/base_lidar.png>
 Package pdftex.def Info: figuras/base_lidar.png  used on input line 683.
-(pdftex.def)             Requested size: 216.81pt x 155.49945pt.
+(pdftex.def)             Requested size: 216.81pt x 113.13081pt.
  [49 <./figuras/pared_ranura.jpg> <./figuras/pared_normal.jpg> <./figuras/base.
 jpg> <./figuras/base_lidar.png>]
-<figuras/plataforma_cad2.jpg, id=1024, 672.111pt x 475.17525pt>
+<figuras/plataforma_cad2.jpg, id=1105, 672.111pt x 475.17525pt>
 File: figuras/plataforma_cad2.jpg Graphic file (type jpg)
 <use figuras/plataforma_cad2.jpg>
 Package pdftex.def Info: figuras/plataforma_cad2.jpg  used on input line 692.
 (pdftex.def)             Requested size: 260.17465pt x 183.93999pt.
-<figuras/plataforma.jpg, id=1025, 2083.785pt x 2168.1pt>
+<figuras/plataforma.jpg, id=1106, 2083.785pt x 2168.1pt>
 File: figuras/plataforma.jpg Graphic file (type jpg)
 <use figuras/plataforma.jpg>
 Package pdftex.def Info: figuras/plataforma.jpg  used on input line 699.
 (pdftex.def)             Requested size: 216.81pt x 225.55647pt.
  [50 <./figuras/plataforma_cad2.jpg> <./figuras/plataforma.jpg>]
-<figuras/diagrama_procesamiento_dec.png, id=1032, 880.28876pt x 2353.79375pt>
+<figuras/diagrama_procesamiento_dec.png, id=1113, 880.28876pt x 2353.79375pt>
 File: figuras/diagrama_procesamiento_dec.png Graphic file (type png)
 <use figuras/diagrama_procesamiento_dec.png>
 Package pdftex.def Info: figuras/diagrama_procesamiento_dec.png  used on input 
 line 711.
 (pdftex.def)             Requested size: 173.44534pt x 463.7468pt.
  [51] [52 <./figuras/diagrama_procesamiento_dec.png>]
-<figuras/disposicion_lidar3.jpeg, id=1043, 2310.6325pt x 2580.64125pt>
+<figuras/disposicion_lidar3.jpeg, id=1124, 2310.6325pt x 2580.64125pt>
 File: figuras/disposicion_lidar3.jpeg Graphic file (type jpg)
 <use figuras/disposicion_lidar3.jpeg>
 Package pdftex.def Info: figuras/disposicion_lidar3.jpeg  used on input line 72
 4.
 (pdftex.def)             Requested size: 182.12146pt x 203.38408pt.
-<figuras/lectura_sin_filt.png, id=1044, 509.5035pt x 495.0495pt>
+<figuras/lectura_sin_filt.png, id=1125, 509.5035pt x 495.0495pt>
 File: figuras/lectura_sin_filt.png Graphic file (type png)
 <use figuras/lectura_sin_filt.png>
 Package pdftex.def Info: figuras/lectura_sin_filt.png  used on input line 731.
 (pdftex.def)             Requested size: 175.61371pt x 170.62607pt.
-<figuras/lectura_con_filt.png, id=1045, 509.5035pt x 495.0495pt>
+<figuras/lectura_con_filt.png, id=1126, 509.5035pt x 495.0495pt>
 File: figuras/lectura_con_filt.png Graphic file (type png)
 <use figuras/lectura_con_filt.png>
 Package pdftex.def Info: figuras/lectura_con_filt.png  used on input line 738.
@@ -1638,76 +1638,75 @@ Package pdftex.def Info: figuras/lectura_con_filt.png  used on input line 738.
 
 [53 <./figuras/disposicion_lidar3.jpeg> <./figuras/lectura_sin_filt.png> <./fig
 uras/lectura_con_filt.png>]
-<figuras/lecturas_nula.jpg, id=1057, 383.63326pt x 132.495pt>
+<figuras/lecturas_nula.jpg, id=1139, 383.63326pt x 132.495pt>
 File: figuras/lecturas_nula.jpg Graphic file (type jpg)
 <use figuras/lecturas_nula.jpg>
 Package pdftex.def Info: figuras/lecturas_nula.jpg  used on input line 757.
 (pdftex.def)             Requested size: 346.89732pt x 119.80844pt.
-<figuras/disposicion_lidar4.jpeg, id=1058, 2312.64pt x 2617.78pt>
+<figuras/disposicion_lidar4.jpeg, id=1140, 2312.64pt x 2617.78pt>
 File: figuras/disposicion_lidar4.jpeg Graphic file (type jpg)
 <use figuras/disposicion_lidar4.jpeg>
 Package pdftex.def Info: figuras/disposicion_lidar4.jpeg  used on input line 76
 6.
 (pdftex.def)             Requested size: 169.11192pt x 191.41191pt.
-<figuras/try_6cm_r.png, id=1059, 498.663pt x 498.663pt>
+<figuras/try_6cm_r.png, id=1141, 498.663pt x 498.663pt>
 File: figuras/try_6cm_r.png Graphic file (type png)
 <use figuras/try_6cm_r.png>
 Package pdftex.def Info: figuras/try_6cm_r.png  used on input line 773.
 (pdftex.def)             Requested size: 175.61371pt x 175.61513pt.
-<figuras/try_6cm_r_car.png, id=1060, 509.5035pt x 495.0495pt>
+<figuras/try_6cm_r_car.png, id=1142, 509.5035pt x 495.0495pt>
 File: figuras/try_6cm_r_car.png Graphic file (type png)
 <use figuras/try_6cm_r_car.png>
 Package pdftex.def Info: figuras/try_6cm_r_car.png  used on input line 780.
 (pdftex.def)             Requested size: 175.61371pt x 170.62607pt.
  [54 <./figuras/lecturas_nula.jpg>] [55 <./figuras/disposicion_lidar4.jpeg> <./
 figuras/try_6cm_r.png> <./figuras/try_6cm_r_car.png>]
-<figuras/disposicion_lidar8.jpeg, id=1075, 1424.32124pt x 1606.0pt>
+<figuras/disposicion_lidar8.jpeg, id=1156, 1424.32124pt x 1606.0pt>
 File: figuras/disposicion_lidar8.jpeg Graphic file (type jpg)
 <use figuras/disposicion_lidar8.jpeg>
 Package pdftex.def Info: figuras/disposicion_lidar8.jpeg  used on input line 79
 7.
 (pdftex.def)             Requested size: 169.11192pt x 190.67772pt.
-<figuras/try_10cm_r.png, id=1076, 498.663pt x 498.663pt>
+<figuras/try_10cm_r.png, id=1157, 498.663pt x 498.663pt>
 File: figuras/try_10cm_r.png Graphic file (type png)
 <use figuras/try_10cm_r.png>
 Package pdftex.def Info: figuras/try_10cm_r.png  used on input line 804.
 (pdftex.def)             Requested size: 175.61371pt x 175.61513pt.
-<figuras/try_10cm_r_car.png, id=1077, 509.5035pt x 495.0495pt>
+<figuras/try_10cm_r_car.png, id=1158, 509.5035pt x 495.0495pt>
 File: figuras/try_10cm_r_car.png Graphic file (type png)
 <use figuras/try_10cm_r_car.png>
 Package pdftex.def Info: figuras/try_10cm_r_car.png  used on input line 811.
 (pdftex.def)             Requested size: 175.61371pt x 170.62607pt.
  [56 <./figuras/disposicion_lidar8.jpeg> <./figuras/try_10cm_r.png> <./figuras/
 try_10cm_r_car.png>] [57]
-<figuras/disposicion_lidar_var_dist1.jpg, id=1098, 4111.36pt x 2312.64pt>
+<figuras/disposicion_lidar_var_dist1.jpg, id=1179, 4111.36pt x 2312.64pt>
 File: figuras/disposicion_lidar_var_dist1.jpg Graphic file (type jpg)
 <use figuras/disposicion_lidar_var_dist1.jpg>
 Package pdftex.def Info: figuras/disposicion_lidar_var_dist1.jpg  used on input
  line 874.
 (pdftex.def)             Requested size: 260.17465pt x 146.33932pt.
-<figuras/0.149m_radius.png, id=1099, 498.663pt x 498.663pt>
+<figuras/0.149m_radius.png, id=1180, 498.663pt x 498.663pt>
 File: figuras/0.149m_radius.png Graphic file (type png)
 <use figuras/0.149m_radius.png>
 Package pdftex.def Info: figuras/0.149m_radius.png  used on input line 881.
 (pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
-<figuras/0.149m_radius_XY.png, id=1100, 509.5035pt x 495.0495pt>
+<figuras/0.149m_radius_XY.png, id=1181, 509.5035pt x 495.0495pt>
 File: figuras/0.149m_radius_XY.png Graphic file (type png)
 <use figuras/0.149m_radius_XY.png>
 Package pdftex.def Info: figuras/0.149m_radius_XY.png  used on input line 888.
 (pdftex.def)             Requested size: 161.95631pt x 157.36153pt.
-<figuras/disposicion_lidar_var_dist8.jpg, id=1101, 3184.89874pt x 2126.94624pt>
-
+<figuras/disposicion_lidar_var_dist8.jpg, id=1182, 2969.0925pt x 2168.1pt>
 File: figuras/disposicion_lidar_var_dist8.jpg Graphic file (type jpg)
 <use figuras/disposicion_lidar_var_dist8.jpg>
 Package pdftex.def Info: figuras/disposicion_lidar_var_dist8.jpg  used on input
  line 900.
-(pdftex.def)             Requested size: 260.17465pt x 173.72917pt.
-<figuras/0.499m_radius.png, id=1102, 498.663pt x 498.663pt>
+(pdftex.def)             Requested size: 260.17465pt x 189.95972pt.
+<figuras/0.499m_radius.png, id=1183, 498.663pt x 498.663pt>
 File: figuras/0.499m_radius.png Graphic file (type png)
 <use figuras/0.499m_radius.png>
 Package pdftex.def Info: figuras/0.499m_radius.png  used on input line 907.
 (pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
-<figuras/0.499m_radius_XY.png, id=1103, 509.5035pt x 495.0495pt>
+<figuras/0.499m_radius_XY.png, id=1184, 509.5035pt x 495.0495pt>
 File: figuras/0.499m_radius_XY.png Graphic file (type png)
 <use figuras/0.499m_radius_XY.png>
 Package pdftex.def Info: figuras/0.499m_radius_XY.png  used on input line 914.
@@ -1715,51 +1714,51 @@ Package pdftex.def Info: figuras/0.499m_radius_XY.png  used on input line 914.
  [58 <./figuras/disposicion_lidar_var_dist1.jpg> <./figuras/0.149m_radius.png> 
 <./figuras/0.149m_radius_XY.png>] [59 <./figuras/disposicion_lidar_var_dist8.jp
 g> <./figuras/0.499m_radius.png> <./figuras/0.499m_radius_XY.png>]
-<figuras/varianza_tendencia.png, id=1121, 475.23pt x 216.591pt>
+<figuras/varianza_tendencia.png, id=1205, 722.7pt x 433.62pt>
 File: figuras/varianza_tendencia.png Graphic file (type png)
 <use figuras/varianza_tendencia.png>
 Package pdftex.def Info: figuras/varianza_tendencia.png  used on input line 946
 .
-(pdftex.def)             Requested size: 346.89732pt x 158.1035pt.
-<figuras/0.149m_radius_stats_P6.png, id=1126, 1300.86pt x 578.16pt>
+(pdftex.def)             Requested size: 411.93768pt x 247.16597pt.
+ [60 <./figuras/varianza_tendencia.png>]
+<figuras/0.149m_radius_stats_P6.png, id=1217, 1300.86pt x 578.16pt>
 File: figuras/0.149m_radius_stats_P6.png Graphic file (type png)
 <use figuras/0.149m_radius_stats_P6.png>
 Package pdftex.def Info: figuras/0.149m_radius_stats_P6.png  used on input line
  956.
 (pdftex.def)             Requested size: 542.02501pt x 240.90234pt.
- [60 <./figuras/varianza_tendencia.png>]
-<figuras/0.499m_radius_stats_P1.png, id=1132, 1300.86pt x 578.16pt>
+<figuras/0.499m_radius_stats_P1.png, id=1218, 1300.86pt x 578.16pt>
 File: figuras/0.499m_radius_stats_P1.png Graphic file (type png)
 <use figuras/0.499m_radius_stats_P1.png>
 Package pdftex.def Info: figuras/0.499m_radius_stats_P1.png  used on input line
  963.
 (pdftex.def)             Requested size: 542.02501pt x 240.90234pt.
-<figuras/bias_tendencia.png, id=1133, 475.449pt x 220.752pt>
+<figuras/bias_tendencia.png, id=1219, 722.7pt x 433.62pt>
 File: figuras/bias_tendencia.png Graphic file (type png)
 <use figuras/bias_tendencia.png>
 Package pdftex.def Info: figuras/bias_tendencia.png  used on input line 970.
-(pdftex.def)             Requested size: 346.89732pt x 161.06677pt.
+(pdftex.def)             Requested size: 346.89732pt x 208.13524pt.
  [61 <./figuras/0.149m_radius_stats_P6.png> <./figuras/0.499m_radius_stats_P1.p
 ng>] [62 <./figuras/bias_tendencia.png>] [63]
-<figuras/analisis_precision_1_1.png, id=1150, 643.9257pt x 341.8371pt>
+<figuras/analisis_precision_1_1.png, id=1235, 643.9257pt x 341.8371pt>
 File: figuras/analisis_precision_1_1.png Graphic file (type png)
 <use figuras/analisis_precision_1_1.png>
 Package pdftex.def Info: figuras/analisis_precision_1_1.png  used on input line
  1007.
 (pdftex.def)             Requested size: 312.20546pt x 165.73862pt.
-<figuras/analisis_precision_1_2.png, id=1151, 651.8754pt x 346.896pt>
+<figuras/analisis_precision_1_2.png, id=1236, 651.8754pt x 346.896pt>
 File: figuras/analisis_precision_1_2.png Graphic file (type png)
 <use figuras/analisis_precision_1_2.png>
 Package pdftex.def Info: figuras/analisis_precision_1_2.png  used on input line
  1014.
 (pdftex.def)             Requested size: 312.20546pt x 166.14294pt.
-<figuras/analisis_precision_1_3.png, id=1152, 390.258pt x 651.8754pt>
+<figuras/analisis_precision_1_3.png, id=1237, 390.258pt x 651.8754pt>
 File: figuras/analisis_precision_1_3.png Graphic file (type png)
 <use figuras/analisis_precision_1_3.png>
 Package pdftex.def Info: figuras/analisis_precision_1_3.png  used on input line
  1026.
 (pdftex.def)             Requested size: 195.12767pt x 325.93689pt.
-<figuras/analisis_precision_1_4.png, id=1153, 398.9304pt x 646.0938pt>
+<figuras/analisis_precision_1_4.png, id=1238, 398.9304pt x 646.0938pt>
 File: figuras/analisis_precision_1_4.png Graphic file (type png)
 <use figuras/analisis_precision_1_4.png>
 Package pdftex.def Info: figuras/analisis_precision_1_4.png  used on input line
@@ -1767,22 +1766,22 @@ Package pdftex.def Info: figuras/analisis_precision_1_4.png  used on input line
 (pdftex.def)             Requested size: 195.12767pt x 316.0268pt.
  [64 <./figuras/analisis_precision_1_1.png> <./figuras/analisis_precision_1_2.p
 ng>]
-<figuras/codo.png, id=1161, 518.6878pt x 520.19344pt>
+<figuras/codo.png, id=1246, 518.6878pt x 520.19344pt>
 File: figuras/codo.png Graphic file (type png)
 <use figuras/codo.png>
 Package pdftex.def Info: figuras/codo.png  used on input line 1050.
 (pdftex.def)             Requested size: 175.61371pt x 176.12523pt.
-<figuras/codo3.png, id=1162, 311.66437pt x 289.08pt>
+<figuras/codo3.png, id=1247, 311.66437pt x 289.08pt>
 File: figuras/codo3.png Graphic file (type png)
 <use figuras/codo3.png>
 Package pdftex.def Info: figuras/codo3.png  used on input line 1057.
 (pdftex.def)             Requested size: 175.61371pt x 162.88939pt.
-<figuras/codo1.png, id=1163, 335.00156pt x 323.70938pt>
+<figuras/codo1.png, id=1248, 335.00156pt x 323.70938pt>
 File: figuras/codo1.png Graphic file (type png)
 <use figuras/codo1.png>
 Package pdftex.def Info: figuras/codo1.png  used on input line 1064.
 (pdftex.def)             Requested size: 175.61371pt x 169.69312pt.
-<figuras/codo2.png, id=1164, 295.85532pt x 295.1025pt>
+<figuras/codo2.png, id=1249, 295.85532pt x 295.1025pt>
 File: figuras/codo2.png Graphic file (type png)
 <use figuras/codo2.png>
 Package pdftex.def Info: figuras/codo2.png  used on input line 1071.
@@ -1791,7 +1790,7 @@ Package pdftex.def Info: figuras/codo2.png  used on input line 1071.
 ng>] [66 <./figuras/codo.png> <./figuras/codo3.png> <./figuras/codo1.png> <./fi
 guras/codo2.png>]
 Cap\'{\i }tulo 10.
-<figuras/calibracion1.png, id=1179, 578.16pt x 578.16pt>
+<figuras/calibracion1.png, id=1265, 578.16pt x 578.16pt>
 File: figuras/calibracion1.png Graphic file (type png)
 <use figuras/calibracion1.png>
 Package pdftex.def Info: figuras/calibracion1.png  used on input line 1086.
@@ -1799,19 +1798,19 @@ Package pdftex.def Info: figuras/calibracion1.png  used on input line 1086.
 [67
 
 ] [68 <./figuras/calibracion1.png>]
-<figuras/disposicion_lidar2.jpeg, id=1194, 2312.64pt x 2678.005pt>
+<figuras/disposicion_lidar2.jpeg, id=1279, 2312.64pt x 2678.005pt>
 File: figuras/disposicion_lidar2.jpeg Graphic file (type jpg)
 <use figuras/disposicion_lidar2.jpeg>
 Package pdftex.def Info: figuras/disposicion_lidar2.jpeg  used on input line 11
 17.
 (pdftex.def)             Requested size: 156.10637pt x 180.7371pt.
-<figuras/lectura_sin_corre.png, id=1195, 509.5035pt x 495.0495pt>
+<figuras/lectura_sin_corre.png, id=1280, 509.5035pt x 495.0495pt>
 File: figuras/lectura_sin_corre.png Graphic file (type png)
 <use figuras/lectura_sin_corre.png>
 Package pdftex.def Info: figuras/lectura_sin_corre.png  used on input line 1124
 .
 (pdftex.def)             Requested size: 175.61371pt x 170.62607pt.
-<figuras/lectura_con_corre.png, id=1196, 509.5035pt x 495.0495pt>
+<figuras/lectura_con_corre.png, id=1281, 509.5035pt x 495.0495pt>
 File: figuras/lectura_con_corre.png Graphic file (type png)
 <use figuras/lectura_con_corre.png>
 Package pdftex.def Info: figuras/lectura_con_corre.png  used on input line 1131
@@ -1858,18 +1857,18 @@ ca-tion\T1/cmr/m/n/10.95 , 2016. di-rec-ción: []$\T1/cmtt/m/n/10.95 https : / /
 [74] [75]
 Cap\'{\i }tulo 14.
 (n-anexos.tex
-<figuras/disposicion_lidar5.jpeg, id=1259, 2312.64pt x 2619.7875pt>
+<figuras/disposicion_lidar5.jpeg, id=1344, 2312.64pt x 2619.7875pt>
 File: figuras/disposicion_lidar5.jpeg Graphic file (type jpg)
 <use figuras/disposicion_lidar5.jpeg>
 Package pdftex.def Info: figuras/disposicion_lidar5.jpeg  used on input line 6.
 
 (pdftex.def)             Requested size: 130.08733pt x 147.3467pt.
-<figuras/try_7cm_r.png, id=1260, 498.663pt x 498.663pt>
+<figuras/try_7cm_r.png, id=1345, 498.663pt x 498.663pt>
 File: figuras/try_7cm_r.png Graphic file (type png)
 <use figuras/try_7cm_r.png>
 Package pdftex.def Info: figuras/try_7cm_r.png  used on input line 13.
 (pdftex.def)             Requested size: 136.58876pt x 136.5887pt.
-<figuras/try_7cm_r_car.png, id=1261, 509.5035pt x 495.0495pt>
+<figuras/try_7cm_r_car.png, id=1346, 509.5035pt x 495.0495pt>
 File: figuras/try_7cm_r_car.png Graphic file (type png)
 <use figuras/try_7cm_r_car.png>
 Package pdftex.def Info: figuras/try_7cm_r_car.png  used on input line 20.
@@ -1882,43 +1881,206 @@ Overfull \vbox (28.46024pt too high) has occurred while \output is active []
 
 [77 <./figuras/disposicion_lidar5.jpeg> <./figuras/try_7cm_r.png> <./figuras/tr
 y_7cm_r_car.png>]
-<figuras/disposicion_lidar6.jpeg, id=1272, 1527.7075pt x 1606.0pt>
+<figuras/disposicion_lidar6.jpeg, id=1358, 1527.7075pt x 1606.0pt>
 File: figuras/disposicion_lidar6.jpeg Graphic file (type jpg)
 <use figuras/disposicion_lidar6.jpeg>
 Package pdftex.def Info: figuras/disposicion_lidar6.jpeg  used on input line 32
 .
 (pdftex.def)             Requested size: 156.10637pt x 164.08919pt.
-<figuras/try_8cm_r.png, id=1273, 498.663pt x 498.663pt>
+<figuras/try_8cm_r.png, id=1359, 498.663pt x 498.663pt>
 File: figuras/try_8cm_r.png Graphic file (type png)
 <use figuras/try_8cm_r.png>
 Package pdftex.def Info: figuras/try_8cm_r.png  used on input line 39.
 (pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
-<figuras/try_8cm_r_car.png, id=1274, 509.5035pt x 495.0495pt>
+<figuras/try_8cm_r_car.png, id=1360, 509.5035pt x 495.0495pt>
 File: figuras/try_8cm_r_car.png Graphic file (type png)
 <use figuras/try_8cm_r_car.png>
 Package pdftex.def Info: figuras/try_8cm_r_car.png  used on input line 46.
 (pdftex.def)             Requested size: 156.10272pt x 151.6735pt.
-<figuras/disposicion_lidar7.jpeg, id=1275, 2310.6325pt x 2674.99374pt>
+<figuras/disposicion_lidar7.jpeg, id=1361, 2310.6325pt x 2674.99374pt>
 File: figuras/disposicion_lidar7.jpeg Graphic file (type jpg)
 <use figuras/disposicion_lidar7.jpeg>
 Package pdftex.def Info: figuras/disposicion_lidar7.jpeg  used on input line 59
 .
 (pdftex.def)             Requested size: 156.10637pt x 180.69714pt.
-<figuras/try_9cm_r.png, id=1276, 498.663pt x 498.663pt>
+<figuras/try_9cm_r.png, id=1362, 498.663pt x 498.663pt>
 File: figuras/try_9cm_r.png Graphic file (type png)
 <use figuras/try_9cm_r.png>
 Package pdftex.def Info: figuras/try_9cm_r.png  used on input line 66.
 (pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
-<figuras/try_9cm_r_car.png, id=1277, 509.5035pt x 495.0495pt>
+<figuras/try_9cm_r_car.png, id=1363, 509.5035pt x 495.0495pt>
 File: figuras/try_9cm_r_car.png Graphic file (type png)
 <use figuras/try_9cm_r_car.png>
 Package pdftex.def Info: figuras/try_9cm_r_car.png  used on input line 73.
 (pdftex.def)             Requested size: 156.10272pt x 151.6735pt.
-) [78 <./figuras/disposicion_lidar6.jpeg> <./figuras/try_8cm_r.png> <./figuras/
-try_8cm_r_car.png>] [79 <./figuras/disposicion_lidar7.jpeg> <./figuras/try_9cm_
-r.png> <./figuras/try_9cm_r_car.png>]
+ [78 <./figuras/disposicion_lidar6.jpeg> <./figuras/try_8cm_r.png> <./figuras/t
+ry_8cm_r_car.png>]
+<figuras/disposicion_lidar_var_dist2.jpg, id=1370, 4111.36pt x 2312.64pt>
+File: figuras/disposicion_lidar_var_dist2.jpg Graphic file (type jpg)
+<use figuras/disposicion_lidar_var_dist2.jpg>
+Package pdftex.def Info: figuras/disposicion_lidar_var_dist2.jpg  used on input
+ line 86.
+(pdftex.def)             Requested size: 260.17465pt x 146.33932pt.
+<figuras/0.199m_radius.png, id=1371, 498.663pt x 498.663pt>
+File: figuras/0.199m_radius.png Graphic file (type png)
+<use figuras/0.199m_radius.png>
+Package pdftex.def Info: figuras/0.199m_radius.png  used on input line 93.
+(pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
+<figuras/0.199m_radius_XY.png, id=1372, 509.5035pt x 495.0495pt>
+File: figuras/0.199m_radius_XY.png Graphic file (type png)
+<use figuras/0.199m_radius_XY.png>
+Package pdftex.def Info: figuras/0.199m_radius_XY.png  used on input line 100.
+(pdftex.def)             Requested size: 161.95631pt x 157.36153pt.
+ [79 <./figuras/disposicion_lidar7.jpeg> <./figuras/try_9cm_r.png> <./figuras/t
+ry_9cm_r_car.png>]
+<figuras/disposicion_lidar_var_dist3.jpg, id=1379, 4111.36pt x 2312.64pt>
+File: figuras/disposicion_lidar_var_dist3.jpg Graphic file (type jpg)
+<use figuras/disposicion_lidar_var_dist3.jpg>
+Package pdftex.def Info: figuras/disposicion_lidar_var_dist3.jpg  used on input
+ line 112.
+(pdftex.def)             Requested size: 260.17465pt x 146.33932pt.
+<figuras/0.249m_radius.png, id=1380, 498.663pt x 498.663pt>
+File: figuras/0.249m_radius.png Graphic file (type png)
+<use figuras/0.249m_radius.png>
+Package pdftex.def Info: figuras/0.249m_radius.png  used on input line 119.
+(pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
+<figuras/0.249m_radius_XY.png, id=1381, 509.5035pt x 495.0495pt>
+File: figuras/0.249m_radius_XY.png Graphic file (type png)
+<use figuras/0.249m_radius_XY.png>
+Package pdftex.def Info: figuras/0.249m_radius_XY.png  used on input line 126.
+(pdftex.def)             Requested size: 161.95631pt x 157.36153pt.
+ [80 <./figuras/disposicion_lidar_var_dist2.jpg> <./figuras/0.199m_radius.png> 
+<./figuras/0.199m_radius_XY.png>]
+<figuras/disposicion_lidar_var_dist4.jpg, id=1388, 3807.22375pt x 2312.64pt>
+File: figuras/disposicion_lidar_var_dist4.jpg Graphic file (type jpg)
+<use figuras/disposicion_lidar_var_dist4.jpg>
+Package pdftex.def Info: figuras/disposicion_lidar_var_dist4.jpg  used on input
+ line 138.
+(pdftex.def)             Requested size: 260.17465pt x 158.01965pt.
+<figuras/0.299m_radius.png, id=1389, 498.663pt x 498.663pt>
+File: figuras/0.299m_radius.png Graphic file (type png)
+<use figuras/0.299m_radius.png>
+Package pdftex.def Info: figuras/0.299m_radius.png  used on input line 145.
+(pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
+<figuras/0.299m_radius_XY.png, id=1390, 509.5035pt x 495.0495pt>
+File: figuras/0.299m_radius_XY.png Graphic file (type png)
+<use figuras/0.299m_radius_XY.png>
+Package pdftex.def Info: figuras/0.299m_radius_XY.png  used on input line 152.
+(pdftex.def)             Requested size: 161.95631pt x 157.36153pt.
+ [81 <./figuras/disposicion_lidar_var_dist3.jpg> <./figuras/0.249m_radius.png> 
+<./figuras/0.249m_radius_XY.png>]
+<figuras/disposicion_lidar_var_dist5.jpg, id=1397, 3839.34375pt x 2312.64pt>
+File: figuras/disposicion_lidar_var_dist5.jpg Graphic file (type jpg)
+<use figuras/disposicion_lidar_var_dist5.jpg>
+Package pdftex.def Info: figuras/disposicion_lidar_var_dist5.jpg  used on input
+ line 164.
+(pdftex.def)             Requested size: 260.17465pt x 156.714pt.
+<figuras/0.349m_radius.png, id=1398, 498.663pt x 498.663pt>
+File: figuras/0.349m_radius.png Graphic file (type png)
+<use figuras/0.349m_radius.png>
+Package pdftex.def Info: figuras/0.349m_radius.png  used on input line 171.
+(pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
+<figuras/0.349m_radius_XY.png, id=1399, 509.5035pt x 495.0495pt>
+File: figuras/0.349m_radius_XY.png Graphic file (type png)
+<use figuras/0.349m_radius_XY.png>
+Package pdftex.def Info: figuras/0.349m_radius_XY.png  used on input line 178.
+(pdftex.def)             Requested size: 161.95631pt x 157.36153pt.
+ [82 <./figuras/disposicion_lidar_var_dist4.jpg> <./figuras/0.299m_radius.png> 
+<./figuras/0.299m_radius_XY.png>]
+<figuras/disposicion_lidar_var_dist6.jpg, id=1406, 3858.415pt x 2312.64pt>
+File: figuras/disposicion_lidar_var_dist6.jpg Graphic file (type jpg)
+<use figuras/disposicion_lidar_var_dist6.jpg>
+Package pdftex.def Info: figuras/disposicion_lidar_var_dist6.jpg  used on input
+ line 190.
+(pdftex.def)             Requested size: 260.17465pt x 155.93767pt.
+<figuras/0.399m_radius.png, id=1407, 498.663pt x 498.663pt>
+File: figuras/0.399m_radius.png Graphic file (type png)
+<use figuras/0.399m_radius.png>
+Package pdftex.def Info: figuras/0.399m_radius.png  used on input line 197.
+(pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
+<figuras/0.399m_radius_XY.png, id=1408, 509.5035pt x 495.0495pt>
+File: figuras/0.399m_radius_XY.png Graphic file (type png)
+<use figuras/0.399m_radius_XY.png>
+Package pdftex.def Info: figuras/0.399m_radius_XY.png  used on input line 204.
+(pdftex.def)             Requested size: 161.95631pt x 157.36153pt.
+
+[83 <./figuras/disposicion_lidar_var_dist5.jpg> <./figuras/0.349m_radius.png> <
+./figuras/0.349m_radius_XY.png>]
+<figuras/disposicion_lidar_var_dist7.jpg, id=1416, 2786.41pt x 2170.1075pt>
+File: figuras/disposicion_lidar_var_dist7.jpg Graphic file (type jpg)
+<use figuras/disposicion_lidar_var_dist7.jpg>
+Package pdftex.def Info: figuras/disposicion_lidar_var_dist7.jpg  used on input
+ line 216.
+(pdftex.def)             Requested size: 260.17465pt x 202.61925pt.
+<figuras/0.449m_radius.png, id=1417, 498.663pt x 498.663pt>
+File: figuras/0.449m_radius.png Graphic file (type png)
+<use figuras/0.449m_radius.png>
+Package pdftex.def Info: figuras/0.449m_radius.png  used on input line 223.
+(pdftex.def)             Requested size: 156.10272pt x 156.09811pt.
+<figuras/0.449m_radius_XY.png, id=1418, 509.5035pt x 495.0495pt>
+File: figuras/0.449m_radius_XY.png Graphic file (type png)
+<use figuras/0.449m_radius_XY.png>
+Package pdftex.def Info: figuras/0.449m_radius_XY.png  used on input line 230.
+(pdftex.def)             Requested size: 161.95631pt x 157.36153pt.
+ [84 <./figuras/disposicion_lidar_var_dist6.jpg> <./figuras/0.399m_radius.png> 
+<./figuras/0.399m_radius_XY.png>]
+<figuras/histograma_dists1.png, id=1425, 722.7pt x 433.62pt>
+File: figuras/histograma_dists1.png Graphic file (type png)
+<use figuras/histograma_dists1.png>
+Package pdftex.def Info: figuras/histograma_dists1.png  used on input line 240.
+
+(pdftex.def)             Requested size: 433.62001pt x 260.17401pt.
+ [85 <./figuras/disposicion_lidar_var_dist7.jpg> <./figuras/0.449m_radius.png> 
+<./figuras/0.449m_radius_XY.png>]
+<figuras/histograma_dists2.png, id=1432, 722.7pt x 433.62pt>
+File: figuras/histograma_dists2.png Graphic file (type png)
+<use figuras/histograma_dists2.png>
+Package pdftex.def Info: figuras/histograma_dists2.png  used on input line 247.
+
+(pdftex.def)             Requested size: 433.62001pt x 260.17401pt.
+<figuras/histograma_dists3.png, id=1433, 722.7pt x 433.62pt>
+File: figuras/histograma_dists3.png Graphic file (type png)
+<use figuras/histograma_dists3.png>
+Package pdftex.def Info: figuras/histograma_dists3.png  used on input line 254.
+
+(pdftex.def)             Requested size: 433.62001pt x 260.17401pt.
+ [86 <./figuras/histograma_dists1.png> <./figuras/histograma_dists2.png>]
+<figuras/histograma_dists4.png, id=1440, 722.7pt x 433.62pt>
+File: figuras/histograma_dists4.png Graphic file (type png)
+<use figuras/histograma_dists4.png>
+Package pdftex.def Info: figuras/histograma_dists4.png  used on input line 261.
+
+(pdftex.def)             Requested size: 433.62001pt x 260.17401pt.
+<figuras/histograma_dists5.png, id=1441, 722.7pt x 433.62pt>
+File: figuras/histograma_dists5.png Graphic file (type png)
+<use figuras/histograma_dists5.png>
+Package pdftex.def Info: figuras/histograma_dists5.png  used on input line 268.
+
+(pdftex.def)             Requested size: 433.62001pt x 260.17401pt.
+ [87 <./figuras/histograma_dists3.png> <./figuras/histograma_dists4.png>]
+<figuras/histograma_dists6.png, id=1448, 722.7pt x 433.62pt>
+File: figuras/histograma_dists6.png Graphic file (type png)
+<use figuras/histograma_dists6.png>
+Package pdftex.def Info: figuras/histograma_dists6.png  used on input line 275.
+
+(pdftex.def)             Requested size: 433.62001pt x 260.17401pt.
+<figuras/histograma_dists7.png, id=1449, 722.7pt x 433.62pt>
+File: figuras/histograma_dists7.png Graphic file (type png)
+<use figuras/histograma_dists7.png>
+Package pdftex.def Info: figuras/histograma_dists7.png  used on input line 282.
+
+(pdftex.def)             Requested size: 433.62001pt x 260.17401pt.
+ [88 <./figuras/histograma_dists5.png> <./figuras/histograma_dists6.png>]
+<figuras/histograma_dists8.png, id=1456, 722.7pt x 433.62pt>
+File: figuras/histograma_dists8.png Graphic file (type png)
+<use figuras/histograma_dists8.png>
+Package pdftex.def Info: figuras/histograma_dists8.png  used on input line 289.
+
+(pdftex.def)             Requested size: 433.62001pt x 260.17401pt.
+ [89 <./figuras/histograma_dists7.png> <./figuras/histograma_dists8.png>]
+[90] [91] [92]) [93]
 No file z-main.gls.
-[80] (z-main.aux
+[94] (z-main.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -1935,55 +2097,56 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `z-main.out' has not changed.
-(rerunfilecheck)             Checksum: 06E81A8925B2A50541C9013D005D3279;14783.
+(rerunfilecheck)             Checksum: 1C16F716D64AB7890806AD136F43D65B;15340.
 Package logreq Info: Writing requests to 'z-main.run.xml'.
 \openout1 = `z-main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31087 strings out of 474423
- 576830 string characters out of 5741719
- 1953496 words of memory out of 5000000
- 52651 multiletter control sequences out of 15000+600000
- 579985 words of font info for 84 fonts, out of 8000000 for 9000
+ 31453 strings out of 474423
+ 587805 string characters out of 5741719
+ 1955496 words of memory out of 5000000
+ 52977 multiletter control sequences out of 15000+600000
+ 580686 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,20n,99p,2343b,2758s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+ <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi
 1095.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm0800.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecti1000.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbi1200.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\jrcer\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.pk> <C:\Users\jrcer\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jrcer\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2488.pk> <C:\Users\jrcer\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\
-jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1095.pk> <C:\
-Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk
-> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1
+0\ectt1095.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecrm0800.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecti1000.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\jrcer\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\jrcer\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.pk> <C:\Users\jrcer\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jrcer\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2488.pk> <C:\Users\
+jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\
+Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1095.pk
+> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1
 095.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
-\ecrm1095.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
-dpi600\ecss1440.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
-en/ec/dpi600\ecrm1200.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/
-jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\font
-s/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\jrcer\AppData\Local\MiKTe
-X\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk><C:/Users/jrcer/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jrcer/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jr
-cer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/
-Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.
-pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr10.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on z-main.pdf (92 pages, 17995076 bytes).
+\eccc1095.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecrm1095.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecss1440.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/ljfour/
+jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jrcer\AppData\Local\MiKTeX\font
+s/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jrcer\AppData\Local\MiKTe
+X\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\jrcer\AppData\Local
+\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk><C:/Users/jrcer/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jrcer
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Us
+ers/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pf
+b><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/jrcer/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jrcer/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on z-main.pdf (108 pages, 55675806 bytes).
 PDF statistics:
- 2209 PDF objects out of 2487 (max. 8388607)
- 283 named destinations out of 1000 (max. 500000)
- 928 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2412 PDF objects out of 2487 (max. 8388607)
+ 322 named destinations out of 1000 (max. 500000)
+ 1071 words of extra memory for PDF output out of 10000 (max. 10000000)
 

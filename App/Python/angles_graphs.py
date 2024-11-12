@@ -1,4 +1,26 @@
 #%%
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Datos de la tabla
+radio_real = np.array([499, 449, 399, 349, 299, 249, 199, 149])
+varianza_muestral = np.array([-0.7850,-0.4306, -0.6047, -0.9656, -0.9657, 0.1742, 0.9895, -0.0254])
+
+
+# Graficar
+plt.figure(figsize=(10, 6))
+plt.scatter(radio_real, varianza_muestral, color='blue', label='Datos observados')
+
+# Etiquetas y título
+plt.xlabel("Radio real (mm)")
+plt.ylabel("Sesgo ($\it{bias}$) promedial (mm)")
+plt.title("Relación entre el radio real y el sesgo promedial")
+plt.legend()
+plt.grid(True)
+plt.show()
+
+
 #%%
 # import pandas as pd
 # import matplotlib.pyplot as plt
@@ -718,6 +740,7 @@
 
 # # %%
 ##-------------------------------------R280----------------------------------------------------##
+'''
 #%%
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -951,3 +974,4 @@ axs8.set_xlabel(f'Deltas del ángulo inicial medido')
 axs8.set_ylabel('Frecuencia')
 
 plt.show()
+'''

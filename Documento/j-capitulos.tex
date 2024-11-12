@@ -641,7 +641,7 @@ Ahora bien, para el desarrollo de la aplicación, se empleó CustomTkinter, una 
 		\item Datos filtrados de ángulos y distancias. 
 	\end{itemize}
 	Cada botón permite al usuario elegir la ubicación donde se guardará la información, simplificando así la organización y el análisis de los datos recopilados.
-	\item Panel de pruebas estadísticas: Sección en la cual se muestran los análisis estadísticos de las aristas capturadas por el sensor. Esta sección solamente aplica para reconstrucciones de entornos cuadriláteros.
+	\item Panel de pruebas estadísticas: Sección en la cual se muestran los análisis estadísticos de las mediciones radiales capturadas por el sensor. Esta sección solamente aplica para reconstrucciones de entornos circulares.
 \end{itemize}
 
 \chapter{Caracterización del LiDAR FHL-LD20}
@@ -865,7 +865,7 @@ Esta ecuación describe cómo el sensor mide la distancia $r$ y el ángulo $\bet
 Para estimar las varianzas $\sigma_r^2$ y $\sigma_\beta^2$ se llevaron a cabo dos experimentos con el sensor LIDAR FHL-LD20.  El primero se centró en evaluar la varianza asociada a las mediciones de distancia, mientras que el segundo se enfocó en analizar las mediciones angulares. Ambos experimentos fueron diseñados para proporcionar una comprensión más profunda del rendimiento del sensor y su precisión en condiciones de operación.
 
 \subsection{Estimación de la varianza asociada a las mediciones de distancia del sensor}
-Para el primer experimento, se diseñaron ocho círculos concéntricos con radios de 150, 200, 250, 300, 350, 400, 450 y 500 mm, todos con una altura de 70 mm. Estos círculos fueron fabricados en MDF y recubiertos con una capa uniforme de cartón de 1 mm de grosor. Además, se imprimió una cuadrícula de 1.2$\times$1.2 metros, dividida en intervalos de un centímetro. Esta cuadrícula incluía una serie de círculos concéntricos con los radios mencionados y líneas diagonales que cruzaban su centro, creando un sistema de referencia radial. En conjunto, este diseño ofreció un entorno ideal para analizar las mediciones en coordenadas polares y cartesianas.
+Para el primer experimento, se diseñaron ocho círculos concéntricos con radios de 150, 200, 250, 300, 350, 400, 450 y 500 mm, todos con una altura de 70 mm. Estos círculos fueron fabricados en MDF y recubiertos con una capa uniforme de cartón de 1 mm de grosor. Además, se imprimió una cuadrícula de 1.2$\times$1.2 metros, dividida en intervalos de un centímetro. Esta cuadrícula incluía una serie de círculos concéntricos con los radios mencionados y líneas diagonales que cruzaban su centro, creando un sistema de referencia radial. En conjunto, este diseño ofreció un entorno controlado para analizar las mediciones en coordenadas polares y cartesianas.
 
 \begin{figure}[H]
 	\centering
@@ -906,14 +906,14 @@ Para el primer experimento, se diseñaron ocho círculos concéntricos con radio
 		\centering
 		\includegraphics[width=0.8\linewidth]{0.499m_radius.png}
 		\caption{Reconstrucción en coordenadas polares de entorno circular: 499 mm de radio}
-		\label{fig:449m_radius_xy}
+		\label{fig:499m_radius_xy}
 	\end{subfigure}
 	\hspace{1em}
 	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\includegraphics[width=0.83\linewidth]{0.499m_radius_XY.png}
 		\caption{Reconstrucción en coordenadas cartesianas de entorno circular: 499 mm de radio}
-		\label{fig:449m_radius}
+		\label{fig:499m_radius}
 	\end{subfigure}
 	\caption{Reconstrucción del entorno circular de 499 mm de radio con 180 revoluciones completas capturadas.}
 	\label{fig:disposicion_lidar_var_dist8}
@@ -921,7 +921,7 @@ Para el primer experimento, se diseñaron ocho círculos concéntricos con radio
 
 Como se muestra en las Figuras \ref{fig:disposicion_lidar_var_dist1} y \ref{fig:disposicion_lidar_var_dist8}, el sensor se posicionó en el centro de la cuadrícula y se alineó concéntricamente uno de los círculos fabricados, utilizando las líneas radiales como guía. Con esta disposición se esperaba que el sensor registrara mediciones uniformes a lo largo de todo el perímetro del círculo. Después de capturar un total de 180 revoluciones, equivalente a 129,600 puntos de medición, y repetir diez veces las mediciones, fue posible establecer el promedio, varianza muestral y sesgo asociados con las distancias medidas por el sensor para cada círculo. El análisis de los datos obtenidos con los ocho círculos permitió evaluar la la precisión del sensor a distintas distancias, proporcionando una base sólida para caracterizar la variabilidad en las mediciones y determinar la varianza asociada en cada caso.
 
-Los resultados del experimento se presentan en el Cuadro \ref{cuadro:stats}, donde se muestran las varianzas calculadas para cada uno de los ocho radios evaluados. En todos los casos, se verificó que las mediciones se ajustaran a una distribución gaussiana normal (ver Anexos), lo que respalda la validez del modelo de ruido asumido para las observaciones del sensor (Sección \ref{sec:estimacion}). Además, se observó que, a medida que aumentaba la distancia de los radios, también se incrementaba la varianza en las mediciones, indicando una disminución gradual en la exactitud del sensor. Para caracterizar esta relación, se realizó un ajuste lineal de los datos, como se muestra en la Figura \ref{fig:varianza_tendencia}, lo que permitió describir la variación de la varianza en función de la distancia. Es importante señalar que el valor esperado para cada medición resultó ser 1 mm menor que el radio del círculo evaluado debido al grosor del recubrimiento de cartón. 
+Los resultados del experimento se presentan en el Cuadro \ref{cuadro:stats}, donde se muestran las varianzas calculadas para cada uno de los ocho radios evaluados. En todos los casos, se verificó que las mediciones se ajustaran a una distribución gaussiana normal (ver Anexos \ref{fig:histograma_dists1} a \ref{fig:histograma_dists2}), lo que respalda la validez del modelo de ruido asumido para las observaciones del sensor (Sección \ref{sec:estimacion}). Además, se observó que, a medida que aumentaba la distancia de los radios, también se incrementaba la varianza en las mediciones, indicando una disminución gradual en la exactitud del sensor. Para caracterizar esta relación, se realizó un ajuste lineal de los datos, como se muestra en la Figura \ref{fig:varianza_tendencia}, lo que permitió describir la variación de la varianza en función de la distancia. Es importante señalar que el valor esperado para cada medición resultó ser 1 mm menor que el radio del círculo evaluado debido al grosor del recubrimiento de cartón. 
 
 \begin{table}[H]
 	\centering
@@ -943,12 +943,12 @@ Los resultados del experimento se presentan en el Cuadro \ref{cuadro:stats}, don
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{varianza_tendencia.png}
+	\includegraphics[width=0.95\textwidth]{varianza_tendencia.png}
 	\caption{Ajuste lineal para la variación de la varianza en función de la distancia.}
 	\label{fig:varianza_tendencia}
 \end{figure}
 
-En la Figura \ref{fig:lecturas1}, se aprecia que para el primer círculo, con un radio real de 149 mm, la variabilidad de los puntos medidos fue relativamente baja, con una notable concentración de mediciones cercanas al valor esperado (149 mm). Sin embargo, al aumentar el radio medido, la dispersión de los puntos incrementó, reflejando una mayor variabilidad en las mediciones (ver Figura \ref{fig:lecturas2}). En cuanto al sesgo o \textit{bias}, la Figura \ref{fig:bias_tendencia} demuestra que no se identificó una tendencia clara, ya que este oscilaba entre aproximadamente -0.9657 mm y 0.9895 mm. Es importante destacar que la varianza muestral, promedio y sesgo reportados en el Cuadro \ref{cuadro:stats} representan los promedios obtenidos en las diez corridas realizadas, proporcionando así una estimación robusta de las mediciones en cada radio. Para una comprensión más detallada de los resultados, en los Anexos TALES se encuentran las estadísticas completas de cada corrida realizada.
+En la Figura \ref{fig:lecturas1}, se aprecia que para el primer círculo, con un radio real de 149 mm, la variabilidad de los puntos medidos fue relativamente baja, con una notable concentración de mediciones cercanas al valor esperado (149 mm). Sin embargo, al aumentar el radio medido, la dispersión de los puntos incrementó, reflejando una mayor variabilidad en las mediciones (ver Figura \ref{fig:lecturas2}). En cuanto al sesgo o \textit{bias}, la Figura \ref{fig:bias_tendencia} demuestra que no se identificó una tendencia clara, ya que este oscilaba entre aproximadamente -0.9657 mm y 0.9895 mm. Es importante destacar que la varianza muestral, promedio y sesgo reportados en el Cuadro \ref{cuadro:stats} representan los promedios obtenidos en las diez corridas realizadas, proporcionando así una estimación robusta de las mediciones en cada radio. Para una comprensión más detallada de los resultados, en los Anexos \ref{fig:tabla_dists1} a \ref{fig:tabla_dists8} se encuentran las estadísticas completas de cada corrida realizada.
 
 
 \begin{figure}[H]
@@ -973,7 +973,7 @@ En la Figura \ref{fig:lecturas1}, se aprecia que para el primer círculo, con un
 \end{figure}
 
 \subsection{Estimación de la varianza asociada a las mediciones de ángulos del sensor}
-En el segundo experimento, se utilizó el mismo conjunto de círculos fabricados para el primer experimento, añadiendo un noveno círculo de 70 mm de radio, diseñado para obstruir la visión del sensor en ciertas direcciones. Como se muestra en las Figuras TAL y TAL, el sensor se mantuvo estático en el centro de la cuadrícula, mientras se colocaban dos círculos: uno externo, correspondiente a los fabricados previamente, y el círculo de obstrucción visual, que incluía ligera abertura de 30°. Adicionalmente, se colocó un arco circular con un radio 20 mm menor que el del círculo externo, cubriendo un rango angular de 42° a 47°. Esta disposición permitió evaluar si el LiDAR era capaz de medir adecuadamente los ángulos según el arco establecido. 
+En el segundo experimento, se utilizó el mismo conjunto de círculos fabricados para el primer experimento, añadiendo un noveno círculo de 70 mm de radio, diseñado para obstruir la visión del sensor en ciertas direcciones. Como se muestra en las Figuras TAL y TAL, el sensor se mantuvo estático en el centro de la cuadrícula, mientras se colocaban dos círculos: uno externo, correspondiente a uno de los mencionados anteriormente, y el círculo de obstrucción visual, el cual incluía una ligera abertura de 30° aproximadamente. Junto a esto, se colocó un arco circular con un radio 20 mm menor que el del círculo externo, el cual abarcaba un rango angular delta de 5° ubicando de 42° a 47°. Esta disposición permitió evaluar si el LiDAR era capaz de medir adecuadamente los ángulos según el cambio en el arco establecido respecto al círculo externo.
 
 Para cada círculo externo, se realizaron diez corridas del experimento, generando un conjunto de datos para evaluar la precisión angular del sensor. Como se detalla en el Cuadro TAL, se observa cierta variabilidad respecto a los valores reales de inicio y final del arco (42° y 47°, respectivamente), lo que indica una variación sistemática en las mediciones angulares del sensor. Al analizar la distribución de las mediciones angulares, se determinó que los datos seguían una distribución normal (ver Anexos), lo cual hace inapropiado el uso de la varianza tradicional para representar la dispersión. En su lugar, en el Cuadro TAL se deja indicado la diferencia respecto a los valores teóricos.
 
