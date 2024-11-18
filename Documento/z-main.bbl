@@ -60,8 +60,8 @@
       \strng{authornamehash}{db67d03a15617382785a47ca21eb1ae5}
       \strng{authorfullhash}{0d01d269bca8d51c55a556cc686c0603}
       \strng{authorfullhashraw}{0d01d269bca8d51c55a556cc686c0603}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Symmetry}
@@ -554,8 +554,8 @@
       \strng{authornamehash}{13f19640bcd92d3071947dc036ef31e9}
       \strng{authorfullhash}{459c9a40a329d9b2367bfbc91d709c19}
       \strng{authorfullhashraw}{459c9a40a329d9b2367bfbc91d709c19}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Complex System Modeling and Simulation}
@@ -718,8 +718,8 @@
       \strng{editornamehash}{7a0501ee612acd4f44d0b782defcca7a}
       \strng{editorfullhash}{7a0501ee612acd4f44d0b782defcca7a}
       \strng{editorfullhashraw}{7a0501ee612acd4f44d0b782defcca7a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{edition}{Second Edition}
@@ -944,6 +944,100 @@
       \range{pages}{4}
       \verb{doi}
       \verb 10.1109/ICIMECE.2016.7910443
+      \endverb
+    \endentry
+    \entry{diffuse}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=c53902d1137aa55df591d21ed7574344}{%
+           family={Damodaran},
+           familyi={D\bibinitperiod},
+           given={Deeptha},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0a40df2cb5563cb685038efea2fffa23}{%
+           family={Mozaffari},
+           familyi={M\bibinitperiod},
+           given={Saeed},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b90267439fcbeae23bae8bd09f903d63}{%
+           family={Alirezaee},
+           familyi={A\bibinitperiod},
+           given={Shahpour},
+           giveni={S\bibinitperiod}}}%
+        {{hash=26dbcb58ced24dd52f72521702761c58}{%
+           family={Ahamed},
+           familyi={A\bibinitperiod},
+           given={Mohammed\bibnamedelima Jalal},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f05225de88e6f19c11a4fee02bd52a81}
+      \strng{fullhash}{f40902b18cd2fc605448acce7a9065d4}
+      \strng{fullhashraw}{f40902b18cd2fc605448acce7a9065d4}
+      \strng{bibnamehash}{f40902b18cd2fc605448acce7a9065d4}
+      \strng{authorbibnamehash}{f40902b18cd2fc605448acce7a9065d4}
+      \strng{authornamehash}{f05225de88e6f19c11a4fee02bd52a81}
+      \strng{authorfullhash}{f40902b18cd2fc605448acce7a9065d4}
+      \strng{authorfullhashraw}{f40902b18cd2fc605448acce7a9065d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{5}
+      \field{title}{Experimental Analysis of the Behavior of Mirror-like Objects in LiDAR-Based Robot Navigation}
+      \field{volume}{13}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.3390/app13052908
+      \endverb
+    \endentry
+    \entry{primitive}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=e61e034e370d4b84991dbc9aea61e9eb}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Shaobo},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f8ff1228cc4422c31e97a0f5e9dc2940}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Dong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=53eb89cbb2821676f7463d508f7f358f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ruisheng},
+           giveni={R\bibinitperiod}}}%
+        {{hash=099a58f50432fae0961d03bb2073f8ca}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ae71581f5a85206606419d77932d2df5}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xinchang},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{9818dc7b2485aaf367798c0ca9b5152a}
+      \strng{fullhash}{5e861e6951d0db0df1e83fc43a170c7d}
+      \strng{fullhashraw}{5e861e6951d0db0df1e83fc43a170c7d}
+      \strng{bibnamehash}{5e861e6951d0db0df1e83fc43a170c7d}
+      \strng{authorbibnamehash}{5e861e6951d0db0df1e83fc43a170c7d}
+      \strng{authornamehash}{9818dc7b2485aaf367798c0ca9b5152a}
+      \strng{authorfullhash}{5e861e6951d0db0df1e83fc43a170c7d}
+      \strng{authorfullhashraw}{5e861e6951d0db0df1e83fc43a170c7d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}
+      \field{title}{Geometric Primitives in LiDAR Point Clouds: A Review}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{pages}{685\bibrangedash 707}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1109/JSTARS.2020.2969119
       \endverb
     \endentry
   \enddatalist

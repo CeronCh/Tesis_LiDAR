@@ -1,10 +1,10 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{Prefacio}{\es@scroman {iii}}{section*.6}%
-\contentsline {chapter}{Lista de figuras}{\es@scroman {ix}}{section*.8}%
-\contentsline {chapter}{Lista de cuadros}{\es@scroman {xi}}{section*.9}%
-\contentsline {chapter}{Resumen}{\es@scroman {xii}}{section*.10}%
-\contentsline {chapter}{Abstract}{\es@scroman {xiii}}{section*.11}%
+\contentsline {chapter}{Lista de figuras}{\es@scroman {xi}}{section*.8}%
+\contentsline {chapter}{Lista de cuadros}{\es@scroman {xiii}}{section*.9}%
+\contentsline {chapter}{Resumen}{\es@scroman {xiv}}{section*.10}%
+\contentsline {chapter}{Abstract}{\es@scroman {xv}}{section*.11}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.12}%
 \contentsline {chapter}{\numberline {2}Antecedentes}{2}{chapter.13}%
 \contentsline {section}{\numberline {2.1}Generación de trayectorias y mapeo de entornos}{2}{section.14}%
@@ -56,23 +56,23 @@
 \contentsline {section}{\numberline {8.2}Lectura de datos}{39}{section.105}%
 \contentsline {subsection}{\numberline {8.2.1}Lectura e interpretación de datos mediante ESP32 y Matlab}{39}{subsection.106}%
 \contentsline {subsection}{\numberline {8.2.2}Lectura e interpretación de datos mediante ESP32 y Python}{45}{subsection.111}%
-\contentsline {chapter}{\numberline {9}Caracterización del LiDAR FHL-LD20}{48}{chapter.113}%
-\contentsline {section}{\numberline {9.1}Desarrollo de plataforma física para pruebas con el LiDAR FHL-LD20}{48}{section.114}%
-\contentsline {section}{\numberline {9.2}Depuración de mediciones nulas en el LiDAR FHL-LD20}{51}{section.120}%
-\contentsline {section}{\numberline {9.3}Rango de medición efectivo del LiDAR FHL-LD20}{53}{section.123}%
-\contentsline {subsection}{\numberline {9.3.1}Rango mínimo de medición}{54}{subsection.124}%
-\contentsline {subsection}{\numberline {9.3.2}Rango máximo de medición}{57}{subsection.128}%
-\contentsline {section}{\numberline {9.4}Estimación de las varianzas del sensor }{57}{section.129}%
-\contentsline {subsection}{\numberline {9.4.1}Estimación de la varianza asociada a las mediciones de distancia del sensor}{58}{subsection.133}%
-\contentsline {subsection}{\numberline {9.4.2}Estimación de la varianza asociada a las mediciones de ángulos del sensor}{62}{subsection.141}%
-\contentsline {section}{\numberline {9.5}Precisión del LiDAR FHL-LD20}{63}{section.142}%
-\contentsline {section}{\numberline {9.6}Detección de bordes y discontinuidades para el LiDAR FHL-LD20}{66}{section.145}%
-\contentsline {chapter}{\numberline {10}Calibración del LiDAR FHL-LD20}{68}{chapter.147}%
-\contentsline {section}{\numberline {10.1}Pruebas para calibrar el LiDAR FHL-LD20}{68}{section.148}%
-\contentsline {section}{\numberline {10.2}Compensación en las mediciones del LiDAR FHL-LD20}{69}{section.150}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{72}{chapter.154}%
-\contentsline {chapter}{\numberline {12}Recomendaciones}{73}{chapter.155}%
-\contentsline {chapter}{\numberline {13}Bibliograf\'{\i }a}{74}{chapter.157}%
-\contentsline {chapter}{\numberline {14}Anexos}{77}{chapter.158}%
-\contentsline {section}{\numberline {14.1}Pruebas de rango de medición mínimo}{78}{section.159}%
-\contentsline {section}{\numberline {14.2}Pruebas para la estimación de la varianza asociada a las mediciones de distancia del sensor}{81}{section.163}%
+\contentsline {chapter}{\numberline {9}Calibración del LiDAR FHL-LD20}{48}{chapter.113}%
+\contentsline {section}{\numberline {9.1}Desarrollo de plataforma física para pruebas y calibración del LiDAR FHL-LD20}{48}{section.114}%
+\contentsline {section}{\numberline {9.2}Calibración de las mediciones del LiDAR FHL-LD20}{51}{section.120}%
+\contentsline {section}{\numberline {9.3}Precisión del LiDAR FHL-LD20 después del proceso de calibración}{53}{section.124}%
+\contentsline {chapter}{\numberline {10}Caracterización del LiDAR FHL-LD20}{57}{chapter.127}%
+\contentsline {section}{\numberline {10.1}Depuración de mediciones nulas en el LiDAR FHL-LD20}{57}{section.128}%
+\contentsline {section}{\numberline {10.2}Rango de medición efectivo del LiDAR FHL-LD20}{60}{section.131}%
+\contentsline {subsection}{\numberline {10.2.1}Rango mínimo de medición}{60}{subsection.132}%
+\contentsline {section}{\numberline {10.3}Estimación de las varianzas del sensor }{64}{section.137}%
+\contentsline {subsection}{\numberline {10.3.1}Estimación de la varianza asociada a las mediciones de distancia del sensor}{64}{subsection.141}%
+\contentsline {subsection}{\numberline {10.3.2}Dispersión de las mediciones angulares del sensor}{69}{subsection.149}%
+\contentsline {chapter}{\numberline {11}Evaluación conceptual para la futura integración del LiDAR FHL-LD20 en agentes robóticos}{80}{chapter.169}%
+\contentsline {section}{\numberline {11.1}Montaje frontal del sensor FHL-LD20}{80}{section.170}%
+\contentsline {chapter}{\numberline {12}Conclusiones}{81}{chapter.171}%
+\contentsline {chapter}{\numberline {13}Recomendaciones}{82}{chapter.172}%
+\contentsline {chapter}{\numberline {14}Bibliograf\'{\i }a}{83}{chapter.174}%
+\contentsline {chapter}{\numberline {15}Anexos}{86}{chapter.175}%
+\contentsline {section}{\numberline {15.1}Pruebas de rango de medición mínimo}{87}{section.176}%
+\contentsline {section}{\numberline {15.2}Pruebas para la estimación de la varianza asociada a las mediciones de distancia del sensor}{89}{section.179}%
+\contentsline {section}{\numberline {15.3}Pruebas para la dispersión de las mediciones angulares del sensor}{106}{section.208}%

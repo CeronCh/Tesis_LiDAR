@@ -644,10 +644,10 @@ Ahora bien, para el desarrollo de la aplicación, se empleó CustomTkinter, una 
 	\item Panel de pruebas estadísticas: Sección en la cual se muestran los análisis estadísticos de las mediciones radiales capturadas por el sensor. Esta sección solamente aplica para reconstrucciones de entornos circulares.
 \end{itemize}
 
-\chapter{Caracterización del LiDAR FHL-LD20}
-En este capítulo se presenta la caracterización del sensor LiDAR FHL-LD20, un proceso que permite evaluar y modelar con precisión la confiabilidad de sus mediciones en condiciones reales de operación. Este análisis tiene como objetivo estudiar las variaciones y el ruido presente en las mediciones de distancia y ángulo proporcionadas por el sensor. La caracterización permite obtener una compresión detallada de los parámetros de incertidumbre del LiDAR, lo que facilita su integración en algoritmos de percepción y navegación autónoma, como el filtro de Kalman extendido (EKF). Este proceso es fundamental para validar las especificaciones proporcionadas por el fabricante, que pueden no reflejar el rendimiento en el entorno real de uso. Además, la caracterización permite adaptar el sensor a las condiciones específicas de la aplicación, identificar limitaciones, y optimizar su configuración para maximizar su rendimiento en la implementación final.
+\chapter{Calibración del LiDAR FHL-LD20}
+En este capítulo se describe la calibración del sensor LiDAR FHL-LD20, un proceso para corregir desviaciones sistemáticas en las lecturas, derivadas de factores inherentes del sensor, permitiendo que las mediciones reflejen con mayor fidelidad las dimensiones reales del entorno.  La calibración no solo minimiza discrepancias en distancia y ángulo, aspectos esenciales en aplicaciones como la navegación robótica y el mapeo, sino que también establece criterios de evaluación claros y parámetros clave para mejorar el procesamiento de datos. Este proceso resulta fundamental para garantizar la precisión y confiabilidad de las mediciones, alineándolas con un estándar o referencia conocida. Al combinarse con la caracterización del sensor, este procedimiento sienta las bases para un desempeño más robusto en filtros y algoritmos avanzados, optimizando la calidad de las mediciones y su interpretación.
 
-\section{Desarrollo de plataforma física para pruebas con el LiDAR FHL-LD20}
+\section{Desarrollo de plataforma física para pruebas y calibración del LiDAR FHL-LD20}
 La plataforma para pruebas preliminares se diseñó utilizando el software de Autodesk Inventor 2024. La estructura consistía en una base cuadrada de 400$\times$400 mm sobre la cual se montaban cuatro paredes de 70 mm de altura de dos clases. Como se muestra en la Figura \ref{fig:pared_ranura}, la primera clase de pared presentaba divisiones escalonadas cada 10 mm, lo que permitía sujetar otras paredes y brindar modularidad a la plataforma. Esta pared también contaba con dos ranuras: una para deslizar y ajustar su posición sobre la plataforma, y otra para facilitar el paso de los cables de conexión del sensor. La segunda, en cambio, era una pieza sin divisiones (ver Figura \ref{fig:pared_normal}), diseñada para proporcionar soporte estructural adicional y cerrar la plataforma.
 
 \begin{figure}[H]
@@ -703,6 +703,144 @@ Las referencias visuales en la cuadrícula y las paredes de la plataforma permit
 
 Para asegurar una detección eficiente y minimizar el ruido generado por componentes estructurales de los agentes robóticos donde se instalará el sensor, se definió un rango mínimo de operación de 15 cm. Considerando un robot móvil como el Pololu 3pi+, permitir que el sensor opere a distancias menores podría hacer que registre elementos de su propia estructura, afectando negativamente la precisión de las mediciones. Además, dado que es poco probable encontrar obstáculos relevantes a menos de 15 cm, este límite permite enfocar la detección en elementos que realmente impacten la navegación y mejoren la maniobrabilidad del robot.
 
+\section{Calibración de las mediciones del LiDAR FHL-LD20}
+\label{sec:calibracion}
+
+En la primera reconstrucción realizada (Figura \ref{primera_corrida}), se observaron deformaciones en las aristas de la caja, que no coincidían con los bordes rectos de la caja física. Estas deformaciones fueron causadas por la falta de corrección angular debida al desplazamiento físico del emisor/receptor del láser dentro de la carcasa. Este desplazamiento implica que el punto exacto desde donde se emite el láser y donde el sensor recoge las reflexiones está ligeramente descentrado con respecto al eje de rotación del sensor.
+
+Cuando el láser no se emite desde el centro del círculo ideal que describe el barrido del LiDAR, se produce un desfase que afecta la precisión angular. Sin embargo, este desplazamiento interno no afecta la distancia medida, ya que sigue siendo una medición directa entre el sensor y el objeto. La luz viaja y vuelve directamente, similar a cómo se usaría una regla para medir la distancia en línea recta. El problema radica en que, un desfase angular interno provoca que el punto aparezca en una ubicación incorrecta en el plano, es decir, más a la izquierda o derecha de su verdadera posición.
+
+El giro del sensor sobre un eje para medir diferentes ángulos genera inconsistencias cuando el emisor/receptor del láser está desplazado del centro de rotación. En este caso, los ángulos registrados no representan con precisión la posición real de los objetos en el entorno. Para abordar este error, la documentación del fabricante sugiere realizar una corrección basada en el código fuente proporcionado \cite{youyeetoo_tech_ld20_nodate}. En este proceso, se utilizan dos valores ajustados:  ``x\_val'' y ``y\_val'', que incorporan los desplazamientos físicos del emisor/receptor en los ejes X y Y. Estos valores no representan las coordenadas cartesianas de los puntos medidos, sino que funcionan como parámetros de ajuste para calcular y corregir el error angular causado por el desfase interno del sensor.
+
+\begin{center}
+	\begin{equation}
+		\label{eq:valor_ajustado_x}
+		\begin{array}{c}
+			x\_val = distancia\_radial + x\_offset \\
+			\text{donde:} \\
+			x\_offset = 5.9
+		\end{array}
+	\end{equation}
+\end{center}
+
+\begin{center}
+	\begin{equation}
+		\label{eq:valor_ajustado_y}
+		\begin{array}{c}
+			x\_val = distancia\_radial \times y\_factor + y\_offset \\
+			\text{donde:} \\
+			y\_offset = -18.975571 \\
+			y\_factor = 0.11923
+		\end{array}
+	\end{equation}
+\end{center}
+
+En la Ecuación \ref{eq:valor_ajustado_y}, el valor ajustado ``y\_val'' utiliza una constante  ``y\_factor'' de 0.11923. Aunque la documentación no especifica la razón exacta de este valor, se puede inferir que su propósito era corregir la proyección angular de las mediciones. Probablemente compensando una inclinación natural del sensor o representando un ajuste empírico destinado a mejorar la precisión de las mediciones. A partir de los valores ajustados, se calcula un ángulo de corrección usando la función arcotangente de la relación ``y\_val'' sobre ``x\_val''. Este ángulo de corrección refleja cuánto debe sumarse o restarse al ángulo original para compensar el desplazamiento interno del sensor. 
+
+Si el sistema utiliza coordenadas en sentido antihorario, el angulo se invierte (restándole 360 grados) y luego se suma el ángulo de corrección para obtener el valor final. En caso contrario, el ángulo de corrección se resta directamente del ángulo original. La Figura \ref{fig: comparación_con_sin_corre}, muestra la disposición del sensor dentro de la caja, junto con una comparación de la reconstrucción visual obtenida a partir de tres revoluciones completas capturadas, utilizando el ángulo sin y con corrección.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.6\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{disposicion_lidar2.jpeg}
+		\caption{Disposición del sensor FHL-LD20 dentro de la caja}
+		\label{disposicion_lidar2}
+		\vspace{1em}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{lectura_sin_corre.png}
+		\caption{Reconstrucción de tres revoluciones completas capturadas sin ángulo de corrección}
+		\label{lectura_sin_corre}
+	\end{subfigure}
+	\hspace{1em}
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{lectura_con_corre.png}
+		\caption{Reconstrucción de tres revoluciones completas capturadas con ángulo de corrección}
+		\label{lectura_con_corre}
+	\end{subfigure}
+	\caption{Comparación de la reconstrucción con y sin ángulo de corrección: tres revoluciones completas capturadas.}
+	\label{fig: comparación_con_sin_corre}
+\end{figure}
+
+\section{Precisión del LiDAR FHL-LD20 después del proceso de calibración}
+Para verificar la calibración del sensor, se colocó en el centro de la plataforma utilizando las brújulas incluidas en el soporte para asegurar su alineación. Una vez posicionado, se realizó una captura de tres revoluciones completas y se compararon los valores medidos de las aristas con los valores nominales esperados. Se realizó un análisis de la reconstrucción obtenida empleando como escenario la plataforma de pruebas preliminares. Este análisis incluyó la determinación de regresiones lineales en las aristas detectadas y el cálculo de diversas métricas para medir la fidelidad de las mediciones realizadas por el sensor. El proceso para evaluar la precisión del sensor para una caja de 400 $\times$ 400 mm se detalla a continuación.
+
+En primer lugar, se aplicó un filtro para seleccionar los puntos más cercanos a las aristas esperadas, utilizando un intervalo de tolerancia de $\pm$ 5 mm.  Luego, se excluyó una franja de 8 mm alrededor de los bordes de la caja para minimizar distorsiones relacionadas con el efecto de las esquinas, donde el ángulo de incidencia del haz sobre la superficie dificulta la detección precisa de la geometría. Estas áreas generan reflexiones difusas que alteran las mediciones del sensor (ver Sección \ref{mediciones_angulares}).  Tras el filtrado, se procedió a obtener la regresión lineal para cada conjunto de puntos que definía una arista de la caja reconstruida. Como se muestra en las Figuras \ref{fig: reconstruccion_analisis_horizontal_1}, las aristas horizontales se ajustaron los valores del eje Y en función de los del eje X, mientras que para las aristas verticales se invirtió esta relación, ajustando los valores del eje X en función de los del eje Y (ver Figura \ref{fig: reconstruccion_analisis_vertical_1}). Este procedimiento evitó pendientes tendientes a infinito en las aristas verticales, generando pendientes cercanas a cero que facilitan su interpretación. De este modo, se logró una representación más clara y consistente de las características geométricas de la caja reconstruida.
+
+A partir de los puntos filtrados y las regresiones obtenidas, se calcularon las siguientes métricas para cada arista:
+\begin{itemize}
+	\item Ecuación de la recta: Pendiente e intercepto obtenidos a partir del ajuste lineal.
+	\item Intervalos de confianza (IC): Para la pendiente e intercepto, se calcularon intervalos de confianza del 95\%, proporcionando una medida de la incertidumbre en la estimación de los parámetros de la recta.
+	\item Diferencia promedio. Media de las diferencias entre los puntos detectados y el valor real esperado, proporcionando una medida del error sistemático del sensor.
+	\item Medición máxima y mínima: Los valores extremos detectados en cada conjunto de puntos que indican la variabilidad en las mediciones.
+	\item Rango: Diferencia entre el valor máximo y mínimo, lo que refleja la dispersión de las mediciones.
+\end{itemize}
+
+Para evaluar la rectitud de las aristas, se analizaron las pendientes obtenidas a partir del ajuste lineal. Los valores obtenidos muestran desviaciones mínimas respecto a la horizontalidad o verticalidad ideal, evidenciando una inclinación prácticamente despreciable. Por ejemplo, la pendiente máxima observada para las aristas horizontales fue de 0.0073 (ver Figura \ref{analisis_precision_1_3}), lo que corresponde a un ángulo de inclinación aproximado de 0.42° respecto al eje horizontal, mientras que la máxima para las aristas verticales fue de 0.0077, con un ángulo de inclinación de 0.44° respecto al eje vertical (ver Figura \ref{analisis_precision_1_4}). Estas inclinaciones son insignificantes en comparación con la escala de la plataforma (400 $\times$ 400 mm) y se encuentran dentro de los márgenes atribuibles a errores en las herramientas de medición, así como a ligeras imprecisiones experimentales durante la orientación del sensor.
+
+Los intervalos de confianza calculados para estas pendientes presentan rangos estrechos, reflejando una alta consistencia en las mediciones y una baja variabilidad entre los puntos analizados. Las magnitudes de las pendientes, todas cercanas a cero, corroboran que las aristas reconstruidas se aproximan con gran precisión a la geometría ideal de líneas rectas. Estos resultados demuestran que el sistema es capaz de capturar la rectitud esperada con un nivel de precisión altamente satisfactorio.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=1.5\linewidth]{analisis_precision_1_1.png}
+		\caption{Análisis de arista horizontal superior}
+		\label{analisis_precision_1_1}
+	\end{subfigure}
+	\hspace{1em}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=1.5\linewidth]{analisis_precision_1_2.png}
+		\caption{Análisis de arista horizontal inferior}
+		\label{analisis_precision_1_2}
+	\end{subfigure}
+	\caption{Análisis de la reconstrucción realizada para las aristas horizontales de una caja de 400$\times$400 mm: tres revoluciones completas capturadas.}
+	\label{fig: reconstruccion_analisis_horizontal_1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width=1.2\linewidth]{analisis_precision_1_3.png}
+		\caption{Análisis de arista vertical derecha}
+		\label{analisis_precision_1_3}
+	\end{subfigure}
+	\hspace{1em}
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width=1.2\linewidth]{analisis_precision_1_4.png}
+		\caption{Análisis de arista vertical izquierda}
+		\label{analisis_precision_1_4}
+	\end{subfigure}
+	\caption{Análisis de la reconstrucción realizada para las aristas verticales de una caja de 400$\times$400 mm: tres revoluciones completas capturadas.}
+	\label{fig: reconstruccion_analisis_vertical_1}
+\end{figure}
+
+El intercepto calculado resulta útil para evaluar el alineamiento general del sensor con respecto a las posiciones esperadas. En todos los casos, se observan ligeras desviaciones en el intercepto que oscilaban entre 0.3959 mm y 2.4565 mm con respecto a las dimensiones esperadas de $\pm$ 200 mm, lo cual es relativamente bajo. El análisis de los intervalos de confianza de la pendiente y el intercepto proporciona una medida de la fiabilidad de estos parámetros. Al mostrar rangos estrechos, se demuestra una fuerte consistencia en las mediciones, lo cual refuerza la confiabilidad de las regresiones lineales obtenidas. 
+
+El rango de las mediciones, que varió entre 3.8049 mm y 4.4322 mm para las diferentes aristas, refleja una dispersión controlada. La diferencia promedio entre las mediciones registradas y el valor real esperado, inferior a 3 mm, confirma que la dispersión de las mediciones se encuentra dentro de los límites de precisión indicados en la Sección \ref{var_dist}. En resumen, las métricas analizadas demuestran que el sensor presenta una buena precisión general. A pesar que se observen pequeñas desviaciones, los errores están por debajo de los 5 mm, lo cual es aceptable para la mayoría de las aplicaciones, en especial para navegación autónoma.
+
+En la Sección \ref{caracterizacion} se detallan pruebas adicionales que complementan el proceso de calibración, proporcionando información clave para el posprocesamiento de los datos. Estas pruebas permiten analizar en mayor profundidad la precisión y consistencia del sensor en diferentes escenarios, lo que resulta esencial para su correcta calibración posprocesamiento. A partir de los resultados descritos en los párrafos anteriores y de las pruebas realizadas en la siguiente sección, se definieron los criterios de evaluación para la calibración del sensor:
+
+\begin{itemize}
+	\item Exactitud al reconstruir las dimensiones de objetos calibrados (escenarios circulares o plataforma de pruebas): Los valores reconstruidos deben coincidir con las dimensiones nominales de referencia, con desviaciones menores a $\pm$ 5 mm.
+	\item Diferencia entre la distancia medida y la distancia real: El error promedio debe mantenerse por debajo de 3 mm, conforme a los límites de precisión indicados en la Sección \ref{caracterizacion}.
+	\item Variabilidad en las mediciones realizadas en condiciones idénticas: La dispersión debe ser mínima, con un rango de variabilidad inferior a $\pm$ 5 mm en mediciones repetidas en las mismas condiciones.
+	\item Consistencia de las pendientes en las aristas reconstruidas: Para el caso de escenarios cuadrados/rectangulares, al centrar correctamente el LiDAR utilizando su soporte, las pendientes obtenidas de las regresiones deben ser cercanas a cero, reflejando la rectitud esperada de la geometría.
+	\item Análisis de la dispersión angular en puntos de transición geométrica: Los valores mínimos, máximos y promedio de las mediciones angulares deben alinearse con los valores teóricos esperados, con una variabilidad inferior a $\pm$ 3° (ver Sección\ref{mediciones_angulares}).
+\end{itemize}
+
+Estos criterios resultan relevantes para evaluar la capacidad del sensor en escenarios que abarcan tanto geometrías simples como aquellas con transiciones abruptas. Cabe señalar que la variabilidad en las mediciones indicadas en los criterios, con márgenes de ±3 mm, ±5 mm o ±3°, son prácticamente despreciables en la aplicación de navegación autónoma dentro de un espacio de trabajo como lo puede ser el Robotat (4.8$\times$3.8 m) o en el rango mínimo de medición establecido de 15 cm (ver Sección \ref{minima_dist}). Sin embargo, se recomienda implementar técnicas de posprocesamiento, como el suavizado de datos o algoritmos de compensación geométrica, para mitigar las dispersiones en las mediciones. Dichas técnicas deben considerar la variabilidad identificada en esta y la siguiente sección, tanto para las mediciones radiales como para las angulares, permitiendo así compensar o mitigar dicha variabilidad y generando mejores aproximaciones del entorno.
+
+\chapter{Caracterización del LiDAR FHL-LD20}
+\label{caracterizacion}
+En este capítulo se describe la caracterización del sensor LiDAR FHL-LD20, un procedimiento diseñado para evaluar y modelar la confiabilidad de sus mediciones bajo condiciones reales de operación. Este análisis se centra en las variaciones presentes en las mediciones de distancia y ángulo registradas por el sensor. Proporciona, además, una comprensión detallada de los parámetros de incertidumbre asociados, los cuales facilitan su integración en algoritmos de percepción y navegación autónoma, como el filtro de Kalman extendido (EKF). Este proceso permite validar las especificaciones proporcionadas por el fabricante, que pueden diferir del desempeño real en campo. Además, resulta clave para adaptar el sensor a las condiciones específicas de la aplicación, identificar posibles limitaciones y optimizar su configuración para maximizar su rendimiento en la implementación final.
+
 \section{Depuración de mediciones nulas en el LiDAR FHL-LD20}
 Como se describe en la Sección \ref{sec:calibracion}, el proceso de calibración utiliza las distancias en formato decimal, para calcular el ángulo de corrección, el cual ajusta la posición angular de los puntos medidos por el LiDAR. En el diagrama de flujo (Figura \ref{fig:diagrama_procesamiento_dec}), se puede apreciar que el procesamiento depende de si la distancia medida es mayor a cero. Cuando es mayor, se calculan tanto los valores de ajuste como el ángulo de desplazamiento real. Una vez determinado el ángulo real, se actualiza el valor del ángulo de corrección antiguo por el más reciente.
 
@@ -744,10 +882,11 @@ Estos puntos añaden cierta confusión visual al interpretar el entorno capturad
 \end{figure}
 
 \section{Rango de medición efectivo del LiDAR FHL-LD20}
-Determinar el rango de medición efectivo implica evaluar las distancias mínima y máxima a las que el sensor puede operar con precisión y confiabilidad. El rango mínimo de medición es fundamental para identificar las limitaciones del sensor en rangos cercanos, mientras que el rango máximo define l alcance que el sensor puede cubrir. Conocer estos rangos permite ajustar la caracterización del sensor para satisfacer las necesidades específicas de la aplicación en la que se utilizará.
+\label{minima_dist}
+Determinar el rango de medición efectivo implica evaluar la distancia mínima a la que el sensor puede operar con precisión y confiabilidad. El rango mínimo de medición es fundamental para identificar las limitaciones del sensor en rangos cercanos y definir el alcance mínimo que el sensor puede capturar. Conocer este límite permite ajustar la caracterización del sensor para satisfacer las necesidades específicas de la aplicación en la que se utilizará.
 
 \subsection{Rango mínimo de medición}
-Para evaluar la distancia mínima que el sensor es capaz de medir, se diseñaron entornos circulares con diámetros cercanos a la distancia mínima especificada por el fabricante. Se imprimieron en 3D círculos de 6, 7, 8, 9, 10 y 11 cm de radio con el fin de identificar el rango mínimo que permitiera un funcionamiento adecuado del sensor. Optar por un contorno circular en lugar de uno cuadrado resultó ventajoso, ya que la naturaleza del sensor favorece una cobertura uniforme en todas las direcciones.
+Para evaluar la distancia mínima que el sensor es capaz de medir, se diseñaron entornos circulares con diámetros cercanos a la distancia mínima especificada por el fabricante. Se imprimieron en 3D círculos de 60, 70, 80, 90 y 100 mm de radio con el fin de identificar el rango mínimo que permitiera un funcionamiento adecuado del sensor. Optar por un contorno circular en lugar de uno cuadrado resultó ventajoso, ya que la naturaleza del sensor favorece una cobertura uniforme en todas las direcciones.
 
 En la Figura \ref{fig: reconstrucciones_vacías_6} se muestra la primera prueba, realizada con un contorno circular de 6 cm de radio. Como se aprecia en las Figuras \ref{try_6cm_r} y \ref{try_6cm_r_car}, el contorno no pudo ser reconstruido, y las gráficas resultaron vacías. Al analizar los datos sin procesar de este experimento, se descubrió que el sensor no era capaz de registrar distancias válidas, por lo que se registraban como cero (ver Figura \ref{fig:data_null}). Y, debido a que las mediciones se filtraban para eliminar las distancias nulas, la reconstrucción de los datos resultó vacía. 
 
@@ -755,7 +894,7 @@ Es importante señalar que, a pesar de la ausencia de mediciones de distancia v�
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{lecturas_nula.jpg}
-	\caption{Ejemplificación de las lecturas nulas durante la reconstrucción de mediciones: entorno circular de 6 cm de radio.}
+	\caption{Ejemplificación de las lecturas nulas durante la reconstrucción de mediciones: entorno circular de 60 mm de radio.}
 	\label{fig:data_null}
 \end{figure}
 
@@ -764,62 +903,84 @@ Es importante señalar que, a pesar de la ausencia de mediciones de distancia v�
 	\begin{subfigure}{0.6\textwidth}
 		\centering
 		\includegraphics[width=0.65\linewidth]{disposicion_lidar4.jpeg}
-		\caption{Disposición del sensor FHL-LD20 dentro del entorno circular: 6 cm de radio}
+		\caption{Disposición del sensor FHL-LD20 dentro del entorno circular: 60 mm de radio.}
 		\label{disposicion_lidar4}
 		\vspace{1em}
 	\end{subfigure}
 	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth]{try_6cm_r.png}
-		\caption{Reconstrucción en coordenadas polares de tres revoluciones completas capturadas en entorno circular: 6 cm de radio}
+		\caption{Reconstrucción en coordenadas polares de tres revoluciones completas capturadas en entorno circular: 60 mm de radio.}
 		\label{try_6cm_r}
 	\end{subfigure}
 	\hspace{1em}
 	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth]{try_6cm_r_car.png}
-		\caption{Reconstrucción en coordenadas cartesianas de tres revoluciones completas capturadas en entorno circular: 6 cm de radio}
+		\caption{Reconstrucción en coordenadas cartesianas de tres revoluciones completas capturadas en entorno circular: 60 mm de radio.}
 		\label{try_6cm_r_car}
 	\end{subfigure}
-	\caption{Reconstrucciones vacías de tres revoluciones completas capturadas en entorno circular: 6 cm de radio}
+	\caption{Reconstrucciones vacías de tres revoluciones completas capturadas en entorno circular: 60 mm de radio.}
 	\label{fig: reconstrucciones_vacías_6}
 \end{figure}
 
+Se llevaron a cabo pruebas adicionales utilizando los contornos circulares de 70, 80, 90 y 100 mm de radio (ver Figuras \ref{fig: reconstrucciones_vacías_7} y \ref{fig: reconstrucciones_vacías_8} en Anexos \ref{min_pruebas}). El entorno circular de 90 mm de radio fue el primero en mostrar indicios de distancias válidas en la reconstrucción. Aunque se logró visualizar una geometría circular, esta presentó irregularidades. Como se observa en la Figura \ref{fig: reconstrucciones_vacías_9}, existen variaciones en la distribución de los puntos capturados.
+ 
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.6\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{disposicion_lidar7.jpeg}
+		\caption{Disposición del sensor FHL-LD20 dentro del entorno circular: 90 mm de radio}
+		\vspace{1em}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{try_9cm_r.png}
+		\caption{Reconstrucción en coordenadas polares de tres revoluciones completas de lectura en entorno circular: 90 mm de radio}
+		\label{try_9cm_r}
+	\end{subfigure}
+	\hspace{1em}
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{try_9cm_r_car.png}
+		\caption{Reconstrucción en coordenadas cartesianas de tres revoluciones completas de lectura en entorno circular: 90 mm de radio}
+		\label{try_9cm_r_car}
+	\end{subfigure}
+	\caption{Reconstrucción del entorno circular de 90 mm de radio con tres revoluciones completas capturadas.}
+	\label{fig: reconstrucciones_vacías_9}
+\end{figure}
 
-Se llevaron a cabo pruebas adicionales utilizando los contornos circulares de 7, 8, 9 y 10 cm de radio (ver Anexos \ref{fig: reconstrucciones_vacías_7} y \ref{fig: reconstrucciones_vacías_8}). El entorno circular de 9 cm de radio fue el primero en mostrar indicios de distancias válidas en la reconstrucción. No obstante, la geometría obtenida no resultó completamente precisa. Aunque se logra visualizar una geometría circular, esta presenta irregularidades. Como se observa en la Figura TAL, existen variaciones en la distribución de los puntos. 
-
-A diferencia del resultado anterior, la reconstrucción del entorno de 10 cm de radio muestra una geometría más continua, ajustándose mejor a la forma esperada (ver Figura \ref{fig: reconstrucciones_10}). Este comportamiento era de esperarse, pues las especificaciones del fabricante indican un rango mínimo de medición de 10 cm. El entorno circular de 9 cm de radio, al estar por debajo del umbral mínimo de medición, refleja una mayor inexactitud, pues el sensor no se encuentra optimizado para capturar con precisión distancias tan cortas. 
+ 
+Al realizar la reconstrucción del entorno de 100 mm de radio, se evidenció una geometría más continua y mejor ajustada a la figura esperada. Sin embargo, todavía se observaron ciertas variaciones en la continuidad de la geometría. Al analizar el acabado superficial de los escenarios circulares impresos, se identificó que la rugosidad inherente en las piezas fabricadas pudo influir en la dispersión de las mediciones. Por esta razón, se decidió emplear un material diferente en las pruebas subsecuentes, con el objetivo de minimizar este efecto y mejorar la calidad de las mediciones capturadas. Cabe destacar que, aunque las especificaciones del fabricante indicaban un rango mínimo de medición de 100 mm, el entorno de 90 mm de radio, pese a estar por debajo de este umbral, fue capturado con notable precisión.
 
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}{0.6\textwidth}
 		\centering
 		\includegraphics[width=0.65\linewidth]{disposicion_lidar8.jpeg}
-		\caption{Disposición del sensor FHL-LD20 dentro del entorno circular: 10 cm de radio}
+		\caption{Disposición del sensor FHL-LD20 dentro del entorno circular: 100 mm de radio.}
 		\label{disposicion_lidar8}
 		\vspace{1em}
 	\end{subfigure}
 	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth]{try_10cm_r.png}
-		\caption{Reconstrucción en coordenadas polares de tres revoluciones completas capturadas en entorno circular: 10 cm de radio}
+		\caption{Reconstrucción en coordenadas polares de tres revoluciones completas capturadas en entorno circular: 100 mm de radio.}
 		\label{try_10cm_r}
 	\end{subfigure}
 	\hspace{1em}
 	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth]{try_10cm_r_car.png}
-		\caption{Reconstrucción en coordenadas cartesianas de tres revoluciones completas capturadas en entorno circular: 10 cm de radio}
+		\caption{Reconstrucción en coordenadas cartesianas de tres revoluciones completas capturadas en entorno circular: 100 mm de radio.}
 		\label{try_10cm_r_car}
 	\end{subfigure}
-	\caption{Reconstrucciones vacías de tres revoluciones completas capturadas en entorno circular: 10 cm de radio}
+	\caption{Reconstrucción del entorno circular de 100 mm de radio con tres revoluciones completas capturadas.}
 	\label{fig: reconstrucciones_10}
 \end{figure}
 
-Para garantizar una detección eficiente y reducir el ruido causado por los componentes estructurales de los agentes robóticos donde se integrará el sensor, como es el caso del Pololu 3pi+, se ha establecido un rango mínimo de medición de 15 cm. A distancias inferiores a  esta, el sensor podría captar partes del propio robot, lo que afectaría negativamente la precisión de las mediciones. Además, dado que la probabilidad de encontrar obstáculos relevantes a menos de 10 cm en el entorno de operación es baja, establecer este límite permite enfocarse en la detección de obstáculos que realmente impacten en la navegación del agente robótico.
-
-\subsection{Rango máximo de medición}
-FALTAN HACER PRUEBAS EN UNA HABITACIÓN.
+Para garantizar una detección eficiente y reducir el ruido causado por los componentes estructurales de los agentes robóticos donde se integrará el sensor, como es el caso del Pololu 3pi+, se ha establecido un rango mínimo de medición de 15 cm. A distancias inferiores a esta, el sensor podría captar partes del propio robot, lo que afectaría negativamente la precisión de las mediciones. Además, dado que la probabilidad de encontrar obstáculos relevantes a menos de 10 cm en el entorno de operación es baja, establecer este límite permite enfocarse en la detección de obstáculos que realmente impacten en la navegación del agente robótico.
 
 \section{Estimación de las varianzas del sensor }
 \label{sec:estimacion}
@@ -865,6 +1026,7 @@ Esta ecuación describe cómo el sensor mide la distancia $r$ y el ángulo $\bet
 Para estimar las varianzas $\sigma_r^2$ y $\sigma_\beta^2$ se llevaron a cabo dos experimentos con el sensor LIDAR FHL-LD20.  El primero se centró en evaluar la varianza asociada a las mediciones de distancia, mientras que el segundo se enfocó en analizar las mediciones angulares. Ambos experimentos fueron diseñados para proporcionar una comprensión más profunda del rendimiento del sensor y su precisión en condiciones de operación.
 
 \subsection{Estimación de la varianza asociada a las mediciones de distancia del sensor}
+\label{var_dist}
 Para el primer experimento, se diseñaron ocho círculos concéntricos con radios de 150, 200, 250, 300, 350, 400, 450 y 500 mm, todos con una altura de 70 mm. Estos círculos fueron fabricados en MDF y recubiertos con una capa uniforme de cartón de 1 mm de grosor. Además, se imprimió una cuadrícula de 1.2$\times$1.2 metros, dividida en intervalos de un centímetro. Esta cuadrícula incluía una serie de círculos concéntricos con los radios mencionados y líneas diagonales que cruzaban su centro, creando un sistema de referencia radial. En conjunto, este diseño ofreció un entorno controlado para analizar las mediciones en coordenadas polares y cartesianas.
 
 \begin{figure}[H]
@@ -921,7 +1083,7 @@ Para el primer experimento, se diseñaron ocho círculos concéntricos con radio
 
 Como se muestra en las Figuras \ref{fig:disposicion_lidar_var_dist1} y \ref{fig:disposicion_lidar_var_dist8}, el sensor se posicionó en el centro de la cuadrícula y se alineó concéntricamente uno de los círculos fabricados, utilizando las líneas radiales como guía. Con esta disposición se esperaba que el sensor registrara mediciones uniformes a lo largo de todo el perímetro del círculo. Después de capturar un total de 180 revoluciones, equivalente a 129,600 puntos de medición, y repetir diez veces las mediciones, fue posible establecer el promedio, varianza muestral y sesgo asociados con las distancias medidas por el sensor para cada círculo. El análisis de los datos obtenidos con los ocho círculos permitió evaluar la la precisión del sensor a distintas distancias, proporcionando una base sólida para caracterizar la variabilidad en las mediciones y determinar la varianza asociada en cada caso.
 
-Los resultados del experimento se presentan en el Cuadro \ref{cuadro:stats}, donde se muestran las varianzas calculadas para cada uno de los ocho radios evaluados. En todos los casos, se verificó que las mediciones se ajustaran a una distribución gaussiana normal (ver Anexos \ref{fig:histograma_dists1} a \ref{fig:histograma_dists2}), lo que respalda la validez del modelo de ruido asumido para las observaciones del sensor (Sección \ref{sec:estimacion}). Además, se observó que, a medida que aumentaba la distancia de los radios, también se incrementaba la varianza en las mediciones, indicando una disminución gradual en la exactitud del sensor. Para caracterizar esta relación, se realizó un ajuste lineal de los datos, como se muestra en la Figura \ref{fig:varianza_tendencia}, lo que permitió describir la variación de la varianza en función de la distancia. Es importante señalar que el valor esperado para cada medición resultó ser 1 mm menor que el radio del círculo evaluado debido al grosor del recubrimiento de cartón. 
+Los resultados del experimento se presentan en el Cuadro \ref{cuadro:stats}, donde se muestran las varianzas calculadas para cada uno de los ocho radios evaluados. En todos los casos, se verificó que las mediciones se ajustaran a una distribución gaussiana normal (ver Figuras \ref{fig:histograma_dists1} a \ref{fig:histograma_dists2} en Anexos \ref{varianza_distancia}), lo que respalda la validez del modelo de ruido asumido para las observaciones del sensor (Sección \ref{sec:estimacion}). Además, se observó que, a medida que aumentaba la distancia de los radios, también se incrementaba la varianza en las mediciones, indicando una disminución gradual en la exactitud del sensor. Para caracterizar esta relación, se realizó un ajuste lineal de los datos, como se muestra en la Figura \ref{fig:varianza_tendencia}, lo que permitió describir la variación de la varianza en función de la distancia. Es importante señalar que el valor esperado para cada medición resultó ser 1 mm menor que el radio del círculo evaluado debido al grosor del recubrimiento de cartón. 
 
 \begin{table}[H]
 	\centering
@@ -948,12 +1110,12 @@ Los resultados del experimento se presentan en el Cuadro \ref{cuadro:stats}, don
 	\label{fig:varianza_tendencia}
 \end{figure}
 
-En la Figura \ref{fig:lecturas1}, se aprecia que para el primer círculo, con un radio real de 149 mm, la variabilidad de los puntos medidos fue relativamente baja, con una notable concentración de mediciones cercanas al valor esperado (149 mm). Sin embargo, al aumentar el radio medido, la dispersión de los puntos incrementó, reflejando una mayor variabilidad en las mediciones (ver Figura \ref{fig:lecturas2}). En cuanto al sesgo o \textit{bias}, la Figura \ref{fig:bias_tendencia} demuestra que no se identificó una tendencia clara, ya que este oscilaba entre aproximadamente -0.9657 mm y 0.9895 mm. Es importante destacar que la varianza muestral, promedio y sesgo reportados en el Cuadro \ref{cuadro:stats} representan los promedios obtenidos en las diez corridas realizadas, proporcionando así una estimación robusta de las mediciones en cada radio. Para una comprensión más detallada de los resultados, en los Anexos \ref{fig:tabla_dists1} a \ref{fig:tabla_dists8} se encuentran las estadísticas completas de cada corrida realizada.
+En la Figura \ref{fig:lecturas1}, se aprecia que para el primer círculo, con un radio real de 149 mm, la variabilidad de los puntos medidos fue relativamente baja ($\pm$ 1 mm), con una notable concentración de mediciones cercanas al valor esperado (149 mm). Sin embargo, al aumentar el radio medido, la dispersión de los puntos incrementó hasta $\pm$ 4 mm sobre el valor esperado (499 mm), reflejando una mayor variabilidad en las mediciones (ver Figura \ref{fig:lecturas8}). En cuanto al sesgo o \textit{bias}, la Figura \ref{fig:bias_tendencia} demuestra que no se identificó una tendencia clara, ya que este oscilaba entre aproximadamente -0.9657 mm y 0.9895 mm. Es importante destacar que la varianza muestral, promedio y sesgo reportados en el Cuadro \ref{cuadro:stats} representan los promedios obtenidos en las diez corridas realizadas, proporcionando así una estimación robusta de las mediciones en cada radio. Para una comprensión más detallada de los resultados, en los Anexos \ref{varianza_distancia} se encuentran las estadísticas completas de cada corrida realizada.
 
 
 \begin{figure}[H]
 	\centering
-	\makebox[\textwidth]{\includegraphics[width=1.25\linewidth]{0.149m_radius_stats_P6.png}}
+	\makebox[\textwidth]{\includegraphics[width=1.25\linewidth]{0.149m_radius_stats_P1.png}}
 	\caption{Variabilidad de las mediciones capturadas para un radio real de 149 mm.}
 	\label{fig:lecturas1}
 \end{figure}
@@ -962,7 +1124,7 @@ En la Figura \ref{fig:lecturas1}, se aprecia que para el primer círculo, con un
 	\centering
 	\makebox[\textwidth]{\includegraphics[width=1.25\linewidth]{0.499m_radius_stats_P1.png}}
 	\caption{Variabilidad de las mediciones capturadas para un radio real de 499 mm.}
-	\label{fig:lecturas2}
+	\label{fig:lecturas8}
 \end{figure}
 
 \begin{figure}[H]
@@ -972,177 +1134,215 @@ En la Figura \ref{fig:lecturas1}, se aprecia que para el primer círculo, con un
 	\label{fig:bias_tendencia}
 \end{figure}
 
-\subsection{Estimación de la varianza asociada a las mediciones de ángulos del sensor}
+\subsection{Dispersión de las mediciones angulares del sensor}
+\label{mediciones_angulares}
+En el segundo experimento, se utilizó el mismo conjunto de círculos del ensayo anterior, añadiendo un noveno círculo de 70 mm de radio, diseñado específicamente para obstruir parcialmente el campo de visión del sensor. Como se muestra en las Figuras \ref{fig:disposicion_lidar_var_theta1} y \ref{fig:disposicion_lidar_var_theta8}, el sensor se mantuvo estático en el centro de la cuadrícula de referencia, mientras se colocaron dos círculos: uno externo, correspondiente a uno de los círculos previamente utilizados, y el círculo de obstrucción visual, con una apertura aproximada de 40° (ver Figura \ref{fig:obstrucción_visual}). Además, se situó un arco circular con un radio 20 mm menor al del círculo externo, abarcando un rango angular de 5°. Esta disposición permitió evaluar cómo las mediciones angulares del sensor respondían a los cambios geométricos entre el círculo y el arco  dentro del área de apertura, enfocando la medición hacia el arco situado frente al círculo externo. Cabe señalar que el arco fue colocado arbitrariamente entre los 42° y 47°, respecto al eje horizontal positivo, definiendo así los puntos de transición teóricos para el análisis.
 
-En el segundo experimento, se utilizó el mismo conjunto de círculos del ensayo anterior, añadiendo un noveno círculo de 70 mm de radio, diseñado específicamente para obstruir la visión del sensor en ciertas direcciones. Como se muestra en las Figuras TAL y TAL, el sensor se mantuvo estático en el centro de la cuadrícula de referencia, mientras se disponían dos círculos adicionales: uno externo que correspondiente a uno de los círculos previamente utilizados, y el círculo de obstrucción visual, con una apertura de aproximadamente 30°.  Además, se situó un arco circular con un radio 20 mm menor que el del círculo externo, abarcando un rango angular de 5°. Esta disposición permitió evaluar si el LiDAR era capaz de medir adecuadamente los ángulos en función del cambio geométrico del arco en relación con el círculo externo. Cabe señalar que el arco se situó arbitrariamente desde los 42°, delimitando una región de análisis para los ángulos teóricos definidos en los puntos de transición, 42° y 47°.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\makebox[\textwidth]{\includegraphics[width=1.15\linewidth]{CIRCULO_OBSTRUCCION_VISUAL.png}}
+		\caption{Disposición del sensor FHL-LD20 dentro del círculo de obstrucción visual: 70 mm de radio, vista isométrica frontal.}
+		\label{fig:obs1}
+	\end{subfigure}
+	\hspace{1em}
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width=1.15\linewidth]{CIRCULO_OBSTRUCCION_VISUAL_2.png}
+		\caption{Disposición del sensor FHL-LD20 dentro del círculo de obstrucción visual: 70 mm de radio, vista isométrica trasera.}
+		\label{fig:obs2}
+	\end{subfigure}
+	\caption{Disposición del sensor FHL-LD20 dentro del círculo de obstrucción visual con apertura de aproximadamente 40°.}
+	\label{fig:obstrucción_visual}
+\end{figure}
 
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\makebox[\textwidth]{\includegraphics[width=1.15\linewidth]{disposicion_lidar_var_theta1.jpg}}
+		\caption{Disposición del sensor FHL-LD20 dentro del entorno circular: 149 mm de radio con arco.}
+		\label{fig:disposicion_lidar_theta1}
+	\end{subfigure}
+	\hspace{1em}
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.85\linewidth]{130mm_theta_XY.png}
+		\caption{Reconstrucción en coordenadas cartesianas de entorno circular: 149 mm de radio con arco.}
+		\label{fig:149m_radius_xy_theta1}
+	\end{subfigure}
+	\caption{Reconstrucción del entorno circular de 149 mm de radio con arco, 180 revoluciones completas capturadas.}
+	\label{fig:disposicion_lidar_var_theta1}
+\end{figure}
 
-Los resultados del experimento se presentan en el Cuadro 3, donde se detalla la variabilidad en los valores reales de inicio y final del arco y del círculo (42° y 47°, respectivamente) para cada uno de los ocho escenarios evaluados, tras realizar seis repeticiones de 1000 mediciones por ángulo. Al analizar la distribución de estas, se determinó que los datos seguían una distribución normal (ver Anexos TAL a TAL), lo cual hace que la varianza tradicional no sea adecuada para representar la dispersión de las mediciones. Por ello, en el Cuadro 3 y en la Figura 3 se presentan únicamente los valores mínimo, máximo y promedio de los datos experimentales en función de la distancia evaluada para cada medición angular registrada. En los Anexos TAL a TAL se incluyen las figuras que muestran los deltas de variación respecto al valor esperado para cada conjunto de mediciones angulares en los bordes del arco y del círculo para cada escenario.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\makebox[\textwidth]{\includegraphics[width=1.15\linewidth]{disposicion_lidar_var_theta8.jpg}}
+		\caption{Disposición del sensor FHL-LD20 dentro del entorno circular: 499 mm de radio con arco.}
+		\label{fig:disposicion_lidar_theta8}
+	\end{subfigure}
+	\hspace{1em}
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.85\linewidth]{480mm_theta_XY.png}
+		\caption{Reconstrucción en coordenadas cartesianas de entorno circular: 499 mm de radio con arco.}
+		\label{fig:499m_radius_xy_theta8}
+	\end{subfigure}
+	\caption{Reconstrucción del entorno circular de 499 mm de radio con arco, 180 revoluciones completas capturadas.}
+	\label{fig:disposicion_lidar_var_theta8}
+\end{figure}
 
-
-
-Esta disposición aseguró condiciones controladas que permitieron comparar con mayor exactitud las mediciones obtenidas contra los valores teóricos establecidos. Además, permitió observar la respuesta del LiDAR ante una transición clara entre el final del arco y el inicio del borde del círculo, proporcionando una base sólida para evaluar la sensibilidad del sensor frente a cambios estructurales en su entorno.
-
-
-
-
-
-\section{Precisión del LiDAR FHL-LD20}
-Para evaluar la precisión del sensor en las mediciones de distancias y ángulos, se llevó a cabo un análisis basado en la reconstrucción de cajas de diferentes dimensiones. Este proceso incluyó la determinación de regresiones lineales para las aristas detectadas y el cálculo de diversas métricas que permiten evaluar la fidelidad de las mediciones del sensor. A continuación se detalla el proceso para evaluar la precisión del sensor para una caja de 400 $\times$ 400 mm.
-
-En primer lugar, se aplicó un filtro para seleccionar los puntos más cercanos a las aristas esperadas, utilizando un intervalo de tolerancia de $\pm$ 5 mm. Se excluyó una franja cercana a los bordes de la caja para evitar distorsiones derivadas al efecto de las esquinas, que suelen generar mediciones menos precisas debido a la complejidad de la geometría de estas áreas. Posteriormente, se realizó un ajuste de regresión lineal para cada conjunto de puntos que conformaba una arista de la caja reconstruida. En el caso de las aristas horizontales, el valor de los valores en el eje Y se ajustó en función de los valores del eje X. Mientras que, para las aristas verticales, se ajustaron los valores del eje X en función de los valores del eje Y. 
-
-A partir de los puntos filtrados y las regresiones obtenidas, se calcularon las siguientes métricas para cada arista:
-\begin{itemize}
-	\item Ecuación de la recta: Pendiente e intercepto obtenidos a partir del ajuste lineal.
-	\item Error cuadrático medio entre los puntos reales y la línea ajustada.
-	\item Intervalos de confianza (IC): Para la pendiente e intercepto, se calcularon intervalos de confianza del 95\%, proporcionando una medida de la incertidumbre en la estimación de los parámetros de la recta.
-	\item Diferencia promedio. Media de las diferencias entre los puntos detectados y el valor real esperado, proporcionando una medida del error sistemático del sensor.
-	\item Puntos máximo y mínimo: Los valores extremos detectados en cada conjunto de puntos que indican la variabilidad en las mediciones.
-	\item Rango: Diferencia entre el valor máximo y mínimo., lo que refleja la dispersión de las mediciones.
-\end{itemize}
-
-Para evaluar la rectitud de las aristas, se analizaron las pendiente obtenidas a partir del ajuste lineal. Estas pendientes, muestran pequeñas desviaciones respecto a la horizontalidad o verticalidad ideal, lo que sugiere un ligero error sistemático en la orientación del sensor. Los intervalos de confianza calculados para estas presentan un rango estrecho, lo que indica una alta consistencia en las mediciones y un bajo nivel de variabilidad entre los diferente puntos medidos. Adicionalmente, las magnitudes de las pendientes están cercanas a cero, lo que sugiere que las aristas reconstruidas se aproximan de manera precisa a la geometría esperada (lineas rectas definidas). 
-
-El intercepto calculado resulta útil para evaluar el alineamiento general del sensor con respecto a las posiciones esperadas. En todos los casos, se observan ligeras desviaciones en el intercepto que oscilan entre 0.3959 mm y 2.4565 mm con respecto a las dimensiones esperadas de  $\pm$ 200 mm, lo cual es relativamente bajo. Sin embargo, estas pequeñas variaciones evidencia la presencia de imprecisiones en las mediciones del sensor.
-
-El análisis de los intervalos de confianza de la pendiente y eñ intercepto proporciona una medida de la fiabilidad de estos parámetros. Al mostrar rangos estrechos, se sugiera una fuerte consistencia en las mediciones, lo cual refuerza la confiabilidad de las regresiones lineales obtenidas. Junto a esto, el rango de las mediciones, que varía entre 3.8049 mm y 4.4322 mm para las diferentes aristas, refleja una dispersión controlada. La diferencia promedio entre los puntos detectados y el valor real esperado, inferior a 3 mm, confirma que la dispersión de las mediciones se encuentra dentro de los límites de precisión indicados por el fabricante. 
-
-En resumen, las métricas analizadas muestran que el sensor presenta una buena precisión general. A pesar que se observen pequeñas desviaciones, los errores están por debajo de los 5 mm, lo cual es aceptable para la mayoría de las aplicaciones, en especial para navegación autónoma.
+Como se observa en la Figura \ref{fig:points}, para evaluar el comportamiento del sensor en estas transiciones, se tomaron cuatro puntos de referencia principales: 
+\begin{enumerate}
+	\item  La última medición registrada del círculo externo antes de iniciar el arco. 
+	\item La primera medición correspondiente al inicio del arco.
+	\item La última medición antes de finalizar el arco.
+	\item La primera medición del círculo externo tras concluir el arco.
+\end{enumerate}
+Estos puntos representaron instantes determinantes en las transiciones geométricas, sirviendo como base para analizar la dispersión de las mediciones angulares.
 
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}{0.8\textwidth}
 		\centering
-		\includegraphics[width=0.9\linewidth]{analisis_precision_1_1.png}
-		\caption{Análisis de arista horizontal superior}
-		\label{analisis_precision_1_1}
+		\includegraphics[width=0.55\linewidth]{480mm_theta_XY_point1.png}
+		\caption{El óvalo rojo muestra la ubicación de dos puntos de referencia y su número de identificación.}
+		\label{fig:point1}
+		\vspace{1em}
 	\end{subfigure}
-	\hspace{1em}
 	\begin{subfigure}{0.8\textwidth}
 		\centering
-		\includegraphics[width=0.9\linewidth]{analisis_precision_1_2.png}
-		\caption{Análisis de arista horizontal inferior}
-		\label{analisis_precision_1_2}
+		\includegraphics[width=0.55\linewidth]{480mm_theta_XY_point2.png}
+		\caption{El óvalo rojo muestra la ubicación de dos puntos de referencia y su número de identificación.}
+		\label{fig:point2}
+	\end{subfigure}
+	\caption{Cuatro puntos de referencia principales en las transiciones de geometría.}
+	\label{fig:points}
+\end{figure}
+
+
+Los resultados del experimento se presentan en los Cuadros \ref{cuadro:stats_theta} y \ref{cuadro:stats_theta_r} en Anexos \ref{dispersion_angular}, donde se detallan los rangos de los valores experimentales en los puntos de transición (42° y 47°, respectivamente), para cada uno de los ocho escenarios evaluados, tras capturar 1080 mediciones por ángulo. Al analizar la distribución de estos datos, se determinó que las mediciones angulares seguían una distribución normal (ver Anexos \ref{disposicion_lidar2}), lo que hace que la varianza tradicional no sea la métrica más adecuada para representar la dispersión observada. Por ello, en las Figuras \ref{fig:varianza_circ_47} a \ref{fig:varianza_circ_42} se presentan únicamente los valores mínimo, máximo y promedio de las mediciones angulares en los puntos de referencia. Adicionalmente, en los Figuras \ref{fig:lecturas_theta42_1}) a \ref{fig:histograma_theta47_8} en Anexos \ref{dispersion_angular} se incluyen gráficos que muestran las desviaciones angulares respecto a los valores esperados (deltas de variación) para cada transición.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{variacion_circ_arc_47.png}
+	\caption{Dispersión angular en la última medición del círculo externo antes del arco a diferentes distancias radiales.}
+	\label{fig:varianza_circ_47}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{variacion_arc_47.png}
+	\caption{Dispersión angular en la primera medición correspondiente al inicio del arco a diferentes distancias radiales.}
+	\label{fig:varianza_arc_47}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{variacion_arc_42.png}
+	\caption{Dispersión angular en la última medición justo antes de finalizar el arco a diferentes distancias radiales.}
+	\label{fig:varianza_arc_42}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{variacion_circ_arc_42.png}
+	\caption{Dispersión angular en la primera medición del círculo externo tras concluir el arco. a diferentes distancias radiales.}
+	\label{fig:varianza_circ_42}
+\end{figure}
+
+Al analizar los cuatro puntos de referencia, se identificó una mayor dispersión en la última medición del círculo externo antes de iniciar el arco a 47°, y en la última medición del arco antes de regresar al círculo a 42° (ver Figura \ref{fig:point1}). En estos puntos, las mediciones presentaron oscilaciones de entre 0.6210° a 2.8817° respecto a sus valores teóricos. En contraste, el primer punto del arco a 47° y la primera medición del círculo externo tras finalizar el arco a 42° (ver Figura \ref{fig:point2}) mostraron una dispersión considerablemente menor, con fluctuaciones que variaron entre -0.6610° a 0.7625° respecto a los valores teóricos esperados (ver Cuadro \ref{cuadro:dispersion_global}).
+
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			\textbf{\makecell{Ubicación de la\\medición obtenida}} & \textbf{\makecell{Valor\\teórico (°)}} & \textbf{\makecell{Mínimo\\local (°)}} & \textbf{\makecell{Diferencia\\con valor\\teórico (°)}} & \textbf{\makecell{Máximo\\local (°)}} & \textbf{\makecell{Diferencia\\ con valor\\ teórico (°)}} & \textbf{\makecell{Mínima\\diferencia\\global\\con valores\\teóricos (°)}} & \textbf{\makecell{Máxima\\diferencia\\global\\con valores\\teóricos (°)}} \\ \hline
+			\makecell{Última medición\\registrada del\\círculo externo \\antes de iniciar\\ el arco} & 47 & 47.8190 & 0.8190 & 49.8817 & 2.8817 & \multirow{2}{*}{0.6210} & \multirow{2}{*}{2.8817} \\ \cline{1-6}
+			\makecell{Última medición\\antes de \\finalizar el arco.} & 42 & 42.6210 & 0.6210 & 43.8413 & 1.8413 & & \\ \hline
+			\makecell{Primera medición\\ correspondiente al \\inicio del arco} & 47 & 46.7588 & -0.2412 & 47.7625 & 0.7625 & \multirow{2}{*}{-0.6610} & \multirow{2}{*}{0.7625} \\ \cline{1-6}
+			\makecell{Primera medición\\del círculo externo\\ tras concluir el arco.} & 42 & 41.3390 & -0.6610 & 42.7551 & 0.7551 & & \\ \hline
+		\end{tabular}%
+	}
+	\caption{Resumen de extremos locales y globales respecto al valor teórico.}
+	\label{cuadro:dispersion_global}
+\end{table}
+
+
+Para verificar este comportamiento, se repitió el experimento variando la posición del arco, ubicándolo a 222° con respecto al eje horizontal positivo. Al igual que el caso anterior, los resultados mostraron una mayor dispersión en la última medición del círculo externo antes del inicio del arco a 227°, así como en la última medición registrada del arco antes de regresar al círculo externo en 222° (ver Figura \ref{fig:point3}). Estas mediciones oscilaron entre 0.5004° y 2.3290° respecto a los valores teóricos. Por el contrario, las mediciones correspondientes al primer punto del arco a 227° y al primer punto del círculo externo tras finalizar el arco a 222°  (ver Figura \ref{fig:point4}) presentaron una dispersión significativamente menor, con variaciones que se encontraron entre -0.9577° y 0.5750° en relación con los valores teóricos esperados (ver Cuadro \ref{cuadro:dispersion_global_2}). En las Figuras \ref{fig:varianza_circ_227} a \ref{fig:varianza_circ_222} se presentan únicamente los valores mínimo, máximo y promedio de las mediciones angulares en los puntos de referencia.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.8\textwidth}
+		\centering
+		\includegraphics[width=0.55\linewidth]{480mm_theta_XY_point4.png}
+		\caption{El óvalo rojo muestra la ubicación de dos puntos de referencia y su número de identificación.}
+		\label{fig:point3}
 		\vspace{1em}
 	\end{subfigure}
-	\caption{Análisis de la reconstrucción realizada para las aristas horizontales de una caja de 400$\times$400 mm: tres revoluciones completas capturadas.}
-	\label{fig: reconstruccion_analisis_horizontal_1}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.8\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{analisis_precision_1_3.png}
-		\caption{Análisis de arista vertical derecha}
-		\label{analisis_precision_1_3}
+		\includegraphics[width=0.55\linewidth]{480mm_theta_XY_point3.png}
+		\caption{El óvalo rojo muestra la ubicación de dos puntos de referencia y su número de identificación.}
+		\label{fig:point4}
 	\end{subfigure}
-	\hspace{1em}
-	\begin{subfigure}{0.45\textwidth}
-		\centering
-		\includegraphics[width=1\linewidth]{analisis_precision_1_4.png}
-		\caption{Análisis de arista vertical izquierda}
-		\label{analisis_precision_1_4}
-	\end{subfigure}
-	\caption{Análisis de la reconstrucción realizada para las aristas verticales de una caja de 400$\times$400 mm: tres revoluciones completas capturadas.}
-	\label{fig: reconstruccion_analisis_vertical_1}
+	\caption{Cuatro puntos de referencia principales en las transiciones de geometría.}
+	\label{fig:points2}
 \end{figure}
-
-\section{Detección de bordes y discontinuidades para el LiDAR FHL-LD20}
-A lo largo de los experimentos realizados se observó que, al probar con entornos cuadriláteros, las esquinas tienden a perderse en las mediciones. Esto sugiere que el sensor podría enfrentar dificultades para detectar con precisión bordes y discontinuidades en estas áreas específicas. Esto se debe a que las esquinas suele generar geometrías complejas y abruptas, lo que genera retornos dispersos e inconsistentes al interactuar con el haz infrarrojo.
-
-Con e fin de evaluar cómo afectan las esquinas la precisión en las mediciones de los bordes, se diseñaron codos con radios de 5, 10 y 15 mm (Figura \ref{fig: codos}). Estos codos permiten estudiar el comportamiento del sensor cuando frente a transiciones suaves entre superficies, simulando una curvatura en lugar de un ángulo agudo. Al utilizar codos en lugar de esquinas afiladas, es posible analizar si el sensor puede detectar transiciones graduales en los bordes con mayor precisión, lo que reduce las distorsiones capturadas. Además, los codos proporcionan un medio de comparación para evaluar el rendimiento del sensor al medir bordes con radios de curvatura específicos, lo que permite establecer un rango de tolerancia en el cual las mediciones del sensor sean confiables.
 
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}{0.45\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{codo.png}
-		\caption{Vista isométrica del diseño del codo para transiciones graduales.}
-		\label{codo}
-	\end{subfigure}
-	\hspace{1em}
-	\begin{subfigure}{0.45\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{codo3.png}
-		\caption{Vista superior del diseño del codo de 5 mm de radio.}
-		\label{codo3}
-		\vspace{1em}
-	\end{subfigure}
-	\begin{subfigure}{0.45\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{codo1.png}
-		\caption{Vista superior del diseño del codo de 10 mm de radio.}
-		\label{codo1}
-	\end{subfigure}
-	\hspace{1em}
-	\begin{subfigure}{0.45\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{codo2.png}
-		\caption{Vista superior del diseño del codo de 15 mm de radio.}
-		\label{codo2}
-	\end{subfigure}
-	\caption{Diseño de los codos para transiciones graduales}
-	\label{fig: codos}
+	\includegraphics[width=0.95\textwidth]{variacion_circ_arc_227.png}
+	\caption{Dispersión angular en la última medición del círculo externo antes del arco a diferentes distancias radiales.}
+	\label{fig:varianza_circ_227}
 \end{figure}
-
-\chapter{Calibración del LiDAR FHL-LD20}
-
-\section{Pruebas para calibrar el LiDAR FHL-LD20}
-Para verificar la calibración del sensor, se colocó en el centro de la plataforma utilizando las brújulas incluidas en el soporte para asegurar su alineación. Una vez posicionado, se realizó una captura de tres revoluciones completas y se compararon los valores medidos de las aristas con los valores nominales esperados. Si los resultados obtenidos se encuentran dentro de una desviación igual o menor a la precisión especificada por el radio de medición, se considera que el sensor está calibrado. En este experimento, se obtuvieron los siguientes mediciones de las aristas: 201.28 mm para la arista horizontal superior, -201.38 mm para la inferior, 202.45 mm para la vertical derecha, y -200.39 mm para la izquierda. Estas desviaciones, aunque mínimas, se encuentran dentro del rango de precisión del sensor, lo que confirma que el dispositivo está correctamente calibrado. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{calibracion1.png}
-	\caption{Reconstrucción realizada para verificar la calibración del sensor.}
-	\label{fig:calibracion}
+	\includegraphics[width=0.95\textwidth]{variacion_arc_227.png}
+	\caption{Dispersión angular en la primera medición correspondiente al inicio del arco a diferentes distancias radiales.}
+	\label{fig:varianza_arc_227}
 \end{figure}
-
-\section{Compensación en las mediciones del LiDAR FHL-LD20}
-\label{sec:calibracion}
-
-En la primera reconstrucción realizada (Figura \ref{primera_corrida}), se observaron deformaciones en las aristas de la caja, que no coincidían con los bordes rectos de la caja física. Estas deformaciones fueron causadas por la falta de corrección angular debida al desplazamiento físico del emisor/receptor del láser dentro de la carcasa. Este desplazamiento implica que el punto exacto desde donde se emite el láser y donde el sensor recoge las reflexiones está ligeramente descentrado con respecto al eje de rotación del sensor.
-
-Cuando el láser no se emite desde el centro del círculo ideal que describe el barrido del LiDAR, se produce un desfase que afecta la precisión angular. Sin embargo, este desplazamiento interno no afecta la distancia medida, ya que sigue siendo una medición directa entre el sensor y el objeto. La luz viaja y vuelve directamente, similar a cómo se usaría una regla para medir la distancia en línea recta. El problema radica en que, un desfase angular interno provoca que el punto aparezca en una ubicación incorrecta en el plano, es decir, más a la izquierda o derecha de su verdadera posición.
-
-El hecho que el sensor gira sobre un eje para medir diferentes ángulos, si el sensor se encuentra desplazado de ese centro de rotación, los ángulo medidos no representarán correctamente la posición de los objetos en el entorno. Para corregir este error, en la documentación proporcionada por el fabricante, se sugería consultar el proceso de corrección realizado a partir del código fuente (FALTA REF). En este se utilizan dos valores ajustados: x\_val y y\_val, que incorporan los desplazamientos en los ejes X y Y. Estos valores no son las coordenadas cartesianas de cada punto evaluado, sino ajustes que ayudan a calcular el error angular causado por el desfase físico del sensor. 
-
-\begin{equation}
-	\label{eq:valor_ajustado_x}
-	x\_val = distancia + x\_offset
-\end{equation}
-\begin{equation}
-	\label{eq:valor_ajustado_y}
-	y\_val = distancia\times y\_factor + y\_offset
-\end{equation}
-
-En la Ecuación \ref{eq:valor_ajustado_y}, el valor ajustado y\_val utiliza una constante  ``y\_factor'' de 0.11923. Aunque la documentación no especifica la razón exacta de este valor, se puede inferir que su propósito era corregir la proyección angular de las mediciones. Probablemente compensando una inclinación natural del sensor o representando un ajuste empírico destinado a mejorar la precisión de las mediciones. A partir de los valores ajustados, se calcula un ángulo de corrección usando la función arcotangente de la relación y\_val sobre x\_val. Este ángulo de corrección refleja cuánto debe sumarse o restarse al ángulo original para compensar el desplazamiento interno del sensor. 
-
-Si el sistema utiliza coordenadas en sentido antihorario, el angulo se invierte (restándole 360 grados) y luego se suma el ángulo de corrección para obtener el valor final. En caso contrario, el ángulo de corrección se resta directamente del ángulo original. La Figura \ref{fig: comparación_con_sin_corre}, muestra la disposición del sensor dentro de la caja, junto con una comparación de la reconstrucción visual obtenida a partir de tres revoluciones completas capturadas, utilizando el angulo sin y con corrección.
 
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}{0.6\textwidth}
-		\centering
-		\includegraphics[width=0.6\linewidth]{disposicion_lidar2.jpeg}
-		\caption{Disposición del sensor FHL-LD20 dentro de la caja}
-		\label{disposicion_lidar2}
-		\vspace{1em}
-	\end{subfigure}
-	\begin{subfigure}{0.45\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{lectura_sin_corre.png}
-		\caption{Reconstrucción de tres revoluciones completas capturadas sin ángulo de corrección}
-		\label{lectura_sin_corre}
-	\end{subfigure}
-	\hspace{1em}
-	\begin{subfigure}{0.45\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{lectura_con_corre.png}
-		\caption{Reconstrucción de tres revoluciones completas capturadas con ángulo de corrección}
-		\label{lectura_con_corre}
-	\end{subfigure}
-	\caption{Comparación de la reconstrucción con y sin ángulo de corrección: tres revoluciones completas capturadas.}
-	\label{fig: comparación_con_sin_corre}
+	\includegraphics[width=0.95\textwidth]{variacion_arc_222.png}
+	\caption{Dispersión angular en la última medición justo antes de finalizar el arco a diferentes distancias radiales.}
+	\label{fig:varianza_arc_222}
 \end{figure}
- 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{variacion_circ_arc_222.png}
+	\caption{Dispersión angular en la primera medición del círculo externo tras concluir el arco. a diferentes distancias radiales.}
+	\label{fig:varianza_circ_222}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			\textbf{\makecell{Ubicación de la\\medición obtenida}} & \textbf{\makecell{Valor\\teórico (°)}} & \textbf{\makecell{Mínimo\\local (°)}} & \textbf{\makecell{Diferencia\\con valor\\teórico (°)}} & \textbf{\makecell{Máximo\\local (°)}} & \textbf{\makecell{Diferencia\\ con valor\\ teórico (°)}} & \textbf{\makecell{Mínima\\diferencia\\global\\con valores\\teóricos (°)}} & \textbf{\makecell{Máxima\\diferencia\\global\\con valores\\teóricos (°)}} \\ \hline
+			\makecell{Última medición\\registrada del\\círculo externo \\antes de iniciar\\ el arco} & 227 & 227.5307 & 0.5307 & 229.3290 & 2.3290 & \multirow{2}{*}{0.5004} & \multirow{2}{*}{2.3290} \\ \cline{1-6}
+			\makecell{Última medición\\antes de \\finalizar el arco.} & 222 & 222.5004 & 0.5004 & 223.1877 & 1.1877 & & \\ \hline
+			\makecell{Primera medición\\ correspondiente al \\inicio del arco}  & 227 & 226.7304 & -0.2696 & 227.5750 & 0.5750 & \multirow{2}{*}{-0.9577} & \multirow{2}{*}{0.5750} \\ \cline{1-6}
+			\makecell{Primera medición\\del círculo externo\\ tras concluir el arco.} & 222 & 221.0423 & -0.9577 & 222.5588 & 0.5588 & & \\ \hline
+		\end{tabular}%
+	}
+	\caption{Resumen de extremos locales y globales respecto al valor teórico para ángulos a 222° y 227°, respecto del eje horizontal positivo.}
+	\label{cuadro:dispersion_global_2}
+\end{table}
+
+Al analizar las reconstrucciones de cada caso en los cuatro puntos de referencia, se observó la presencia de ciertas ``colas'' en las mediciones durante las transiciones de geometría, afectando principalmente las últimas lecturas previas al cambio geométrico. Estas señales residuales, conocidas técnicamente como reflexiones difusas de bordes \cite{diffuse}, se originan por la interacción del LiDAR con transiciones abruptas, donde los bordes de las superficies generan reflexiones parciales del haz infrarrojo, dando lugar a múltiples ecos al recibir la señal. Este fenómeno incrementó la dispersión en las transiciones geométricas, especialmente en las mediciones finales antes del cambio geométrico. 
+
+Estas ``colas'' en la reconstrucción del entrono representan el resultado de un procesamiento incompleto por parte del sensor. Además, la consistencia de este fenómeno en las mediciones confirma que no se trata de un error aleatorio, sino de un comportamiento sistemático inherente de la interacción del sensor con los cambios geométricos. Para reducir estos efectos, se recomienda emplear técnicas de posprocesamiento, como el suavizado de datos o la compensación geométrica mediante algoritmos avanzados de reconstrucción basados en geometrías primitivas \cite{primitive}.
+
+\chapter{Evaluación conceptual para la futura integración del LiDAR FHL-LD20 en agentes robóticos}
+En este capítulo se presentan modelos 3D que ilustran posibles montajes del sensor FHL-LD20 en los robots de tracción diferencial Pololu 3pi+. Estos montajes son propuestas conceptuales que exploran cómo podría integrarse el sensor, considerando aspectos como tamaño, espacio disponible, operatividad y limitaciones inherentes a cada configuración. Cada diseño ofrece ventajas y desventajas específicas para su aplicación en tareas de navegación autónoma y mapeo de entornos. Los modelos se han desarrollado respetando las dimensiones, la forma y las características físicas tanto del sensor como del robot, para proporcionar una visión realista de su posible implementación.
+
+\section{Montaje frontal del sensor FHL-LD20}

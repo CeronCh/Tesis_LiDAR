@@ -2460,7 +2460,10 @@
     <bcf:citekey order="101" intorder="1">youyeetoo_tech_ld20_nodate</bcf:citekey>
     <bcf:citekey order="102" intorder="1">youyeetoo_tech_ld20_nodate</bcf:citekey>
     <bcf:citekey order="103" intorder="1">youyeetoo_tech_ld20_nodate</bcf:citekey>
-    <bcf:citekey order="104" intorder="1">corke_robotics_2017</bcf:citekey>
+    <bcf:citekey order="104" intorder="1">youyeetoo_tech_ld20_nodate</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">corke_robotics_2017</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">diffuse</bcf:citekey>
+    <bcf:citekey order="107" intorder="1">primitive</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

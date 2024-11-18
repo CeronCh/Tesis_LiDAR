@@ -93,6 +93,7 @@ def catch_samples():
     save_data_dec_button.configure(state = "disabled")
     save_processed_button.configure(state = "disabled")
     save_filtered_button.configure(state = "disabled")
+    statics_quadrilaterals_button.configure(state = "disabled")
     init_time = time.time()
     old_angle_rad, old_angle_deg, new_angle_rad, new_angle_deg, radio_dist, distx, disty = [], [], [], [], [], [], []
     LiDAR.reset_input_buffer()
@@ -151,6 +152,7 @@ def catch_samples():
         save_data_dec_button.configure(state = "normal")
         save_processed_button.configure(state = "normal")
         save_filtered_button.configure(state = "normal")
+        statics_quadrilaterals_button.configure(state = "normal")
         return old_angle_rad, old_angle_deg, new_angle_rad, new_angle_deg, radio_dist, distx, disty
     else:
         print("El puerto no está abierto.")
@@ -285,7 +287,13 @@ def plots(theta, r, x, y):
     ax2.spines["right"].set_edgecolor("white")
 
     ax1.tick_params(axis = "both", colors = "white")
+    ax1.set_xlabel("Ángulos (°)", color="white")
+    ax1.set_ylabel("Radios (mm)", color="white")
+    ax1.yaxis.set_label_coords(-0.1, 0.5)
+
     ax2.tick_params(axis = "both", colors = "white")
+    ax2.set_xlabel("Eje X (mm)", color="white")
+    ax2.set_ylabel("Eje Y (mm)", color="white")
     ax1.plot(theta, r, ".", color = "cyan", markersize = 3) 
     ax2.plot(x, y, ".", color = "cyan", markersize = 3)
     axes1_canvas.draw()
@@ -417,7 +425,7 @@ def edges_analysis():
     plt.close('fig1')
     plt.close('fig2')
     plt.close('all')
-    letter_size = 7
+    letter_size = 12
     expected_value_sup = 200
     interval_sup = 5
     border_exclusion_sup = 8
@@ -437,23 +445,24 @@ def edges_analysis():
     min_value_sup = np.min(y_sup)
     range_value_sup = max_value_sup - min_value_sup
 
-    fig3, ax3 = plt.subplots(figsize=(8, 4), num='fig3')
-    ax3.scatter(x_sup, y_sup, color = "blue", s = 3, label='Arista superior')
-    ax3.plot(x_sup, predicted_line_sup, color='red', label='Regresión superior')
+    fig3, ax3 = plt.subplots(figsize=(10, 4), num='fig3')
+    ax3.scatter(x_sup, y_sup, color = "blue", s = 3, label='Mediciones para arista superior')
+    ax3.plot(x_sup, predicted_line_sup, color='red', label='Regresión lineal')
     
-    ax3.text(90, 198, f"Ecuación: y = {coef_sup:.4f}x + {intercept_sup:.4f}", fontsize=letter_size, color='black')
-    ax3.text(90, 197, f"RMSE: {rmse_sup:.4f}", fontsize=letter_size, color='black')
-    ax3.text(90, 196, f"IC Pendiente: ({confidence_intervals_sup[1][0]:.4f}, {confidence_intervals_sup[1][1]:.4f})", fontsize=letter_size, color='black')
-    ax3.text(90, 195, f"IC Intercepto: ({confidence_intervals_sup[0][0]:.4f}, {confidence_intervals_sup[0][1]:.4f})", fontsize=letter_size, color='black')
-    ax3.text(90, 194, f"Diferencia promedio: {mean_difference_sup:.4f}", fontsize=letter_size, color='black')
-    ax3.text(90, 193, f"Punto máximo: {max_value_sup:.4f}", fontsize=letter_size, color='black')
-    ax3.text(90, 192, f"Punto mínimo: {min_value_sup:.4f}", fontsize=letter_size, color='black')
-    ax3.text(90, 191, f"Rango: {range_value_sup:.4f}", fontsize=letter_size, color='black')
+    ax3.text(105, 193, f"Ecuación: y = {coef_sup:.4f}x + {intercept_sup:.4f}", fontsize=letter_size, color='black')
+    #ax3.text(90, 197, f"RMSE: {rmse_sup:.4f}", fontsize=letter_size, color='black')
+    ax3.text(105, 191, f"IC Pendiente: ({confidence_intervals_sup[1][0]:.4f}, {confidence_intervals_sup[1][1]:.4f})", fontsize=letter_size, color='black')
+    ax3.text(105, 189, f"IC Intercepto: ({confidence_intervals_sup[0][0]:.4f}, {confidence_intervals_sup[0][1]:.4f})", fontsize=letter_size, color='black')
+    ax3.text(105, 187, f"Diferencia promedio: {mean_difference_sup:.4f}", fontsize=letter_size, color='black')
+    ax3.text(105, 185, f"Punto máximo: {max_value_sup:.4f}", fontsize=letter_size, color='black')
+    ax3.text(105, 183, f"Punto mínimo: {min_value_sup:.4f}", fontsize=letter_size, color='black')
+    ax3.text(105, 181, f"Rango: {range_value_sup:.4f}", fontsize=letter_size, color='black')
 
 
     ax3.set_xlim([-210, 210])
-    ax3.set_ylim([190, 210])
-    
+    ax3.set_ylim([180, 220])
+    ax3.set_xlabel("Eje X (mm)")
+    ax3.set_ylabel("Eje Y (mm)")
     ax3.legend()
     ax3.set_title('Análisis de arista horizontal superior')
     
@@ -477,23 +486,24 @@ def edges_analysis():
     min_value_inf = np.min(y_inf)
     range_value_inf = max_value_inf - min_value_inf
 
-    fig4, ax4 = plt.subplots(figsize=(8, 4), num='fig4')
-    ax4.scatter(x_inf, y_inf, color = "blue", s = 3, label='Arista inferior')
-    ax4.plot(x_inf, predicted_line_inf, color='red', label='Regresión inferior')
+    fig4, ax4 = plt.subplots(figsize=(10, 4), num='fig4')
+    ax4.scatter(x_inf, y_inf, color = "blue", s = 3, label='Mediciones para arista inferior')
+    ax4.plot(x_inf, predicted_line_inf, color='red', label='Regresión lineal')
     
-    ax4.text(88, -198, f"Ecuación: y = {coef_inf:.4f}x + {intercept_inf:.4f}", fontsize=letter_size, color='black')
-    ax4.text(88, -197, f"RMSE: {rmse_inf:.4f}", fontsize=letter_size, color='black')
-    ax4.text(88, -196, f"IC Pendiente: ({confidence_intervals_inf[1][0]:.4f}, {confidence_intervals_inf[1][1]:.4f})", fontsize=letter_size, color='black')
-    ax4.text(88, -195, f"IC Intercepto: ({confidence_intervals_inf[0][0]:.4f}, {confidence_intervals_inf[0][1]:.4f})", fontsize=letter_size, color='black')
-    ax4.text(88, -194, f"Diferencia promedio: {mean_difference_inf:.4f}", fontsize=letter_size, color='black')
-    ax4.text(88, -193, f"Punto máximo: {max_value_inf:.4f}", fontsize=letter_size, color='black')
-    ax4.text(88, -192, f"Punto mínimo: {min_value_inf:.4f}", fontsize=letter_size, color='black')
-    ax4.text(88, -191, f"Rango: {range_value_inf:.4f}", fontsize=letter_size, color='black')
+    ax4.text(105, -193, f"Ecuación: y = {coef_inf:.4f}x {intercept_inf:.4f}", fontsize=letter_size, color='black')
+    #ax4.text(105, -194, f"RMSE: {rmse_inf:.4f}", fontsize=letter_size, color='black')
+    ax4.text(105, -191, f"IC Pendiente: ({confidence_intervals_inf[1][0]:.4f}, {confidence_intervals_inf[1][1]:.4f})", fontsize=letter_size, color='black')
+    ax4.text(105, -189, f"IC Intercepto: ({confidence_intervals_inf[0][0]:.4f}, {confidence_intervals_inf[0][1]:.4f})", fontsize=letter_size, color='black')
+    ax4.text(105, -187, f"Diferencia promedio: {mean_difference_inf:.4f}", fontsize=letter_size, color='black')
+    ax4.text(105, -185, f"Punto máximo: {max_value_inf:.4f}", fontsize=letter_size, color='black')
+    ax4.text(105, -183, f"Punto mínimo: {min_value_inf:.4f}", fontsize=letter_size, color='black')
+    ax4.text(105, -181, f"Rango: {range_value_inf:.4f}", fontsize=letter_size, color='black')
 
 
     ax4.set_xlim([-210, 210])
-    ax4.set_ylim([-190, -210])
-    
+    ax4.set_ylim([-180, -220])
+    ax4.set_xlabel("Eje X (mm)")
+    ax4.set_ylabel("Eje Y (mm)")
     ax4.legend()
     ax4.set_title('Análisis de arista horizontal inferior')
     
@@ -517,24 +527,25 @@ def edges_analysis():
     min_value_right = np.min(x_right)
     range_value_right = max_value_right - min_value_right
 
-    fig5, ax5 = plt.subplots(figsize=(5, 8), num='fig5')
-    ax5.scatter(x_right, y_right, color = "blue", s = 3, label='Arista derecha')
-    ax5.plot(predicted_line_right, y_right, color='red', label='Regresión derecha')
+    fig5, ax5 = plt.subplots(figsize=(7, 9), num='fig5')
+    ax5.scatter(x_right, y_right, color = "blue", s = 3, label='Mediciones para arista derecha')
+    ax5.plot(predicted_line_right, y_right, color='red', label='Regresión lineal')
     
-    ax5.text(191, 160, f"Ecuación: y = {coef_right:.4f}x + {intercept_right:.4f}", fontsize=letter_size, color='black')
-    ax5.text(191, 150, f"RMSE: {rmse_right:.4f}", fontsize=letter_size, color='black')
+    ax5.text(161, 150, f"Ecuación: x = {coef_right:.4f}y + {intercept_right:.4f}", fontsize=letter_size-2, color='black')
+    #ax5.text(181, 150, f"RMSE: {rmse_right:.4f}", fontsize=letter_size, color='black')
     #ax5.text(190, -197, f"Desviación Estándar: {std_dev_sup:.4f}", fontsize=letter_size, color='black')
-    ax5.text(191, 140, f"IC Pendiente: ({confidence_intervals_right[1][0]:.4f}, {confidence_intervals_right[1][1]:.4f})", fontsize=letter_size, color='black')
-    ax5.text(191, 130, f"IC Intercepto: ({confidence_intervals_right[0][0]:.4f}, {confidence_intervals_right[0][1]:.4f})", fontsize=letter_size, color='black')
-    ax5.text(191, 120, f"Diferencia promedio: {mean_difference_right:.4f}", fontsize=letter_size, color='black')
-    ax5.text(191, 110, f"Punto máximo: {max_value_right:.4f}", fontsize=letter_size, color='black')
-    ax5.text(191, 100, f"Punto mínimo: {min_value_right:.4f}", fontsize=letter_size, color='black')
-    ax5.text(191, 90, f"Rango: {range_value_right:.4f}", fontsize=letter_size, color='black')
+    ax5.text(161, 140, f"IC Pendiente: ({confidence_intervals_right[1][0]:.4f}, {confidence_intervals_right[1][1]:.4f})", fontsize=letter_size-2, color='black')
+    ax5.text(161, 130, f"IC Intercepto: ({confidence_intervals_right[0][0]:.4f}, {confidence_intervals_right[0][1]:.4f})", fontsize=letter_size-2, color='black')
+    ax5.text(161, 120, f"Diferencia promedio: {mean_difference_right:.4f}", fontsize=letter_size-2, color='black')
+    ax5.text(161, 110, f"Punto máximo: {max_value_right:.4f}", fontsize=letter_size-2, color='black')
+    ax5.text(161, 100, f"Punto mínimo: {min_value_right:.4f}", fontsize=letter_size-2, color='black')
+    ax5.text(161, 90, f"Rango: {range_value_right:.4f}", fontsize=letter_size-2, color='black')
 
 
-    ax5.set_xlim([190, 210])
+    ax5.set_xlim([160, 240])
     ax5.set_ylim([-210, 210])
-    
+    ax5.set_xlabel("Eje X (mm)")
+    ax5.set_ylabel("Eje Y (mm)")
     ax5.legend()
     ax5.set_title('Análisis de arista vertical derecha')
     
@@ -558,24 +569,25 @@ def edges_analysis():
     min_value_left = np.min(x_left)
     range_value_left = max_value_left - min_value_left
 
-    fig6, ax6 = plt.subplots(figsize=(5, 8), num='fig6')
-    ax6.scatter(x_left, y_left, color = "blue", s = 3, label='Arista izquierda')
-    ax6.plot(predicted_line_left, y_left, color='red', label='Regresión izquierda')
+    fig6, ax6 = plt.subplots(figsize=(7, 9), num='fig6')
+    ax6.scatter(x_left, y_left, color = "blue", s = 3, label='Mediciones para arista izquierda')
+    ax6.plot(predicted_line_left, y_left, color='red', label='Regresión lineal')
     
-    ax6.text(-191, 160, f"Ecuación: y = {coef_left:.4f}x + {intercept_left:.4f}", fontsize=letter_size, color='black')
-    ax6.text(-191, 150, f"RMSE: {rmse_left:.4f}", fontsize=letter_size, color='black')
+    ax6.text(-161, 150, f"Ecuación: y = {coef_left:.4f}x + {intercept_left:.4f}", fontsize=letter_size-2, color='black')
+    #ax6.text(-191, 150, f"RMSE: {rmse_left:.4f}", fontsize=letter_size, color='black')
     #ax6.text(-191, -197, f"Desviación Estándar: {std_dev_sup:.4f}", fontsize=letter_size, color='black')
-    ax6.text(-191, 140, f"IC Pendiente: ({confidence_intervals_left[1][0]:.4f}, {confidence_intervals_left[1][1]:.4f})", fontsize=letter_size, color='black')
-    ax6.text(-191, 130, f"IC Intercepto: ({confidence_intervals_left[0][0]:.4f}, {confidence_intervals_left[0][1]:.4f})", fontsize=letter_size, color='black')
-    ax6.text(-191, 120, f"Diferencia promedio: {mean_difference_left:.4f}", fontsize=letter_size, color='black')
-    ax6.text(-191, 110, f"Punto máximo: {max_value_left:.4f}", fontsize=letter_size, color='black')
-    ax6.text(-191, 100, f"Punto mínimo: {min_value_left:.4f}", fontsize=letter_size, color='black')
-    ax6.text(-191, 90, f"Rango: {range_value_left:.4f}", fontsize=letter_size, color='black')
+    ax6.text(-161, 140, f"IC Pendiente: ({confidence_intervals_left[1][0]:.4f}, {confidence_intervals_left[1][1]:.4f})", fontsize=letter_size-2, color='black')
+    ax6.text(-161, 130, f"IC Intercepto: ({confidence_intervals_left[0][0]:.4f}, {confidence_intervals_left[0][1]:.4f})", fontsize=letter_size-2, color='black')
+    ax6.text(-161, 120, f"Diferencia promedio: {mean_difference_left:.4f}", fontsize=letter_size-2, color='black')
+    ax6.text(-161, 110, f"Punto máximo: {max_value_left:.4f}", fontsize=letter_size-2, color='black')
+    ax6.text(-161, 100, f"Punto mínimo: {min_value_left:.4f}", fontsize=letter_size-2, color='black')
+    ax6.text(-161, 90, f"Rango: {range_value_left:.4f}", fontsize=letter_size-2, color='black')
 
 
-    ax6.set_xlim([-190, -210])
+    ax6.set_xlim([-160, -240])
     ax6.set_ylim([-210, 210])
-    
+    ax6.set_xlabel("Eje X (mm)")
+    ax6.set_ylabel("Eje Y (mm)")
     ax6.legend()
     ax6.set_title('Análisis de arista vertical izquierda')
     
@@ -590,7 +602,8 @@ def edges_analysis():
     ax7.plot(predicted_line_left, y_left, color='red', label='Regresión realizada')
     ax7.set_xlim([-210, 210])
     ax7.set_ylim([-210, 210])
-    
+    ax7.set_xlabel("Eje X (mm)")
+    ax7.set_ylabel("Eje Y (mm)")
     ax7.legend()
     ax7.set_title('Análisis de reconstrucción')
     
@@ -823,7 +836,7 @@ main_letter = "#FFFFFF"
 customtkinter.set_appearance_mode("dark")
 customtkinter.set_default_color_theme("dark-blue")
 main_window = customtkinter.CTk()
-main_window.geometry("1015x700")
+main_window.geometry("1015x750")
 main_window.title("LiDAR MapViewer")
 main_window.protocol("WM_DELETE_WINDOW", on_closing)
 # ---------------------------------------Definicion de sección de conexión a COM----------------------------------------
@@ -925,7 +938,7 @@ time_label2.configure(font = ("Helvetica", 12), text_color = main_letter)
 time_label2.grid(row = 2, column = 9, sticky = "W",padx = 5, pady = 1)
 
 # ---------------------------------------Definicion de sección para graficar ejes----------------------------------------
-axes_tabview = customtkinter.CTkTabview(main_window, width = 835, height = 600)
+axes_tabview = customtkinter.CTkTabview(main_window, width = 835, height = 650)
 axes_tabview.configure(border_width = 1, border_color = border_frame)
 axes_tabview.grid(row = 3, column = 0, columnspan = 7, rowspan = 20, padx = 5, pady = 5)
 axes_tabview.grid_propagate(False) 
@@ -942,6 +955,9 @@ fig1.patch.set_facecolor("#212121")
 ax1.set_facecolor("#212121") 
 ax1.spines["polar"].set_edgecolor("white")
 ax1.tick_params(axis = "both", colors = "white")
+ax1.set_xlabel("Ángulos (°)", color="white")
+ax1.set_ylabel("Radios (mm)", color="white")
+ax1.yaxis.set_label_coords(-0.1, 0.5)
 
 axes1_canvas = FigureCanvasTkAgg(fig1, master = tab1)
 axes1_widget = axes1_canvas.get_tk_widget()
@@ -961,7 +977,8 @@ ax2.spines["bottom"].set_edgecolor("white")
 ax2.spines["left"].set_edgecolor("white")
 ax2.spines["right"].set_edgecolor("white")
 ax2.tick_params(axis = "both", colors = "white")
-
+ax2.set_xlabel("Eje X (mm)", color="white")
+ax2.set_ylabel("Eje Y (mm)", color="white")
 axes2_canvas = FigureCanvasTkAgg(fig2, master = tab2)
 axes2_widget = axes2_canvas.get_tk_widget()
 axes2_widget.config(width = 705, height = 685)

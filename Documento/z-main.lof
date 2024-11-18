@@ -41,41 +41,97 @@
 \contentsline {figure}{\numberline {30}{\ignorespaces Vista isométrica del soporte para el LiDAR FHL-LD20.}}{49}{figure.caption.117}%
 \contentsline {figure}{\numberline {31}{\ignorespaces Vista isométrica de la plataforma de pruebas.}}{50}{figure.caption.118}%
 \contentsline {figure}{\numberline {32}{\ignorespaces Vista superior de la plataforma de pruebas.}}{50}{figure.caption.119}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Diagrama de flujo general para procesamiento de datos en formato decimal.}}{52}{figure.caption.121}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Comparación de la reconstrucción con y sin filtro de mediciones nulas: tres revoluciones completas capturadas.}}{53}{figure.caption.122}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Ejemplificación de las lecturas nulas durante la reconstrucción de mediciones: entorno circular de 6 cm de radio.}}{54}{figure.caption.125}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas capturadas en entorno circular: 6 cm de radio}}{55}{figure.caption.126}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas capturadas en entorno circular: 10 cm de radio}}{56}{figure.caption.127}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Reconstrucción con 180 revoluciones completas capturadas del entorno circular: 149 mm de radio.}}{58}{figure.caption.134}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Reconstrucción del entorno circular de 499 mm de radio con 180 revoluciones completas capturadas.}}{59}{figure.caption.135}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Ajuste lineal para la variación de la varianza en función de la distancia.}}{60}{figure.caption.137}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 149 mm.}}{61}{figure.caption.138}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 499 mm.}}{61}{figure.caption.139}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Variación del sesgo en función de la distancia.}}{62}{figure.caption.140}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Análisis de la reconstrucción realizada para las aristas horizontales de una caja de 400$\times $400 mm: tres revoluciones completas capturadas.}}{65}{figure.caption.143}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Análisis de la reconstrucción realizada para las aristas verticales de una caja de 400$\times $400 mm: tres revoluciones completas capturadas.}}{66}{figure.caption.144}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Diseño de los codos para transiciones graduales}}{67}{figure.caption.146}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Comparación de la reconstrucción con y sin ángulo de corrección: tres revoluciones completas capturadas.}}{52}{figure.caption.123}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Análisis de la reconstrucción realizada para las aristas horizontales de una caja de 400$\times $400 mm: tres revoluciones completas capturadas.}}{54}{figure.caption.125}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Análisis de la reconstrucción realizada para las aristas verticales de una caja de 400$\times $400 mm: tres revoluciones completas capturadas.}}{55}{figure.caption.126}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {47}{\ignorespaces Reconstrucción realizada para verificar la calibración del sensor.}}{69}{figure.caption.149}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Comparación de la reconstrucción con y sin ángulo de corrección: tres revoluciones completas capturadas.}}{71}{figure.caption.153}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Diagrama de flujo general para procesamiento de datos en formato decimal.}}{58}{figure.caption.129}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Comparación de la reconstrucción con y sin filtro de mediciones nulas: tres revoluciones completas capturadas.}}{59}{figure.caption.130}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Ejemplificación de las lecturas nulas durante la reconstrucción de mediciones: entorno circular de 60 mm de radio.}}{60}{figure.caption.133}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas capturadas en entorno circular: 60 mm de radio.}}{61}{figure.caption.134}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Reconstrucción del entorno circular de 90 mm de radio con tres revoluciones completas capturadas.}}{62}{figure.caption.135}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Reconstrucción del entorno circular de 100 mm de radio con tres revoluciones completas capturadas.}}{63}{figure.caption.136}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Reconstrucción con 180 revoluciones completas capturadas del entorno circular: 149 mm de radio.}}{65}{figure.caption.142}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Reconstrucción del entorno circular de 499 mm de radio con 180 revoluciones completas capturadas.}}{66}{figure.caption.143}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Ajuste lineal para la variación de la varianza en función de la distancia.}}{67}{figure.caption.145}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 149 mm.}}{68}{figure.caption.146}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 499 mm.}}{69}{figure.caption.147}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Variación del sesgo en función de la distancia.}}{69}{figure.caption.148}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Disposición del sensor FHL-LD20 dentro del círculo de obstrucción visual con apertura de aproximadamente 40°.}}{70}{figure.caption.150}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Reconstrucción del entorno circular de 149 mm de radio con arco, 180 revoluciones completas capturadas.}}{70}{figure.caption.151}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Reconstrucción del entorno circular de 499 mm de radio con arco, 180 revoluciones completas capturadas.}}{71}{figure.caption.152}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Cuatro puntos de referencia principales en las transiciones de geometría.}}{72}{figure.caption.157}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Dispersión angular en la última medición del círculo externo antes del arco a diferentes distancias radiales.}}{73}{figure.caption.158}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Dispersión angular en la primera medición correspondiente al inicio del arco a diferentes distancias radiales.}}{73}{figure.caption.159}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Dispersión angular en la última medición justo antes de finalizar el arco a diferentes distancias radiales.}}{74}{figure.caption.160}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Dispersión angular en la primera medición del círculo externo tras concluir el arco. a diferentes distancias radiales.}}{74}{figure.caption.161}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Cuatro puntos de referencia principales en las transiciones de geometría.}}{76}{figure.caption.163}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Dispersión angular en la última medición del círculo externo antes del arco a diferentes distancias radiales.}}{77}{figure.caption.164}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Dispersión angular en la primera medición correspondiente al inicio del arco a diferentes distancias radiales.}}{77}{figure.caption.165}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Dispersión angular en la última medición justo antes de finalizar el arco a diferentes distancias radiales.}}{78}{figure.caption.166}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Dispersión angular en la primera medición del círculo externo tras concluir el arco. a diferentes distancias radiales.}}{78}{figure.caption.167}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {49}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas de lectura en entorno circular: 7 cm de radio}}{78}{figure.caption.160}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas de lectura en entorno circular: 8 cm de radio}}{79}{figure.caption.161}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas de lectura en entorno circular: 9 cm de radio}}{80}{figure.caption.162}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Reconstrucción del entorno circular de 199 mm de radio con 180 revoluciones completas capturadas.}}{81}{figure.caption.164}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Reconstrucción del entorno circular de 249 mm de radio con 180 revoluciones completas capturadas.}}{82}{figure.caption.165}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Reconstrucción del entorno circular de 299 mm de radio con 180 revoluciones completas capturadas.}}{83}{figure.caption.166}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Reconstrucción del entorno circular de 349 mm de radio con 180 revoluciones completas capturadas.}}{84}{figure.caption.167}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Reconstrucción del entorno circular de 399 mm de radio con 180 revoluciones completas capturadas.}}{85}{figure.caption.168}%
-\contentsline {figure}{\numberline {57}{\ignorespaces Reconstrucción del entorno circular de 449 mm de radio con 180 revoluciones completas capturadas.}}{86}{figure.caption.169}%
-\contentsline {figure}{\numberline {58}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 149 mm de radio.}}{87}{figure.caption.170}%
-\contentsline {figure}{\numberline {59}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 199 mm de radio.}}{87}{figure.caption.171}%
-\contentsline {figure}{\numberline {60}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 249 mm de radio.}}{88}{figure.caption.172}%
-\contentsline {figure}{\numberline {61}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 299 mm de radio.}}{88}{figure.caption.173}%
-\contentsline {figure}{\numberline {62}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 349 mm de radio.}}{89}{figure.caption.174}%
-\contentsline {figure}{\numberline {63}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 399 mm de radio.}}{89}{figure.caption.175}%
-\contentsline {figure}{\numberline {64}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 449 mm de radio.}}{90}{figure.caption.176}%
-\contentsline {figure}{\numberline {65}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 499 mm de radio.}}{90}{figure.caption.177}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {61}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas de lectura en entorno circular: 70 mm de radio.}}{87}{figure.caption.177}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Reconstrucciones vacías de tres revoluciones completas de lectura en entorno circular: 8 cm de radio.}}{88}{figure.caption.178}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Reconstrucción del entorno circular de 199 mm de radio con 180 revoluciones completas capturadas.}}{89}{figure.caption.180}%
+\contentsline {figure}{\numberline {64}{\ignorespaces Reconstrucción del entorno circular de 249 mm de radio con 180 revoluciones completas capturadas.}}{90}{figure.caption.181}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Reconstrucción del entorno circular de 299 mm de radio con 180 revoluciones completas capturadas.}}{91}{figure.caption.182}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Reconstrucción del entorno circular de 349 mm de radio con 180 revoluciones completas capturadas.}}{92}{figure.caption.183}%
+\contentsline {figure}{\numberline {67}{\ignorespaces Reconstrucción del entorno circular de 399 mm de radio con 180 revoluciones completas capturadas.}}{93}{figure.caption.184}%
+\contentsline {figure}{\numberline {68}{\ignorespaces Reconstrucción del entorno circular de 449 mm de radio con 180 revoluciones completas capturadas.}}{94}{figure.caption.185}%
+\contentsline {figure}{\numberline {69}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 149 mm.}}{95}{figure.caption.186}%
+\contentsline {figure}{\numberline {70}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 249 mm.}}{95}{figure.caption.187}%
+\contentsline {figure}{\numberline {71}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 299 mm.}}{96}{figure.caption.188}%
+\contentsline {figure}{\numberline {72}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 349 mm.}}{96}{figure.caption.189}%
+\contentsline {figure}{\numberline {73}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 399 mm.}}{97}{figure.caption.190}%
+\contentsline {figure}{\numberline {74}{\ignorespaces Variabilidad de las mediciones capturadas para un radio real de 449 mm.}}{97}{figure.caption.191}%
+\contentsline {figure}{\numberline {75}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 149 mm de radio.}}{98}{figure.caption.192}%
+\contentsline {figure}{\numberline {76}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 199 mm de radio.}}{98}{figure.caption.193}%
+\contentsline {figure}{\numberline {77}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 249 mm de radio.}}{99}{figure.caption.194}%
+\contentsline {figure}{\numberline {78}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 299 mm de radio.}}{99}{figure.caption.195}%
+\contentsline {figure}{\numberline {79}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 349 mm de radio.}}{100}{figure.caption.196}%
+\contentsline {figure}{\numberline {80}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 399 mm de radio.}}{100}{figure.caption.197}%
+\contentsline {figure}{\numberline {81}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 449 mm de radio.}}{101}{figure.caption.198}%
+\contentsline {figure}{\numberline {82}{\ignorespaces Distribución de las mediciones de distancia radial para un círculo de 499 mm de radio.}}{101}{figure.caption.199}%
+\contentsline {figure}{\numberline {83}{\ignorespaces Reconstrucción del entorno circular de 199 mm de radio con arco, 180 revoluciones completas capturadas.}}{106}{figure.caption.209}%
+\contentsline {figure}{\numberline {84}{\ignorespaces Reconstrucción del entorno circular de 249 mm de radio con arco, 230 revoluciones completas capturadas.}}{106}{figure.caption.210}%
+\contentsline {figure}{\numberline {85}{\ignorespaces Reconstrucción del entorno circular de 299 mm de radio con arco, 280 revoluciones completas capturadas.}}{107}{figure.caption.211}%
+\contentsline {figure}{\numberline {86}{\ignorespaces Reconstrucción del entorno circular de 349 mm de radio con arco, 330 revoluciones completas capturadas.}}{107}{figure.caption.212}%
+\contentsline {figure}{\numberline {87}{\ignorespaces Reconstrucción del entorno circular de 399 mm de radio con arco, 380 revoluciones completas capturadas.}}{108}{figure.caption.213}%
+\contentsline {figure}{\numberline {88}{\ignorespaces Reconstrucción del entorno circular de 449 mm de radio con arco, 430 revoluciones completas capturadas.}}{108}{figure.caption.214}%
+\contentsline {figure}{\numberline {89}{\ignorespaces Deltas de la primera medición angular capturada para el arco de 129 mm de radio, iniciando a 47°.}}{109}{figure.caption.215}%
+\contentsline {figure}{\numberline {90}{\ignorespaces Distribución de la primera medición angular capturada para el arco de 129 mm de radio, iniciando a 47°.}}{109}{figure.caption.216}%
+\contentsline {figure}{\numberline {91}{\ignorespaces Deltas de la última medición angular capturada para el arco de 129 mm de radio, finalizando a 42°.}}{110}{figure.caption.217}%
+\contentsline {figure}{\numberline {92}{\ignorespaces Distribución de la última medición angular capturada para el arco de 129 mm de radio, finalizando a 42°.}}{110}{figure.caption.218}%
+\contentsline {figure}{\numberline {93}{\ignorespaces Deltas de la primera medición angular capturada para el arco de 179 mm de radio, iniciando a 47°.}}{111}{figure.caption.219}%
+\contentsline {figure}{\numberline {94}{\ignorespaces Distribución de la primera medición angular capturada para el arco de 179 mm de radio, iniciando a 47°.}}{111}{figure.caption.220}%
+\contentsline {figure}{\numberline {95}{\ignorespaces Deltas de la última medición angular capturada para el arco de 179 mm de radio, finalizando a 42°.}}{112}{figure.caption.221}%
+\contentsline {figure}{\numberline {96}{\ignorespaces Distribución de la última medición angular capturada para el arco de 179 mm de radio, finalizando a 42°.}}{112}{figure.caption.222}%
+\contentsline {figure}{\numberline {97}{\ignorespaces Deltas de la primera medición angular capturada para el arco de 229 mm de radio, iniciando a 47°.}}{113}{figure.caption.223}%
+\contentsline {figure}{\numberline {98}{\ignorespaces Distribución de la primera medición angular capturada para el arco de 229 mm de radio, iniciando a 42°.}}{113}{figure.caption.224}%
+\contentsline {figure}{\numberline {99}{\ignorespaces Deltas de la última medición angular capturada para el arco de 229 mm de radio, finalizando a 42°.}}{114}{figure.caption.225}%
+\contentsline {figure}{\numberline {100}{\ignorespaces Distribución de la última medición angular capturada para el arco de 229 mm de radio, finalizando a 42°.}}{114}{figure.caption.226}%
+\contentsline {figure}{\numberline {101}{\ignorespaces Deltas de la primera medición angular capturada para el arco de 279 mm de radio, iniciando a 47°.}}{115}{figure.caption.227}%
+\contentsline {figure}{\numberline {102}{\ignorespaces Distribución de la primera medición angular capturada para el arco de 279 mm de radio, iniciando a 47°.}}{115}{figure.caption.228}%
+\contentsline {figure}{\numberline {103}{\ignorespaces Deltas de la última medición angular capturada para el arco de 279 mm de radio, finalizando a 42°.}}{116}{figure.caption.229}%
+\contentsline {figure}{\numberline {104}{\ignorespaces Distribución de la última medición angular capturada para el arco de 279 mm de radio, finalizando a 42°.}}{116}{figure.caption.230}%
+\contentsline {figure}{\numberline {105}{\ignorespaces Deltas de la primera medición angular capturada para el arco de 329 mm de radio, iniciando a 47°.}}{117}{figure.caption.231}%
+\contentsline {figure}{\numberline {106}{\ignorespaces Distribución de la primera medición angular capturada para el arco de 329 mm de radio, iniciando a 47°.}}{117}{figure.caption.232}%
+\contentsline {figure}{\numberline {107}{\ignorespaces Deltas de la última medición angular capturada para el arco de 329 mm de radio, finalizando a 42°.}}{118}{figure.caption.233}%
+\contentsline {figure}{\numberline {108}{\ignorespaces Distribución de la última medición angular capturada para el arco de 329 mm de radio, finalizando a 42°.}}{118}{figure.caption.234}%
+\contentsline {figure}{\numberline {109}{\ignorespaces Deltas de la primera medición angular capturada para el arco de 379 mm de radio, iniciando a 47°.}}{119}{figure.caption.235}%
+\contentsline {figure}{\numberline {110}{\ignorespaces Distribución de la primera medición angular capturada para el arco de 379 mm de radio, iniciando a 47°.}}{119}{figure.caption.236}%
+\contentsline {figure}{\numberline {111}{\ignorespaces Deltas de la última medición angular capturada para el arco de 379 mm de radio, finalizando a 42°.}}{120}{figure.caption.237}%
+\contentsline {figure}{\numberline {112}{\ignorespaces Distribución de la última medición angular capturada para el arco de 379 mm de radio, finalizando a 42°.}}{120}{figure.caption.238}%
+\contentsline {figure}{\numberline {113}{\ignorespaces Deltas de la primera medición angular capturada para el arco de 429 mm de radio, iniciando a 47°.}}{121}{figure.caption.239}%
+\contentsline {figure}{\numberline {114}{\ignorespaces Distribución de la primera medición angular capturada para el arco de 429 mm de radio, iniciando a 47°.}}{121}{figure.caption.240}%
+\contentsline {figure}{\numberline {115}{\ignorespaces Deltas de la última medición angular capturada para el arco de 429 mm de radio, finalizando a 42°.}}{122}{figure.caption.241}%
+\contentsline {figure}{\numberline {116}{\ignorespaces Distribución de la última medición angular capturada para el arco de 429 mm de radio, finalizando a 42°.}}{122}{figure.caption.242}%
+\contentsline {figure}{\numberline {117}{\ignorespaces Deltas de la primera medición angular capturada para el arco de 479 mm de radio, iniciando a 47°.}}{123}{figure.caption.243}%
+\contentsline {figure}{\numberline {118}{\ignorespaces Distribución de la primera medición angular capturada para el arco de 479 mm de radio, iniciando a 47°.}}{123}{figure.caption.244}%
+\contentsline {figure}{\numberline {119}{\ignorespaces Deltas de la última medición angular capturada para el arco de 479 mm de radio, finalizando a 42°.}}{124}{figure.caption.245}%
+\contentsline {figure}{\numberline {120}{\ignorespaces Distribución de la última medición angular capturada para el arco de 479 mm de radio, finalizando a 42°.}}{124}{figure.caption.246}%
