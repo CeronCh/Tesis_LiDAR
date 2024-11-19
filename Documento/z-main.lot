@@ -7,46 +7,46 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces Criterios de comparación.}}{27}{table.caption.63}%
-\contentsline {table}{\numberline {2}{\ignorespaces Matriz de comparación por pares.}}{28}{table.caption.64}%
-\contentsline {table}{\numberline {3}{\ignorespaces Escala fundamental de comparación por pares.}}{29}{table.caption.65}%
-\contentsline {table}{\numberline {4}{\ignorespaces Valores de interés para la comparación.}}{29}{table.caption.67}%
-\contentsline {table}{\numberline {5}{\ignorespaces Ponderación de costo.}}{30}{table.caption.69}%
-\contentsline {table}{\numberline {6}{\ignorespaces Ponderación de disponibilidad.}}{30}{table.caption.71}%
-\contentsline {table}{\numberline {7}{\ignorespaces Ponderación de precisión.}}{30}{table.caption.73}%
-\contentsline {table}{\numberline {8}{\ignorespaces Ponderación de rango de medición.}}{31}{table.caption.75}%
-\contentsline {table}{\numberline {9}{\ignorespaces Ponderación de parámetros eléctricos.}}{31}{table.caption.77}%
-\contentsline {table}{\numberline {10}{\ignorespaces Ponderación de velocidad de medición.}}{32}{table.caption.79}%
-\contentsline {table}{\numberline {11}{\ignorespaces Ponderación de tamaño.}}{32}{table.caption.81}%
-\contentsline {table}{\numberline {12}{\ignorespaces Ponderación de masa.}}{32}{table.caption.83}%
-\contentsline {table}{\numberline {13}{\ignorespaces Ponderación de operatividad en aplicaciones deseadas.}}{33}{table.caption.85}%
-\contentsline {table}{\numberline {14}{\ignorespaces Ponderación de adaptabilidad a robots móviles.}}{34}{table.caption.87}%
-\contentsline {table}{\numberline {15}{\ignorespaces Características de los sensores analizados.}}{34}{table.caption.88}%
-\contentsline {table}{\numberline {16}{\ignorespaces Ponderación individual de los sensores evaluados según criterios establecidos.}}{35}{table.caption.92}%
+\contentsline {table}{\numberline {1}{\ignorespaces Criterios de comparación.}}{29}{table.caption.63}%
+\contentsline {table}{\numberline {2}{\ignorespaces Matriz de comparación por pares.}}{30}{table.caption.64}%
+\contentsline {table}{\numberline {3}{\ignorespaces Escala fundamental de comparación por pares.}}{31}{table.caption.65}%
+\contentsline {table}{\numberline {4}{\ignorespaces Valores de interés para la comparación.}}{31}{table.caption.67}%
+\contentsline {table}{\numberline {5}{\ignorespaces Ponderación de costo.}}{32}{table.caption.69}%
+\contentsline {table}{\numberline {6}{\ignorespaces Ponderación de disponibilidad.}}{32}{table.caption.71}%
+\contentsline {table}{\numberline {7}{\ignorespaces Ponderación de precisión.}}{32}{table.caption.73}%
+\contentsline {table}{\numberline {8}{\ignorespaces Ponderación de rango de medición.}}{33}{table.caption.75}%
+\contentsline {table}{\numberline {9}{\ignorespaces Ponderación de parámetros eléctricos.}}{33}{table.caption.77}%
+\contentsline {table}{\numberline {10}{\ignorespaces Ponderación de velocidad de medición.}}{34}{table.caption.79}%
+\contentsline {table}{\numberline {11}{\ignorespaces Ponderación de tamaño.}}{34}{table.caption.81}%
+\contentsline {table}{\numberline {12}{\ignorespaces Ponderación de masa.}}{34}{table.caption.83}%
+\contentsline {table}{\numberline {13}{\ignorespaces Ponderación de operatividad en aplicaciones deseadas.}}{35}{table.caption.85}%
+\contentsline {table}{\numberline {14}{\ignorespaces Ponderación de adaptabilidad a robots móviles.}}{36}{table.caption.87}%
+\contentsline {table}{\numberline {15}{\ignorespaces Características de los sensores analizados.}}{36}{table.caption.88}%
+\contentsline {table}{\numberline {16}{\ignorespaces Ponderación individual de los sensores evaluados según criterios establecidos.}}{37}{table.caption.92}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {17}{\ignorespaces Parámetros de rendimiento.}}{37}{table.caption.96}%
-\contentsline {table}{\numberline {18}{\ignorespaces Parámetros de conexión del Lidar FHL-LD20.}}{38}{table.caption.101}%
-\contentsline {table}{\numberline {19}{\ignorespaces Parámetros de transmisión UART.}}{38}{table.caption.102}%
-\contentsline {table}{\numberline {20}{\ignorespaces Estructura de un paquete de medición.}}{38}{table.caption.104}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {21}{\ignorespaces Estadísticas de precisión: valores promedio de distancia, sesgo y varianza muestral obtenidos para cada radio tras las diez corridas realizadas.}}{67}{table.caption.144}%
-\contentsline {table}{\numberline {22}{\ignorespaces Resumen de extremos locales y globales respecto al valor teórico.}}{75}{table.caption.162}%
-\contentsline {table}{\numberline {23}{\ignorespaces Resumen de extremos locales y globales respecto al valor teórico para ángulos a 222° y 227°, respecto del eje horizontal positivo.}}{79}{table.caption.168}%
+\contentsline {table}{\numberline {17}{\ignorespaces Parámetros de rendimiento.}}{39}{table.caption.96}%
+\contentsline {table}{\numberline {18}{\ignorespaces Parámetros de conexión del Lidar FHL-LD20.}}{40}{table.caption.101}%
+\contentsline {table}{\numberline {19}{\ignorespaces Parámetros de transmisión UART.}}{40}{table.caption.102}%
+\contentsline {table}{\numberline {20}{\ignorespaces Estructura de un paquete de medición.}}{40}{table.caption.104}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {21}{\ignorespaces Estadísticas de precisión: valores promedio de distancia, sesgo y varianza muestral obtenidos para cada radio tras las diez corridas realizadas.}}{70}{table.caption.145}%
+\contentsline {table}{\numberline {22}{\ignorespaces Resumen de extremos locales y globales respecto al valor teórico.}}{78}{table.caption.163}%
+\contentsline {table}{\numberline {23}{\ignorespaces Resumen de extremos locales y globales respecto al valor teórico para ángulos a 222° y 227°, respecto del eje horizontal positivo.}}{82}{table.caption.169}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {24}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 149 mm de radio.}}{102}{table.caption.200}%
-\contentsline {table}{\numberline {25}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 199 mm de radio.}}{102}{table.caption.201}%
-\contentsline {table}{\numberline {26}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 249 mm de radio.}}{103}{table.caption.202}%
-\contentsline {table}{\numberline {27}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 299 mm de radio.}}{103}{table.caption.203}%
-\contentsline {table}{\numberline {28}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 349 mm de radio.}}{104}{table.caption.204}%
-\contentsline {table}{\numberline {29}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 399 mm de radio.}}{104}{table.caption.205}%
-\contentsline {table}{\numberline {30}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 449 mm de radio.}}{105}{table.caption.206}%
-\contentsline {table}{\numberline {31}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 499 mm de radio.}}{105}{table.caption.207}%
-\contentsline {table}{\numberline {32}{\ignorespaces Estadísticas de precisión: valores mínimo, promedio y máximo de las mediciones angulares en los puntos inicial y final del arco a 42° y 47° respecto al eje horizontal positivo, para los ocho escenarios evaluados.}}{125}{table.caption.247}%
-\contentsline {table}{\numberline {33}{\ignorespaces Estadísticas de precisión: valores mínimo, promedio y máximo de las mediciones angulares en los puntos inicial y final del círculo externo a 42° y 47° respecto al eje horizontal positivo, para los ocho escenarios evaluados.}}{125}{table.caption.248}%
-\contentsline {table}{\numberline {34}{\ignorespaces Estadísticas de precisión: valores mínimo, promedio y máximo de las mediciones angulares en los puntos inicial y final del arco a 222° y 227° respecto al eje horizontal positivo, para los ocho escenarios evaluados.}}{125}{table.caption.249}%
-\contentsline {table}{\numberline {35}{\ignorespaces Estadísticas de precisión: valores mínimo, promedio y máximo de las mediciones angulares en los puntos inicial y final del círculo externo a 222° y 227° respecto al eje horizontal positivo, para los ocho escenarios evaluados.}}{126}{table.caption.250}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {24}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 149 mm de radio.}}{108}{table.caption.207}%
+\contentsline {table}{\numberline {25}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 199 mm de radio.}}{109}{table.caption.208}%
+\contentsline {table}{\numberline {26}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 249 mm de radio.}}{109}{table.caption.209}%
+\contentsline {table}{\numberline {27}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 299 mm de radio.}}{110}{table.caption.210}%
+\contentsline {table}{\numberline {28}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 349 mm de radio.}}{110}{table.caption.211}%
+\contentsline {table}{\numberline {29}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 399 mm de radio.}}{111}{table.caption.212}%
+\contentsline {table}{\numberline {30}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 449 mm de radio.}}{111}{table.caption.213}%
+\contentsline {table}{\numberline {31}{\ignorespaces Estadísticas de precisión de 180 revoluciones completas de lectura en entorno circular: 499 mm de radio.}}{112}{table.caption.214}%
+\contentsline {table}{\numberline {32}{\ignorespaces Estadísticas de precisión: valores mínimo, promedio y máximo de las mediciones angulares en los puntos inicial y final del arco a 42° y 47° respecto al eje horizontal positivo, para los ocho escenarios evaluados.}}{121}{table.caption.234}%
+\contentsline {table}{\numberline {33}{\ignorespaces Estadísticas de precisión: valores mínimo, promedio y máximo de las mediciones angulares en los puntos inicial y final del círculo externo a 42° y 47° respecto al eje horizontal positivo, para los ocho escenarios evaluados.}}{122}{table.caption.235}%
+\contentsline {table}{\numberline {34}{\ignorespaces Estadísticas de precisión: valores mínimo, promedio y máximo de las mediciones angulares en los puntos inicial y final del arco a 222° y 227° respecto al eje horizontal positivo, para los ocho escenarios evaluados.}}{122}{table.caption.236}%
+\contentsline {table}{\numberline {35}{\ignorespaces Estadísticas de precisión: valores mínimo, promedio y máximo de las mediciones angulares en los puntos inicial y final del círculo externo a 222° y 227° respecto al eje horizontal positivo, para los ocho escenarios evaluados.}}{122}{table.caption.237}%

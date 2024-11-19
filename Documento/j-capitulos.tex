@@ -412,7 +412,7 @@ Una vez definidos los pesos y ponderaciones de los criterios presentados previam
 \end{table}
 
 \chapter{Lectura e interpretación de datos extraídos del LiDAR FHL-LD20}
-Este capítulo aborda el funcionamiento y la interpretación de datos del sensor LiDAR FHL-LD20. Se detalla el formato de los paquetes de datos enviados por el sensor, y se describe cómo se captura y procesa esta información utilizando software como Matlab y Python. Además, se presenta la aplicación desarrollada para que el usuario comprenda como operar el sensor y utilizar de manera efectiva los datos que proporciona.
+Este capítulo aborda el funcionamiento y la interpretación de datos del sensor LiDAR FHL-LD20. Se detalla el formato de los paquetes de datos enviados por el sensor, y se describe cómo se captura y procesa esta información utilizando software como Matlab y Python. Además, se presenta la aplicación desarrollada para que el usuario comprenda cómo opera el sensor y utilizar de manera efectiva los datos que proporciona.
 
 \section{Funcionamiento del sensor de distancia FHL-LD20}
 Esta sección se centra en el funcionamiento del sensor FHL-LD20, detallando sus características técnicas, protocolo de comunicación y la estructura de los datos que transmite. Se exploran los principios de operación que permiten al sensor capturar y transmitir información de manera eficiente. La comprensión de estos aspectos es fundamental para integrar y utilizar el sensor de manera efectiva en aplicaciones que requieran mediciones precisas. 
@@ -641,7 +641,7 @@ Ahora bien, para el desarrollo de la aplicación, se empleó CustomTkinter, una 
 		\item Datos filtrados de ángulos y distancias. 
 	\end{itemize}
 	Cada botón permite al usuario elegir la ubicación donde se guardará la información, simplificando así la organización y el análisis de los datos recopilados.
-	\item Panel de pruebas estadísticas: Sección en la cual se muestran los análisis estadísticos de las mediciones radiales capturadas por el sensor. Esta sección solamente aplica para reconstrucciones de entornos circulares.
+	\item Panel de pruebas estadísticas: Sección en la cual se muestran los análisis estadísticos de las mediciones radiales y angulares capturadas por el sensor. Esta sección solamente aplica para reconstrucciones de entornos circulares. Además, se ofrece un botón con el cual se pueden calcular métricas para reconstrucciones de entornos cuadrados/rectangulares.
 \end{itemize}
 
 \chapter{Calibración del LiDAR FHL-LD20}
@@ -785,16 +785,16 @@ Los intervalos de confianza calculados para estas pendientes presentan rangos es
 
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}{\textwidth}
+	\begin{subfigure}{1\textwidth}
 		\centering
-		\includegraphics[width=1.5\linewidth]{analisis_precision_1_1.png}
+		\includegraphics[width=1\textwidth]{analisis_precision_1_1.png}
 		\caption{Análisis de arista horizontal superior}
 		\label{analisis_precision_1_1}
 	\end{subfigure}
-	\hspace{1em}
-	\begin{subfigure}{\textwidth}
+	\vspace{1em}
+	\begin{subfigure}{1\textwidth}
 		\centering
-		\includegraphics[width=1.5\linewidth]{analisis_precision_1_2.png}
+		\includegraphics[width=1\textwidth]{analisis_precision_1_2.png}
 		\caption{Análisis de arista horizontal inferior}
 		\label{analisis_precision_1_2}
 	\end{subfigure}
@@ -802,18 +802,19 @@ Los intervalos de confianza calculados para estas pendientes presentan rangos es
 	\label{fig: reconstruccion_analisis_horizontal_1}
 \end{figure}
 
+
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}{0.45\textwidth}
 		\centering
-		\includegraphics[width=1.2\linewidth]{analisis_precision_1_3.png}
+		\includegraphics[width=1\linewidth]{analisis_precision_1_3.png}
 		\caption{Análisis de arista vertical derecha}
 		\label{analisis_precision_1_3}
 	\end{subfigure}
 	\hspace{1em}
 	\begin{subfigure}{0.45\textwidth}
 		\centering
-		\includegraphics[width=1.2\linewidth]{analisis_precision_1_4.png}
+		\includegraphics[width=1\linewidth]{analisis_precision_1_4.png}
 		\caption{Análisis de arista vertical izquierda}
 		\label{analisis_precision_1_4}
 	\end{subfigure}
@@ -823,7 +824,14 @@ Los intervalos de confianza calculados para estas pendientes presentan rangos es
 
 El intercepto calculado resulta útil para evaluar el alineamiento general del sensor con respecto a las posiciones esperadas. En todos los casos, se observan ligeras desviaciones en el intercepto que oscilaban entre 0.3959 mm y 2.4565 mm con respecto a las dimensiones esperadas de $\pm$ 200 mm, lo cual es relativamente bajo. El análisis de los intervalos de confianza de la pendiente y el intercepto proporciona una medida de la fiabilidad de estos parámetros. Al mostrar rangos estrechos, se demuestra una fuerte consistencia en las mediciones, lo cual refuerza la confiabilidad de las regresiones lineales obtenidas. 
 
-El rango de las mediciones, que varió entre 3.8049 mm y 4.4322 mm para las diferentes aristas, refleja una dispersión controlada. La diferencia promedio entre las mediciones registradas y el valor real esperado, inferior a 3 mm, confirma que la dispersión de las mediciones se encuentra dentro de los límites de precisión indicados en la Sección \ref{var_dist}. En resumen, las métricas analizadas demuestran que el sensor presenta una buena precisión general. A pesar que se observen pequeñas desviaciones, los errores están por debajo de los 5 mm, lo cual es aceptable para la mayoría de las aplicaciones, en especial para navegación autónoma.
+El rango de las mediciones, que varió entre 3.8049 mm y 4.4322 mm para las diferentes aristas, refleja una dispersión controlada. La diferencia promedio entre las mediciones registradas y el valor real esperado, inferior a 3 mm, confirma que la dispersión de las mediciones se encuentra dentro de los límites de precisión indicados en la Sección \ref{var_dist}. En resumen, las métricas analizadas demuestran que el sensor presenta una buena precisión general. A pesar que se observen pequeñas desviaciones, los errores están por debajo de los 5 mm, lo cual es aceptable para la mayoría de las aplicaciones, en especial para navegación autónoma. En la Figura \ref{fig:ajuste_lineal_caja} se muestra la reconstrucción de la plataforma de pruebas junto con los ajustes lineales. Se destaca que la inclinación de los ajustes lineales en la reconstrucción es despreciable para las dimensiones de la propia plataforma.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{calibracion1.png}
+	\caption{Vista superior de la plataforma de pruebas reconstruida con los ajustes lineales.}
+	\label{fig:ajuste_lineal_caja}
+\end{figure}
 
 En la Sección \ref{caracterizacion} se detallan pruebas adicionales que complementan el proceso de calibración, proporcionando información clave para el posprocesamiento de los datos. Estas pruebas permiten analizar en mayor profundidad la precisión y consistencia del sensor en diferentes escenarios, lo que resulta esencial para su correcta calibración posprocesamiento. A partir de los resultados descritos en los párrafos anteriores y de las pruebas realizadas en la siguiente sección, se definieron los criterios de evaluación para la calibración del sensor:
 
@@ -1083,7 +1091,7 @@ Para el primer experimento, se diseñaron ocho círculos concéntricos con radio
 
 Como se muestra en las Figuras \ref{fig:disposicion_lidar_var_dist1} y \ref{fig:disposicion_lidar_var_dist8}, el sensor se posicionó en el centro de la cuadrícula y se alineó concéntricamente uno de los círculos fabricados, utilizando las líneas radiales como guía. Con esta disposición se esperaba que el sensor registrara mediciones uniformes a lo largo de todo el perímetro del círculo. Después de capturar un total de 180 revoluciones, equivalente a 129,600 puntos de medición, y repetir diez veces las mediciones, fue posible establecer el promedio, varianza muestral y sesgo asociados con las distancias medidas por el sensor para cada círculo. El análisis de los datos obtenidos con los ocho círculos permitió evaluar la la precisión del sensor a distintas distancias, proporcionando una base sólida para caracterizar la variabilidad en las mediciones y determinar la varianza asociada en cada caso.
 
-Los resultados del experimento se presentan en el Cuadro \ref{cuadro:stats}, donde se muestran las varianzas calculadas para cada uno de los ocho radios evaluados. En todos los casos, se verificó que las mediciones se ajustaran a una distribución gaussiana normal (ver Figuras \ref{fig:histograma_dists1} a \ref{fig:histograma_dists2} en Anexos \ref{varianza_distancia}), lo que respalda la validez del modelo de ruido asumido para las observaciones del sensor (Sección \ref{sec:estimacion}). Además, se observó que, a medida que aumentaba la distancia de los radios, también se incrementaba la varianza en las mediciones, indicando una disminución gradual en la exactitud del sensor. Para caracterizar esta relación, se realizó un ajuste lineal de los datos, como se muestra en la Figura \ref{fig:varianza_tendencia}, lo que permitió describir la variación de la varianza en función de la distancia. Es importante señalar que el valor esperado para cada medición resultó ser 1 mm menor que el radio del círculo evaluado debido al grosor del recubrimiento de cartón. 
+Los resultados del experimento se presentan en el Cuadro \ref{cuadro:stats}, donde se muestran las varianzas calculadas para cada uno de los ocho radios evaluados. En todos los casos, se verificó que las mediciones se ajustaran a una distribución gaussiana normal (ver Figuras \ref{fig:histograma_dists6} a \ref{fig:histograma_dists8} en Anexos \ref{varianza_distancia}), lo que respalda la validez del modelo de ruido asumido para las observaciones del sensor (Sección \ref{sec:estimacion}). Además, se observó que, a medida que aumentaba la distancia de los radios, también se incrementaba la varianza en las mediciones, indicando una disminución gradual en la exactitud del sensor. Para caracterizar esta relación, se realizó un ajuste lineal de los datos, como se muestra en la Figura \ref{fig:varianza_tendencia}, lo que permitió describir la variación de la varianza en función de la distancia. Es importante señalar que el valor esperado para cada medición resultó ser 1 mm menor que el radio del círculo evaluado debido al grosor del recubrimiento de cartón. 
 
 \begin{table}[H]
 	\centering
@@ -1228,28 +1236,28 @@ Los resultados del experimento se presentan en los Cuadros \ref{cuadro:stats_the
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{variacion_circ_arc_47.png}
+	\includegraphics[width=0.75\textwidth]{variacion_circ_arc_47.png}
 	\caption{Dispersión angular en la última medición del círculo externo antes del arco a diferentes distancias radiales.}
 	\label{fig:varianza_circ_47}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{variacion_arc_47.png}
+	\includegraphics[width=0.75\textwidth]{variacion_arc_47.png}
 	\caption{Dispersión angular en la primera medición correspondiente al inicio del arco a diferentes distancias radiales.}
 	\label{fig:varianza_arc_47}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{variacion_arc_42.png}
+	\includegraphics[width=0.75\textwidth]{variacion_arc_42.png}
 	\caption{Dispersión angular en la última medición justo antes de finalizar el arco a diferentes distancias radiales.}
 	\label{fig:varianza_arc_42}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{variacion_circ_arc_42.png}
+	\includegraphics[width=0.75\textwidth]{variacion_circ_arc_42.png}
 	\caption{Dispersión angular en la primera medición del círculo externo tras concluir el arco. a diferentes distancias radiales.}
 	\label{fig:varianza_circ_42}
 \end{figure}
@@ -1279,14 +1287,14 @@ Para verificar este comportamiento, se repitió el experimento variando la posic
 	\centering
 	\begin{subfigure}{0.8\textwidth}
 		\centering
-		\includegraphics[width=0.55\linewidth]{480mm_theta_XY_point4.png}
+		\includegraphics[width=0.50\linewidth]{480mm_theta_XY_point4.png}
 		\caption{El óvalo rojo muestra la ubicación de dos puntos de referencia y su número de identificación.}
 		\label{fig:point3}
 		\vspace{1em}
 	\end{subfigure}
 	\begin{subfigure}{0.8\textwidth}
 		\centering
-		\includegraphics[width=0.55\linewidth]{480mm_theta_XY_point3.png}
+		\includegraphics[width=0.50\linewidth]{480mm_theta_XY_point3.png}
 		\caption{El óvalo rojo muestra la ubicación de dos puntos de referencia y su número de identificación.}
 		\label{fig:point4}
 	\end{subfigure}
@@ -1296,28 +1304,28 @@ Para verificar este comportamiento, se repitió el experimento variando la posic
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{variacion_circ_arc_227.png}
+	\includegraphics[width=0.75\textwidth]{variacion_circ_arc_227.png}
 	\caption{Dispersión angular en la última medición del círculo externo antes del arco a diferentes distancias radiales.}
 	\label{fig:varianza_circ_227}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{variacion_arc_227.png}
+	\includegraphics[width=0.75\textwidth]{variacion_arc_227.png}
 	\caption{Dispersión angular en la primera medición correspondiente al inicio del arco a diferentes distancias radiales.}
 	\label{fig:varianza_arc_227}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{variacion_arc_222.png}
+	\includegraphics[width=0.75\textwidth]{variacion_arc_222.png}
 	\caption{Dispersión angular en la última medición justo antes de finalizar el arco a diferentes distancias radiales.}
 	\label{fig:varianza_arc_222}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{variacion_circ_arc_222.png}
+	\includegraphics[width=0.75\textwidth]{variacion_circ_arc_222.png}
 	\caption{Dispersión angular en la primera medición del círculo externo tras concluir el arco. a diferentes distancias radiales.}
 	\label{fig:varianza_circ_222}
 \end{figure}
@@ -1346,3 +1354,92 @@ Estas ``colas'' en la reconstrucción del entrono representan el resultado de un
 En este capítulo se presentan modelos 3D que ilustran posibles montajes del sensor FHL-LD20 en los robots de tracción diferencial Pololu 3pi+. Estos montajes son propuestas conceptuales que exploran cómo podría integrarse el sensor, considerando aspectos como tamaño, espacio disponible, operatividad y limitaciones inherentes a cada configuración. Cada diseño ofrece ventajas y desventajas específicas para su aplicación en tareas de navegación autónoma y mapeo de entornos. Los modelos se han desarrollado respetando las dimensiones, la forma y las características físicas tanto del sensor como del robot, para proporcionar una visión realista de su posible implementación.
 
 \section{Montaje frontal del sensor FHL-LD20}
+Antes de diseñar el primer montaje del sensor, se evaluó la capacidad del Pololu 3pi+ para desplazarse sobre la plataforma del ecosistema Robotat con el LiDAR instalado pero inactivo. Para ello, se realizaron pruebas de movimiento básico hacia adelante y hacia atrás a una velocidad de 50 rpm, con el propósito de verificar que la masa del LiDAR no generara una carga adicional significativa en los motores, evitando así un posible desgaste prematuro en las cajas reductoras del robot. Durante las trayectorias realizadas, el sensor permaneció estático, y el agente robótico demostró ser capaz de moverse sin impedimentos. Además, se comprobó que el soporte y el sensor no afectaban la visualización de los marcadores pasivos del sistema de detección de movimiento.
+
+Tras confirmar que el agente robótico podía soportar la carga del sensor sin comprometer su funcionamiento, se procedió al diseño de diversas configuraciones de montaje para integrar el sensor de manera estable al robot. La Figura \ref{fig:montaje1} presenta el diseño del montaje frontal. Este diseño posiciona el sensor FHL-LD20 en la parte delantera del Pololu 3pi+, utilizando separadores ME de latón de 20 mm y 6 mm de altura para su fijación. Como se muestra en la Figura \ref{fig:base1}, el soporte incorpora una pared con voladizo que permite la colocación del marcador pasivo, facilitando su detección. Dicha ubicación sobre el sensor asegura su visibilidad sin interferencias, incluso cuando el robot se encuentra en movimiento. Además, el diseño aprovecha la altura del agente para garantizar que las paredes en los entornos donde se ponga a prueba no necesiten ser demasiado altas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{3PI_PLUS_32U4_ROBOT_MAIN_BOARD_LiDAR_V1.png}
+	\caption{Vista isométrica del montaje frontal del sensor FHL-LD20 en Pololu 3pi+.}
+	\label{fig:montaje1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.50\textwidth]{BASE_LIDAR_V4.png}
+	\caption{Vista isométrica del soporte para el montaje frontal del sensor FHL-LD20.}
+	\label{fig:base1}
+\end{figure}
+
+Sin embargo, esta configuración presenta limitaciones en cuanto al campo de visión del sensor. La pared trasera que sostiene el marcador obstruye la visión hacia atrás, reduciendo la capacidad del LiDAR para realizar mapeos completos. Adicionalmente, el desplazamiento del centro de gravedad hacia adelante puede comprometer la estabilidad del robot durante giros rápidos o maniobras bruscas, lo que podría afectar su desempeño en tareas que requieran cambios frecuentes de dirección.
+
+Otro aspecto a considerar es la vulnerabilidad del sensor en esta posición. Al estar ubicado en la parte frontal, el LiDAR está más expuesto a posibles daños durante colisiones, especialmente si no se implementan protecciones adicionales. Aunque esta ubicación facilita el acceso al sensor y permite un montaje directo, es importante evaluar el riesgo de impacto sobre el sensor si no se considera el desfase respecto al centro del agente robótico. Por último, la fabricación del soporte presenta desafíos en su manufactura debido a la geometría empleada. Como se muestra en la Figura TAL, el soporte cuenta con dos voladizos los cuales se podrían capturar únicamente empleando soportes al momento de imprimir la pieza 3D.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{3PI_PLUS_32U4_ROBOT_MAIN_BOARD_LiDAR_V1_CENTER_GRAVITY.png}
+	\caption{Ubicación del centro de gravedad del montaje realizado.}
+	\label{fig:centro1}
+\end{figure}
+
+\section{Montaje superior del sensor FHL-LD20}
+
+Como se observa en la Figura \ref{fig:montaje2}, en esta configuración, el sensor se ubica sobre el Pololu 3pi+. Nuevamente, la estructura utiliza separadores M3,  alcanzando una altura de 40 mm desde la placa de expansión del robot. Esta configuración optimiza el campo de visión del LiDAR, permitiéndole capturar datos de forma completa sin interferencias de otros componentes del robot.  La elevación también deja el espacio frontal libre, lo que facilita la integración de módulos adicionales como cámaras o sensores para tareas avanzadas de navegación autónoma.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{3PI_PLUS_32U4_ROBOT_MAIN_BOARD_LiDAR_V2.png}
+	\caption{Vista isométrica del montaje superior del sensor FHL-LD20 en Pololu 3pi+.}
+	\label{fig:montaje2}
+\end{figure}
+
+Un beneficio importante de esta disposición es la estabilidad relativa que proporciona. Como se muestra en la Figura \ref{fig:centro2}, el centro de gravedad permanece más cercano al chasis que en el montaje frontal, mejorando la estabilidad del robot en giros rápidos o movimientos acelerados. Esta característica es clave para aplicaciones donde se requieran maniobras ágiles y precisas, especialmente en superficies uniformes. No obstante, esta configuración también tiene desventajas notables. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{3PI_PLUS_32U4_ROBOT_MAIN_BOARD_LiDAR_V2_CENTER_GRAVITY.png}
+	\caption{Ubicación del centro de gravedad del montaje realizado.}
+	\label{fig:centro2}
+\end{figure}
+
+Al contar con una mayor altura se incrementa la susceptibilidad del robot a volcarse en superficies irregulares o desniveladas, limitando su aplicación en ciertos entornos \cite{lidar_height}. Además, la elevación del sensor podría generar oscilaciones o vibraciones adicionales durante el movimiento, afectando la precisión de las mediciones del LiDAR. Este efecto debe ser mitigado con ajustes mecánicos o algoritmos de compensación en el procesamiento de datos.
+
+Finalmente, esta configuración requiere que los entornos evaluados cuenten con paredes más altas para garantizar un mapeo efectivo. Si bien el diseño es adecuado para áreas abiertas y controladas, puede ser menos práctico en espacios con restricciones de altura o donde la estabilidad sea crítica. En general, el montaje superior es una opción versátil para tareas de exploración en entornos amplios donde el rango completo del sensor sea una prioridad. Junto a esto, a diferencia del caso anterior, el soporte empleado para la sujeción del LiDAR es fácil de manufacturar debido a su geometría (ver Figura \ref{fig:base2}). Además que mantiene el marcador pasivo en una ubicación visible para el sistema de detección por debajo del LiDAR.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{BASE_LIDAR_V3.png}
+	\caption{Vista isométrica del soporte para el montaje frontal del sensor FHL-LD20.}
+	\label{fig:base2}
+\end{figure}
+
+\section{Montaje frontal del sensor FHL-LD20 con rueda loca}
+Como se muestra en la Figura \ref{fig:montaje3}, esta propuesta adapta el montaje frontal, añadiendo una rueda loca en la parte delantera del robot para contrarrestar el desplazamiento del centro de gravedad hacia adelante, proporcionando mayor estabilidad en superficies irregulares o durante movimientos bruscos (ver Figura \ref{fig:centro3}). La rueda loca mejora el equilibrio general del sistema y permite un funcionamiento más estable al transportar el sensor en terrenos poco uniformes.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{3PI_PLUS_32U4_ROBOT_MAIN_BOARD_LiDAR_V3.png}
+	\caption{Vista isométrica del montaje superior del sensor FHL-LD20 en Pololu 3pi+.}
+	\label{fig:montaje3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{3PI_PLUS_32U4_ROBOT_MAIN_BOARD_LiDAR_V3_CENTER_GRAVITY.png}
+	\caption{Ubicación del centro de gravedad del montaje realizado.}
+	\label{fig:centro3}
+\end{figure}
+
+Al igual que para el primer montaje, una ventaja importante de este diseño es que mantiene el marcador pasivo en una ubicación visible para el sistema de detección. Esto garantiza que se siga detectando al robot sin interferencias, lo que es esencial en experimentos de navegación en entornos controlados. La estabilidad adicional proporcionada por la rueda loca hace que esta configuración sea adecuada para tareas en terrenos irregulares, donde los montajes anteriores podrían presentar dificultades. Sin embargo, el uso de una rueda loca introduce ciertas limitaciones.
+
+El diseño aumenta ligeramente el tamaño del robot, reduciendo su maniobrabilidad en espacios reducidos y complicando los giros rápidos. Además, una rueda loca tradicional podría generar fricción adicional durante los giros sobre su propio eje, afectando la precisión y la fluidez de las maniobras. Por esta razón, se recomienda explorar el uso de una rueda loca con bola, la cual proporciona menor fricción y mayor libertad de movimiento \cite{caster_wheel}. Si bien este diseño incrementa la complejidad mecánica del robot, el montaje frontal con rueda loca representa una solución práctica para aplicaciones donde la estabilidad y el desempeño en terrenos desafiantes son factores prioritarios. Es una opción robusta, especialmente para entornos donde se priorizan el equilibrio y la funcionalidad del sistema.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{BASE_LIDAR_V5.png}
+	\caption{Vista isométrica del soporte para el montaje frontal del sensor FHL-LD20.}
+	\label{fig:base3}
+\end{figure}
+
+Los montajes descritos previamente consideran el uso de la placa de expansión desarrollada por José Álvarez para ampliar las capacidades de los agentes robóticos Pololu 3pi+. Esta placa proporciona una solución viable para integrar el sensor LiDAR, aprovechando la flexibilidad en la asignación de pines del microcontrolador ESP32-S3 en el TinyS3 \cite{jose_alvarez_2023}. Los pines del bus SPI, al no inicializar el módulo correspondiente, pueden configurarse como GPIO normales, lo que permite reasignarlos a otras funciones, como UART, sin afectar el hardware existente.  Además, el TinyS3 ofrece la posibilidad de remapear cualquier módulo UART a los pines disponibles mediante su matriz GPIO, lo que facilita la redirección de las conexiones del LiDAR hacia pines previamente ocupados por periféricos, como la cámara descrita en \cite{jose_alvarez_2023}. Este procedimiento se lleva a cabo únicamente a nivel de software, garantizando la compatibilidad de los pines asignados y permitiendo una integración eficiente del LiDAR sin requerir modificaciones físicas significativas en la placa de expansión.

@@ -1,0 +1,12 @@
+\begin{itemize}
+	\item La evaluación y comparación de sensores de distancia tipo láser identificó al LiDAR FHL-LD20 como la opción más adecuada para futuras aplicaciones de mapeo de entornos. La selección se fundamentó en criterios críticos como la adaptabilidad y operatividad de este sensor en sistemas robóticos móviles, además de su rango de medición, precisión y dimensiones, esenciales para cumplir con los requisitos de esta aplicación.
+	\item La herramienta de software desarrollada no solo facilitó la interpretación y visualización de los datos del sensor, sino que también se consolidó como un recurso fundamental para futuras validaciones en distintos entornos. 
+	\item La herramienta de software proporcionó un medio visual para comprender el funcionamiento del sensor y aprovechar de manera eficiente los datos que genera.
+	\item La caracterización del sensor LiDAR FHL-LD20 permitió evaluar y modelar la confiabilidad de sus mediciones bajo condiciones reales de operación, identificando diferencias en la distribución de las mediciones: las distancias radiales presentaron una distribución normal, mientras que los ángulos siguieron una distribución uniforme.
+	\item A partir de la caracterización del sensor se definió un rango mínimo de medición efectivo de 15 cm y se depuraron mediciones nulas asociadas a ángulos de incidencia desfavorables, mejorando la calidad de los datos.
+	\item Las reconstrucciones del entorno ante cambios abruptos de geometría revelaron la aparición de reflexiones difusas en los bordes de transición, generadas por interacciones específicas del LiDAR con los bordes de las superficies.
+	\item Las pruebas de calibración del sensor demostraron que los valores reconstruidos coinciden con las dimensiones nominales de referencia, mostrando desviaciones inferiores a $\pm$5 mm en mediciones repetidas realizadas bajo las mismas condiciones.
+	\item A través de las pruebas de caracterización y calibración, se determinó que la diferencia entre la distancia medida promedio y la distancia real se mantuvo por debajo de 3 mm. Además, las mediciones angulares promedio coincidieron con el valor teórico esperado, con una dispersión que no superó los $\pm$3°.
+	\item Se verificó que el agente robótico Pololu 3pi+ soportó la carga del sensor sin comprometer su funcionamiento. Esto, junto con la integración de la placa de expansión, montajes evaluados y la herramienta de software desarrollada, confirmó que es posible integrar el sensor en el agente.
+\end{itemize}
+

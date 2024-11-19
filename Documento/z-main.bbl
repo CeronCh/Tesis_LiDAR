@@ -1040,6 +1040,118 @@
       \verb 10.1109/JSTARS.2020.2969119
       \endverb
     \endentry
+    \entry{lidar_height}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=97936e1c2b29a39474387e1dd7a8ec86}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Kezhi},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a8d879f64fc5997758727dd940b51751}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={Yeqiang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=65d2e4f38e2c72b6f3cea6552c36aaea}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chunxiang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9845261412338f09f9fda112e8d5206d}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff862abf631ffeb969659bb6f43bdcfb}
+      \strng{fullhash}{19e79d2dca43330ef38f962e5f026418}
+      \strng{fullhashraw}{19e79d2dca43330ef38f962e5f026418}
+      \strng{bibnamehash}{19e79d2dca43330ef38f962e5f026418}
+      \strng{authorbibnamehash}{19e79d2dca43330ef38f962e5f026418}
+      \strng{authornamehash}{ff862abf631ffeb969659bb6f43bdcfb}
+      \strng{authorfullhash}{19e79d2dca43330ef38f962e5f026418}
+      \strng{authorfullhashraw}{19e79d2dca43330ef38f962e5f026418}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Intelligent Vehicles}
+      \field{number}{1}
+      \field{title}{Forehead or Headlights – At Which Height Should LiDARs be Mounted on the Vehicle?}
+      \field{volume}{9}
+      \field{year}{2024}
+      \field{pages}{2564\bibrangedash 2575}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TIV.2023.3318628
+      \endverb
+    \endentry
+    \entry{caster_wheel}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=b1e6fc96e14c7e7b7f2a821c27eb5e97}{%
+           family={Shabalina},
+           familyi={S\bibinitperiod},
+           given={Ksenia},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5ced7dddd6aac2c6b284e78e123ad185}{%
+           family={Sagitov},
+           familyi={S\bibinitperiod},
+           given={Artur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0ebe0a3cb3f02f253bd16d7f85771174}{%
+           family={Magid},
+           familyi={M\bibinitperiod},
+           given={Evgeni},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2dcaeecc16ba6e2d2e2f990f7ddb2dd}
+      \strng{fullhash}{b2dcaeecc16ba6e2d2e2f990f7ddb2dd}
+      \strng{fullhashraw}{b2dcaeecc16ba6e2d2e2f990f7ddb2dd}
+      \strng{bibnamehash}{b2dcaeecc16ba6e2d2e2f990f7ddb2dd}
+      \strng{authorbibnamehash}{b2dcaeecc16ba6e2d2e2f990f7ddb2dd}
+      \strng{authornamehash}{b2dcaeecc16ba6e2d2e2f990f7ddb2dd}
+      \strng{authorfullhash}{b2dcaeecc16ba6e2d2e2f990f7ddb2dd}
+      \strng{authorfullhashraw}{b2dcaeecc16ba6e2d2e2f990f7ddb2dd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 11th International Conference on Developments in eSystems Engineering (DeSE)}
+      \field{title}{Comparative Analysis of Mobile Robot Wheels Design}
+      \field{year}{2018}
+      \field{pages}{175\bibrangedash 179}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/DeSE.2018.00041
+      \endverb
+    \endentry
+    \entry{jose_alvarez_2023}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=ae6eba4779bb1aa57331f63482abf150}{%
+           family={Alvarez},
+           familyi={A\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad del Valle de Guatemala}%
+      }
+      \strng{namehash}{ae6eba4779bb1aa57331f63482abf150}
+      \strng{fullhash}{ae6eba4779bb1aa57331f63482abf150}
+      \strng{fullhashraw}{ae6eba4779bb1aa57331f63482abf150}
+      \strng{bibnamehash}{ae6eba4779bb1aa57331f63482abf150}
+      \strng{authorbibnamehash}{ae6eba4779bb1aa57331f63482abf150}
+      \strng{authornamehash}{ae6eba4779bb1aa57331f63482abf150}
+      \strng{authorfullhash}{ae6eba4779bb1aa57331f63482abf150}
+      \strng{authorfullhashraw}{ae6eba4779bb1aa57331f63482abf150}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Desarrollo de una placa de expansión para los agentes Pololu 3Pi+ que expanda sus capacidades dentro del ecosistema Robotat}
+      \field{type}{Tesis de licenciatura}
+      \field{year}{2023}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
