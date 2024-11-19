@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  19 NOV 2024 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  19 NOV 2024 12:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2434,16 +2434,23 @@ LaTeX Info: Redefining \% on input line 16.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `z-main.out' has not changed.
-(rerunfilecheck)             Checksum: 0CE5C7D4E6D12E7CA42BE391CDA4992F;16364.
+
+
+Package rerunfilecheck Warning: File `z-main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `z-main.out':
+(rerunfilecheck)             Before: 0CE5C7D4E6D12E7CA42BE391CDA4992F;16364
+(rerunfilecheck)             After:  BF1852474A2142B62754AFB543FF5631;16588.
 Package logreq Info: Writing requests to 'z-main.run.xml'.
 \openout1 = `z-main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32054 strings out of 474423
- 609756 string characters out of 5741719
- 1969496 words of memory out of 5000000
+ 32055 strings out of 474423
+ 609767 string characters out of 5741719
+ 1970496 words of memory out of 5000000
  53489 multiletter control sequences out of 15000+600000
  581366 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2484,9 +2491,9 @@ ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jrcer/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jrcer/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jrcer/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on z-main.pdf (138 pages, 116431991 bytes).
+Output written on z-main.pdf (138 pages, 116432765 bytes).
 PDF statistics:
- 2813 PDF objects out of 2984 (max. 8388607)
- 409 named destinations out of 1000 (max. 500000)
+ 2816 PDF objects out of 2984 (max. 8388607)
+ 410 named destinations out of 1000 (max. 500000)
  1317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
